@@ -1,0 +1,83 @@
+.message-item-component {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    min-height: 3.5rem;
+    padding: 0 1rem;
+    
+    &.self {
+        text-align: right;
+        align-items: flex-end;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    &.info {
+        justify-content: center;
+    }
+    .image-holder {
+        margin-right: 0.5rem;
+        display: flex;
+        align-items: flex-end;
+        img {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+        }
+    }
+    .message-holder {
+        display: flex;
+        flex-direction: column;
+        background: #eeffee;
+        padding: 0.7rem 1.5rem;
+        border-radius: 1.5rem 1.5rem 1.5rem 0rem;
+        border: 1px solid #d9d9d9;
+        
+        &.self {
+            max-width: 90%;
+            align-items: flex-end;
+            align-items: flex-end;
+            background: #fffaed;
+            margin-right: .5rem;
+            flex-wrap: wrap;
+            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+        }
+        .head-container {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            .name-container {
+                font-weight: bold;
+                color: #000000;
+                font-size: 0.7rem;
+            }
+            .time-container {
+                margin-left: 0.5rem;
+                font-size: 0.6rem;
+                color: #999999;
+            }
+        }
+        .message-wrapper {
+            font-size: 0.8rem;
+            color: #5a5a5a;
+            flex-wrap: wrap;
+            overflow-wrap: break-word;
+            text-align: justify;
+        }
+    }
+    .message-item-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .info-message {
+            color: #fff;
+            background: #aaaeb1;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .info-time {
+            font-size: 0.6rem;
+            color: #999;
+        }
+    }
+}

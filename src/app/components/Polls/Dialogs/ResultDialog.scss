@@ -1,0 +1,25 @@
+.result-dialog{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    .description{
+        display: flex;
+        align-items: center;
+    }
+    .poll-result-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .poll-result-option{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 0;
+            width: 100%;
+            &-progress{
+                flex: 1;
+            }
+        }
+    }
+}

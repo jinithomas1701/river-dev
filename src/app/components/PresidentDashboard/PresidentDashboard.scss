@@ -1,0 +1,65 @@
+@import "../../Util/commonStyles.scss";
+
+.president-dash-container{
+
+    .btn-settings{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        color: $text-altdark;
+        transition: .3s;
+        
+        &:hover{
+            background: $border-base;
+        }
+    }
+    
+    .dash-quickinfo{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 1rem;
+        padding: .2rem 0;
+        border-top: 1px dashed $border-base;
+        border-bottom: 1px dashed $border-base;
+
+        .point-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: .1rem .3rem .1rem 0;
+            padding: 0.5rem 3rem 1rem 1rem;
+            background: #333;
+            border-radius: 4px;
+
+            dd{
+                margin: 0;
+                font-weight: 300;
+                font-size: .9rem;
+                line-height: 1.1rem;
+                color: #eee;
+            }
+            dt{
+                margin: 0;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1rem;
+                color: #fff;
+            }
+        }
+
+        .btn-settings{
+            margin-left: auto;
+            min-width: 0;
+        }
+    }
+    
+    .main-tab{
+        margin-top: 1rem;
+    }
+    
+    .tab-body-container{
+        padding-top: 1.5rem;
+    }
+}

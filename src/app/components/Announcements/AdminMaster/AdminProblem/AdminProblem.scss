@@ -1,0 +1,48 @@
+@import "../../../../Util/commonStyles";
+
+.admin-problem-wrapper {
+    padding-top: 2rem;
+    .problem-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: space-around;
+        &::after {
+            display: flex;
+            content: none;
+            width: 100%;
+        }
+        .no-input {
+            padding-top: 4rem;
+            text-align: center;
+            justify-content: center;
+            color: gray;
+            width: 100%;
+        }
+        > .announcement-problem-item-wrapper {
+            width: 100%;
+            margin: 0 auto 3rem;
+        }
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: flex-start;
+
+            > .announcement-problem-item-wrapper {
+                width: 48%;
+                margin: 0 1% 3rem;
+            }
+            .no-input {
+                padding-top: 4rem;
+                text-align: center;
+                justify-content: center;
+                color: gray;
+                width: 100%;
+            }
+        }
+    }
+    .loadmore {
+        text-align: center;
+    }
+}

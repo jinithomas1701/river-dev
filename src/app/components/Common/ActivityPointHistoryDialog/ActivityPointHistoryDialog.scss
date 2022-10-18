@@ -1,0 +1,139 @@
+.activity-pointhistory-dialog-wrapper{
+    .main-wrapper{
+        width: 100%;
+        max-width: 100%;
+    }
+    .details-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    .loading-wrapper, .error-wrapper{
+        width: 100%;
+        min-height: 10rem;
+        display: flex;
+        justify-content: center;
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-icon{
+            margin-right: 0.3rem;
+            font-size: 1.5rem;
+            color: #f9647e;
+        }
+    }
+    .title-master, .title-activity{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        margin-bottom: .5rem;
+        color: #22acbc;
+        position: relative;
+        + p{
+            color: #888;
+            font-size: 0.8rem;
+        }
+    }
+    .title-activity{
+        font-size: 1rem;
+        color: #666;
+    }
+    .headsup-table{
+        width: 100%;
+        border: 1px solid #eee;
+        margin: 1.5rem 0;
+        border-width: 1px 0;
+        th{
+            font-size: 0.8rem;
+            padding-top: 0.5rem;
+            font-weight: 600;
+        }
+        td{
+            max-width: 25rem;
+            overflow-y: auto;
+            max-height: 8rem;
+            padding-bottom: .5rem;
+        }
+    }
+    .points-group{
+        .col{
+            padding: 0;
+        }
+    }
+    .subheading{
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 600;
+        color: #22acbc;
+        margin-bottom: .1rem;
+    }
+    td.text-right{
+        text-align: right;
+    }
+    .table-wrapper{
+        width: 100%;
+    }
+    .point-table{
+        width: 100%;
+        margin-bottom: 1rem;
+        tr{
+            border-bottom: 1px dotted #eee;
+            &:first-child:last-child{
+                border-bottom: 0;
+            }
+        }
+        th{
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+            padding: 0  0 0.3rem;
+        }
+        td{
+            font-size: 0.9rem;
+            color: #888;
+        }
+    }
+
+    .approvers-table{
+        width: 100%;
+        th{
+            font-size: 0.9rem;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            > li{
+                font-size: 0.8rem;
+                background: #f3eeee;
+                display: inline-block;
+                padding: .1rem 0.7rem;
+                border-radius: 0.9rem;
+                line-height: 1.4rem;
+                margin-right: .2rem;
+            }
+        }
+    }
+    .descriptions{
+        margin-top: 2.5rem;
+        color: #888;
+        font-size: 0.8rem;
+        text-align: justify;
+        white-space: pre-wrap;
+        b{
+            color: #666;
+            padding-right: .2rem;
+        }
+        a{
+            padding-left: .2rem;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #4997d9;
+        }
+    }
+    .close-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

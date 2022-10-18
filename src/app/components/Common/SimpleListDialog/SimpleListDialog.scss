@@ -1,0 +1,11 @@
+.simple-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-item{
+        font-size: 1.3rem;
+        color: #333;
+        margin: .5rem 0;
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../../Util/cssUtils.scss";
+
+.kpilist-wrapper {
+    .kpi-item {
+        background: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid $border-base;
+        cursor: pointer;
+        display: block;
+        transition: 0.3s;
+
+        &.disabled {
+            background: #eeeeee;
+        }
+
+        &:hover {
+            background: #fcfcfc;
+        }
+
+        .title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .title-sub {
+            font-size: 0.8rem;
+            margin-bottom: 0.1rem;
+            color: $text-base;
+        }
+
+        .sub-details {
+            font-size: 0.8rem;
+            display: flex;
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+
+            .label-term-group {
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: nowrap;
+                padding: 0 0.5rem;
+                min-width: 0;
+                max-width: 35%;
+                margin: 0;
+                dt {
+                    white-space: nowrap;
+                    font-weight: $weight-semibold;
+                    &:after {
+                        content: ": ";
+                        padding-right: 0.3rem;
+                    }
+                }
+                dd {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0;
+                    color: $text-base;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.cfo-dashboard-wrapper{
+    position: relative;
+    margin: 0 0 1rem 0;
+
+    .empty{
+        display: flex;
+        color: gray;
+        margin: 2rem;
+        justify-content: center;
+    }
+
+    .club-listing-wrapper{
+        position: absolute;
+        right: 0;
+        top: -4rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 1024px){
+            position: static;
+        }
+        
+        > button{
+            margin-left: .2rem;
+            margin-right: .2rem;
+        }
+        
+        h6{
+            margin: 0 0 0 .2rem;
+            padding: 0;
+        }
+
+        .form-control{
+            background-color: transparent;
+        }
+    }
+
+    .fieldheader-wrapper{
+        margin-top: 0;
+    }
+}

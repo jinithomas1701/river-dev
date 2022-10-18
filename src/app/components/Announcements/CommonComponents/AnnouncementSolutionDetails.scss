@@ -1,0 +1,123 @@
+@import "../../../Util/commonStyles";
+
+.solutiondetail-wrap {
+    .detail-page-card {
+        display: flex;
+        box-shadow: 0 4px 8px 0 rgba(192, 191, 191, 0.2);
+        margin: 0;
+        padding: 0 15px;
+        align-items: center;
+        width: 100%;
+        margin: 0.1rem;
+        .action-wrapper {
+            margin-left: auto;
+        }
+    }
+
+    .meta-info {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $border-base;
+
+        .created-by-detail-wrapper {
+            p {
+                font-weight: $weight-semibold;
+                font-size: $text-size-small;
+                margin: 0;
+            }
+        }
+    }
+    .detail-display {
+        margin: 1rem 2rem 1rem 2rem;
+        font-size: 0.9rem;
+        .table-meta {
+            width: 100%;
+            th {
+                font-size: $text-size-small;
+                font-weight: $weight-semibold;
+                line-height: 1rem;
+            }
+            td {
+                font-size: $text-size-small;
+                line-height: 1rem;
+                text-align: right;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .body-detail {
+        margin: 1rem 2rem 1rem 2rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+
+        > .title {
+            font-size: $text-size-heading-1;
+            display: block;
+            color: darken($primary-base, 10%);
+            font-weight: $weight-semibold;
+            margin-bottom: 0.3rem;
+        }
+        p {
+            font-weight: 400;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+        }
+        table {
+            font-size: 0.7rem;
+            th {
+                font-weight: 600;
+            }
+        }
+        .row {
+            margin-bottom: 0.5rem;
+            .created-by-detail-wrapper {
+                margin-bottom: 1.5rem;
+                .createdby-name {
+                    margin-bottom: 0.1rem;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                }
+                .createdby-role {
+                    margin-bottom: 0.1rem;
+                    font-size: 0.7rem;
+                    font-weight: 300;
+                }
+            }
+            .tagspecific-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                .tag {
+                    font-weight: 500;
+                    font-size: 0.7rem;
+                }
+                .chip-item {
+                    margin: 0.1rem 0.1rem;
+                    font-size: 9px;
+                    height: 17px;
+                    max-width: 80px;
+                    display: flex;
+                }
+            }
+        }
+        .attachment-wrapper {
+            .attachment-map {
+                p {
+                    margin-bottom: 0.5rem;
+                }
+                .attachment-display {
+                    display: flex;
+                    .chip-item {
+                        margin: 0.1rem 0.1rem;
+                        max-width: 200px;
+                    }
+                }
+            }
+            .row {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

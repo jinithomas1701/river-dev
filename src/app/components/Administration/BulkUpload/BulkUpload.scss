@@ -1,0 +1,93 @@
+.bulk-upload {
+    #excel-file,#excel-file-act {
+        display: none;
+    }
+    .file-select-container {
+        display: flex;
+        flex-direction: row;
+        .fileText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-left: 0.7rem;
+        }
+    }
+    .content-container {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        position: relative;
+    }
+    
+    .page-content-section {
+    
+        .section-title {
+            color: #909090;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .new-section-title {
+            margin-top: 1rem;
+        }
+    
+        .input-container {
+            padding-left: 2.8rem;
+            margin-top: 2rem;
+            .input-field {
+                width: 17rem;
+            }
+        }
+
+        .center-button-container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            .center-button {
+                align-self: center;
+            }
+        }
+
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .contact-card-wrapper {
+                width: 25%;
+                margin-right: 5.2rem;
+                margin-top: 1.1rem;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            margin-top: 2rem;
+        }
+    }
+    .fab-progress {
+        color: #fff;
+    }
+
+    .download{
+        &-template-container{
+            margin-top: 2rem;
+        }
+        &-text{
+
+        }
+        &-link{
+            display: inline-block;
+            color: #0a81df;
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+

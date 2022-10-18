@@ -1,0 +1,60 @@
+@import "../../../../Util/commonStyles.scss";
+
+.createvoice-dialog-wrapper{
+    @include common-dialog;
+
+    > div{
+        > .header{
+
+        }
+        > .content{
+
+            .input-select{
+                width: 100%;
+            }
+
+            .input-text{
+                width: 100%;
+                margin-bottom: .5rem;
+            }
+
+            .fieldheader-wrapper{
+                margin-top: 2rem;
+            }
+
+            .chip-container{
+                margin: 0.3rem 0 1rem;
+                border-bottom: 1px solid #999;
+                min-height: 3.5rem;
+                display: block;
+                padding-bottom: 0.3rem;
+                position: relative;
+                padding-top: 1.2rem;
+
+                .chip-label{
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: .95rem;
+                    margin-bottom: .5rem;
+                    position: absolute;
+                    top: calc(100% - 1.7rem);
+                    left: 0;
+                    transition: .2s;
+
+                    &.fill{
+                        top: 0;
+                        transform: translate(0, 1.5px) scale(0.75);
+                        transform-origin: top left;
+                    }
+                }
+
+                .chip-item{
+                    display: inline-flex;
+                    margin: 0 .3rem;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

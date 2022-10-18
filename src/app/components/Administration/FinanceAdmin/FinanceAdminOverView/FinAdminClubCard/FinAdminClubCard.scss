@@ -1,0 +1,53 @@
+@import "../../../../../Util/commonStyles";
+
+.finadmin-clubcard-wrapper {
+    padding: 1.5rem;
+    margin: 1rem;
+
+    > figure{
+        margin: 0;
+    }
+
+    .edit-icon-wrapper{
+        float: right;
+        color: rgb(141, 141, 141);
+
+        &:hover{
+            color: black;
+        }
+    }
+
+    .finadmin-clubcard-body{
+        display: flex;
+        font-size: $text-size-heading-1;
+        margin-top: 0.5rem;
+
+        .allowance-detail-wrapper{
+            width: 100%;
+
+            .bold{
+                font-weight: 600;
+            }
+
+            .sub-title{
+                text-align: center;
+            }
+
+            .amount{
+                text-align: right;
+            }
+        }
+
+        .label-list{
+            float: left;
+            max-width: 60%;
+        }
+
+        .amount-list{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-end;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.litup-suggest-view-dialog-container{
+    .action-button {
+        flex: 1;
+        display: flex;
+        color: #3e3e3e;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        &.active {
+            color: #3f51b5;
+        }
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        .head-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            .vote-count-container {
+                display: flex;
+                flex-direction: column;
+                margin-right: 1rem;
+                .vote-section {
+                    display: flex;
+                    flex-direction: row;
+                    color: #999999;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    .vote-count {
+                        margin-left: 0.6rem;
+                        font-weight: 600;
+                        color: #3f51b5;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .user-details {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0.5rem;
+                
+                .user-info {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0.5rem;
+                    .name {
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                    .email {
+                        font-size: 0.8rem;
+                        color: #808080;
+                    }
+                    .date {
+                        font-size: 0.7rem;
+                        color: #969696;
+                    }
+                }
+                
+            }
+        }
+        .profile-avatar{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+        .title{
+            font-weight: bold;
+            color: #333;
+            margin-top: 0.5rem;
+            width: 100%;
+            overflow: hidden;
+            overflow-wrap: break-word;
+        }
+        .text {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+            white-space: pre-wrap;
+        }
+        .extra-actions {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            .file-name {
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

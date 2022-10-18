@@ -1,0 +1,47 @@
+@import "../../../../Util/commonStyles";
+.main-container-wrapper {
+   
+    .type-title {
+        display: flex;
+        .meeting-type-title {
+            font-size: $text-size-heading-1;
+            font-weight: $weight-semibold;
+            color: $primary-base;
+        }
+        .recurrent-period {
+            font-size: 0.85rem;
+            color: gray;
+            padding-left: 0.5rem;
+        }
+    }
+    .history-button {
+        width: 30%;
+        text-align: right;
+        .show-history-button {
+            cursor: pointer;
+            color: #22bcac;
+            font-weight: 500;
+            font-size: 0.8rem;
+            text-decoration: underline;
+        }
+    }
+
+    .meeting-title {
+        font-size: 1rem;
+        font-weight: $weight-medium;
+        margin: 0 0 0.5rem;
+    }
+
+    .meeting-description {
+        font-size: $text-size-heading-1;
+        font-weight: $weight-normal;
+        text-align: justify;
+    }
+
+    .minutes-title {
+        margin-top: 1rem;
+        font-size: $text-size-heading-1;
+        font-weight: $weight-semibold;
+        color: $primary-base;
+    }
+}

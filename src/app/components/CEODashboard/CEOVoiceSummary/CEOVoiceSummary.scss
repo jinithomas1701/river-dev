@@ -1,0 +1,78 @@
+@import "../../../Util/commonStyles.scss";
+
+.ceo-voicesummary-wrapper{
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 0 2rem 1.5rem;
+    position: relative;
+
+    .summary-table{
+        width: 100%;
+        table-layout: fixed;
+
+        th{
+            text-transform: uppercase;
+            font-size: .7rem;
+            font-weight: $weight-medium;
+            padding: 2rem 2rem 0 0;
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            &:last-child{
+                &:after{
+                    content: none;
+                }
+            }
+        }
+        td{
+            font-size: 1.8rem;
+            font-weight: $weight-bold;
+            padding: 0;
+            line-height: 1;
+            overflow: hidden;
+            width: 20%;
+            position: relative;
+            padding-right: 2rem;
+            text-align: right;
+
+            &:last-child{
+                &:after{
+                    content: none;
+                }
+            }
+
+            &:after{
+                content: '';
+                height: 100%;
+                width: 1px;
+                position: absolute;
+                right: 1rem;
+                top: 0;
+                display: block;
+                background: $border-base;
+            }
+
+            &.voice-total{
+                color: $text-base;
+            }
+
+            &.voice-escalated{
+                color: $voice-escalated;
+            }
+            &.voice-pending{
+                color: $voice-pending;
+            }
+            &.voice-inprogress{
+                color: $voice-inprogress;
+            }
+            &.voice-resolved{
+                color: $voice-resolved;
+            }
+            &.voice-rejected{
+                color: $voice-rejected;
+            }
+        }
+    }
+}

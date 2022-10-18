@@ -1,0 +1,239 @@
+@import "../../../../Util/commonStyles.scss";
+
+.cfo-list-item-dock-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    > .tools-header {
+        padding: 0.5rem 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+
+        .cols-1 {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .cols-2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn,
+        .btn-primary,
+        .btn-default,
+        .btn-bordered,
+        .btn-complimentary,
+        .btn-icon-bordered {
+            margin: 0 0.5rem;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    > .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        padding: 2rem 1.5rem 0;
+        font-size: 0.8rem;
+        color: #333;
+
+        &.loading {
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: black;
+        }
+
+        > .details-header {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 2rem;
+
+            .left-col {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                float: left;
+
+                .avatar-img {
+                    height: 3rem;
+                    width: 3rem;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
+            .right-col {
+                float: right;
+
+                .table-stats {
+                    font-size: 0.72rem;
+
+                    th {
+                        padding: 0;
+                        padding-right: 0.5rem;
+                        white-space: nowrap;
+                        font-weight: 600;
+                    }
+                    td {
+                        white-space: nowrap;
+                        padding: 0;
+                        text-align: right;
+                        text-transform: uppercase;
+
+                        &.stats {
+                            font-weight: $weight-semibold;
+                        }
+
+                        &.escalated {
+                            color: $tertiary-base;
+                        }
+
+                        .icon-type {
+                            font-size: 1rem;
+                            color: $icon-color;
+                            margin-right: 0.2rem;
+                        }
+
+                        .centered {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        .details-body {
+            flex-grow: 1;
+            padding-bottom: 2rem;
+
+            > .title {
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin: 0 0 0.5rem;
+            }
+
+            > .sub-text,
+            > .description {
+                text-align: justify;
+                white-space: pre-wrap;
+
+                > .title {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    margin: 0 0 0.5rem;
+                }
+
+                position: relative;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    .btn-edit {
+                        opacity: 1;
+                    }
+                }
+
+                .btn-edit {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    opacity: 0;
+                    transition: opacity 0.2s;
+                }
+
+                > .title {
+                    font-weight: 600;
+                }
+            }
+
+            .attachment-wrapper {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 1rem;
+
+                > .title {
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-weight: 600;
+                }
+
+                > .attachment-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-right: 1rem;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+
+                    > .item {
+                        padding: 0 0.5rem 0.3rem;
+                        line-height: 1;
+
+                        .empty {
+                            font-weight: 300;
+                        }
+
+                        a {
+                            color: #1c998c;
+                            text-decoration: underline;
+                            cursor: pointer;
+                            transition: 0.2s color;
+
+                            &:hover,
+                            &:focus {
+                                color: lighten(#22bcac, 2%);
+                            }
+
+                            &:visited {
+                                color: darken(#1c998c, 2%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > .discussion-teaser {
+            display: flex;
+            flex-direction: column;
+            background: #f8f9fa;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+
+            > .header {
+                padding: 1rem 1.5rem 0.5rem;
+                > .title {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+            }
+
+            .discussion-wrapper {
+                flex-grow: 1;
+
+                > .discussion-body {
+                    max-height: 10rem;
+                    overflow: hidden;
+                    background: #f8f9fa;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.meetings-container{
+    flex-direction: row;
+
+    .with-label-card{
+        width: 100%;
+        padding-right: 1.2rem;
+        display: flex;
+        flex-direction: column;
+
+        .meeting-type-label{
+            font-weight: bold;
+            font-size: 1rem;
+            color: #999;
+            margin-top: 1rem;
+            margin-bottom: .3rem;
+        }
+    }
+}

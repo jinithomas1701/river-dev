@@ -1,0 +1,60 @@
+
+
+.notifications-menu{
+    height: 300px;
+    overflow-y: auto;
+    .new-avatar{
+        background:rgb(46, 50, 255)
+    }
+
+    a{
+        margin-left:7px;
+    }
+
+    .notification-list-item{
+        padding: 3px 5px;
+        border-bottom: 1px dashed #f0f0f0;
+        height: 4rem;
+        &-avatar{
+            width: 30px;
+            height: 30px;
+        }
+        &-icon{
+            font-size: 1rem;
+        }
+
+        .river-notify-title-head{
+            &.new{
+                    h3{
+                        font-weight: 600;
+                    }
+            }
+
+            h3{
+                font-size: .8rem;
+            }
+            p{
+                font-size: .6rem;
+            }
+        }
+    }
+
+
+    .loading-text{
+        color: #eae9e9;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .no-notification{
+            &-icon{
+                font-size: 11rem;
+            }
+        }
+    }
+}
+

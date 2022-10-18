@@ -1,0 +1,108 @@
+.dash-filter{
+    padding: 1rem;
+    background: #fcfcfc;
+    font-size: .9rem;
+    border-bottom: 4px solid #f2f2f2;
+    color: #888;
+    margin: 1rem 0 0;
+
+    .filter-head{
+        margin-bottom: .5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .title{
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .cols-1{
+            display: flex;
+            align-items: center;
+        }
+        .cols-2, .cols-3{
+            .filter-report-select{
+                background: #fff;
+                min-width: 3rem;
+            }
+            .label{
+                text-transform: uppercase;
+                margin-right: .5rem;
+            }
+        }
+        .cols-3 .filter-report-select{
+            min-width: 9rem;
+        }
+
+    }
+    .filter-results{
+        .filter-result-table{
+            border-top: 1px solid  #eee;
+            width: 100%;
+            thead{
+                tr{
+                    border-bottom: 1px solid  #eee;
+                }
+                th{
+                    text-align: center;
+                    vertical-align: bottom;
+                    padding: .5rem 0;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    &:first-child{
+                        text-align: left;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    transition: .2s;
+                    text-align: left;
+                    &:hover{
+                        background: darken(#fcfcfc, 3%);
+                    }
+                }
+                th{
+                    padding: .3rem .5rem;
+                    font-weight: 500;
+                }
+                td{
+                    text-align: center;
+                    padding: .3rem 0;
+                }
+            }
+        }
+        .empty-content{
+            padding: 0.5rem 0;
+        }
+    }
+    .summary-wrapper{
+        margin: 1rem 0;
+        font-size: .8rem;
+        padding: 1rem;
+        background: #fff;
+        
+        > .title{
+            margin: 0;
+            padding: 0;
+            font-size: .9rem;
+        }
+        
+        .summary-row{
+            .title{
+                font-weight: 500;
+                color: #333;
+                padding-top: .2rem;
+            }
+            .info{
+                display: flex;
+                > .cols-1{
+                    flex-grow: 1;
+                    border-bottom: 1px solid #eee;
+                    padding: 0.2rem 0;
+                }
+            }
+        }
+    }
+}

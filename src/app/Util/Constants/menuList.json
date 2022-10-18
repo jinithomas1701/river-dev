@@ -1,0 +1,209 @@
+{
+    "user" :[
+        {
+            "icon": "dvr",
+            "text": "Home",
+            "path": "/welcome",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "dashboard",
+            "text": "Feed",
+            "path": "/dashboard",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "person",
+            "text": "My Profile",
+            "path": "/myProfile",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "store",
+            "text": "My Club",
+            "path": "/myClub",
+            "privilage": "VIEW_USER_MENU"
+        },                
+        {
+            "icon": "supervised_user_circle",
+            "text": "Dashboard & Admin",
+            "path": "/admin",
+            "privilage": "ADMIN_PRIVILEGE"
+        } ,
+        {
+            "icon": "directions_run",
+            "text": "My Activities",
+            "path": "/activities",
+            "privilage": "VIEW_USER_MENU"
+
+        },
+        {
+            "icon": "record_voice_over",
+            "text": "Voices",
+            "path": "/voices",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "date_range",
+            "text": "Meetings",
+            "path": "/meetings",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "poll",
+            "text": "Polls",
+            "path": "/polls",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "check_box",
+            "text": "Surveys",
+            "path": "/survey",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "im": "ideaLitupIconGrey.png",
+            "text": "ideaLit",
+            "path": "/litup",
+            "privilage": "VIEW_USER_LITUP"
+        },
+        {
+            "icon": "event_note",
+            "text": "My CUD",
+            "path": "/userCUD",
+            "privilage": "VIEW_USER_MENU"
+        },
+        {
+            "icon": "trending_up",
+            "text": "Go For Growth",
+            "path": "/goforgrowth",
+            "privilage": "VIEW_USER_GFG"
+        },
+        {
+            "icon": "build",
+            "text": "Common Dashboard",
+            "path": "/admin/dash",
+            "privilage": "VIEW_USER_DASH"
+        }               
+    ],
+    "admin" :[
+        {
+            "icon": "home",
+            "text": "Back to Feed",
+            "path": "/dashboard",
+            "desc":""
+        },
+        {
+            "icon": "dashboard",
+            "text": "Club Dashboard",
+            "privilage":"VIEW_CLUB_PRESIDENT_DASHBOARD",
+            "path": "/admin/clubDash",
+            "desc":"summary of your club and comparison with other clubs"
+        },
+        {
+            "icon": "dashboard",
+                    "text": "Panel Dashboard",
+            "privilage":"VIEW_COUNCIL_DASHBOARD",
+            "path": "/admin/councilDash",
+                    "desc":"View all activities, voices etc assigned to your panel and take action on that"
+        },
+        {
+            "icon": "dashboard",
+            "text": "CEO Dashboard",
+            "privilage":"VIEW_CEO_DASHBOARD",
+            "path": "/admin/ceoDash",
+            "desc":"Compare and evaluate all clubs and their performance"
+        },
+        {
+            "icon": "dashboard",
+            "text": "Dashboard",
+            "privilage":"VIEW_RIVER_DASHBOARD",
+            "path": "/admin/riverDash",
+            "desc":"River Council dashboard"
+        },
+        {
+            "icon": "directions_run",
+            "text": "Assign(ed) Activities",
+            "path": "/admin/activities",
+            "privilage": "VIEW_ACTIVITY",
+                    "desc":"Activities assigned to your club/panel"
+        },
+        {
+            "icon": "directions_walk",
+            "text": "Master Activities",
+            "path": "/admin/activity/master",
+            "privilage": "VIEW_ALL_MASTER_ACTIVITY",
+            "desc":"Activity Master data from which Activities are assigned"
+        },
+        {
+            "icon": "date_range",
+            "text": "All Meetings",
+            "path": "/admin/meetings",
+            "privilage": "VIEW_MEETING",
+            "desc":"Manage all/club meetings relevant to you"
+        },
+        {
+            "icon": "record_voice_over",
+            "text": "Raised Voices",
+            "path": "/admin/voices",
+            "privilage": "VIEW_VOICE",
+                    "desc":"Voices related to your club/panel"
+        },
+        {
+            "icon": "group",
+            "text": "Manage Users",
+            "path": "/admin/users",
+            "privilage": "VIEW_USER",
+            "desc":"Manage all users"
+        },
+        {
+            "icon": "picture_as_pdf",
+            "text": "Generate Reports",
+            "path": "/admin/report",
+            "privilage": "GENERATE_REPORT",
+            "desc":"Generate various reports"
+        },
+        {
+            "icon": "store",
+            "text": "Manage Clubs",
+            "path": "/admin/clubs",
+            "privilage": "VIEW_CLUB",
+            "desc":"Manage all clubs"
+        },
+        {
+            "icon": "group",
+                    "text": "Manage Panels",
+            "path": "/admin/councils",
+            "privilage": "VIEW_COUNCIL",
+                    "desc":"Manage all panels"
+        },
+        {
+            "icon": "poll",
+            "text": "Create(ed) Polls",
+            "path": "/admin/polls",
+            "privilage": "VIEW_POLL",
+            "desc":"Manage polls relevant to you"
+        },
+        {
+            "icon": "grain",
+            "text": "Manage Points",
+            "path": "/admin/points",
+            "privilage": "MANAGE_POINTS",
+            "desc":"Manage points of users"
+        },
+        {
+            "icon": "backup",
+            "text": "Bulk Upload",
+            "path": "/admin/bulkupload",
+            "privilage": "MANAGE_BULK_UPLOAD",
+            "desc":"Bulk upload of activities, users etc..."
+        },
+        {
+            "icon": "event_note",
+            "text": "Manage CUD",
+            "path": "/admin/councilCUD",
+            "privilage": "GET_ALL_CUDS_FOR_COUNCIL",
+                    "desc":"Manage CUD under your panel"
+        }
+    ]
+}

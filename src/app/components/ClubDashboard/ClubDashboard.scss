@@ -1,0 +1,309 @@
+.club-dashboard-container{
+
+    .link_container{
+        display: flex;
+        margin-bottom: 0.7rem;
+
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            //width: 10rem;
+            background: white;
+            border:1px solid #ddd;
+            padding: 0.2rem 0.4rem;
+            margin-left: 0.4rem;
+            
+
+            .title{
+                font-size: 0.8rem;
+                font-weight: bold;
+                color:#444;
+                border-bottom: 1px solid #999;
+                padding: 0.3rem 0.4rem;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                padding: 0.4rem 0.4rem;
+                span{
+                    font-size: 0.8rem;
+                    color: green;
+                    text-decoration: underline;
+                    padding: 0.3rem;
+
+                    a{
+                        color: #147369;
+                    }
+                }
+            }
+        }
+    }
+    .tab-container{
+        margin-top: 1rem;
+
+        &.last-weeks{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &.compare{
+            display: flex;
+            flex-direction: row;
+
+            .compare-top-percent-container{
+                flex: 1;
+                margin-right: .5rem;
+
+                .compare-top-container{
+                    background: #fff;
+                    margin-bottom: 1.5rem;
+                    padding: 1.5rem;
+                    display: flex;
+                    .top-club{
+                        display: flex;
+                        flex: 1;
+                        flex-direction: column;
+                        align-items: center;
+                        &-value{
+                            font-size: 3rem;
+                            font-weight: bold;
+                            color: #444;
+                        }
+                        &-text{
+                            font-size: .9rem;
+                            text-align: center;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        .last-weeks {
+            &-table{
+                &-container{
+                    background: #fff;
+                    margin: 1rem 0;
+                    padding: 1rem;
+                    flex: 1;
+                    overflow: hidden;
+                    position: relative;
+                    tr:last-child td {
+                        border-bottom: none;
+                    }
+                    
+                    &.summary{
+                        .points-by-club{
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                        }
+                    }
+                    .table-navigate{
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                    }
+                }
+                &-title{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                &-content{
+                    overflow: auto;
+                    height: max-content;
+                    th{
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &-sidebar{
+                width: 12rem;
+                background: #fff;
+                margin: 1rem 1rem 1rem 0;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-height: max-content;
+
+                &-btn{
+                    display: flex;
+                    align-items: center;
+                    padding: .3rem;
+                    flex: 1;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #2d2d2d;
+                    height: 3rem;
+                    padding-left: 1.5rem;
+                    justify-content: space-between;
+                    .count{
+                        margin-right: 1rem;
+                        background: #ccc;
+                        padding: 0.4rem;
+                    }
+                    &:hover{
+                        background: #d9d6d6;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        border-right: .2rem solid #22bcac;
+                    }
+                }
+            }
+            &-week-control{
+                &-btn{
+                    &s-container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: .5rem;
+                        align-items: center;
+                    }
+                    background: #dfdfdf;
+                    border-radius: 10rem;
+                    cursor: pointer;
+                    &:hover{
+                        background: #858585;
+                        color: #dbdbdb;
+                    }
+                    &.disabled{
+                        background: #dfdfdf;
+                        color: #b6b6b6;
+                        border-radius: 10rem;
+                        cursor: auto;
+                        &:hover{
+                            background: #dfdfdf;
+                            color: #b6b6b6;                       
+                        }
+                    }
+                }
+                &-text{
+                    font-weight: bold;
+                    color: #555;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        
+
+        .compare-chart-container{
+            background: #fff;
+            padding: 1rem;
+            flex: 2;
+        }
+        
+        .top-5-users{
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            &-title{
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #444;
+            }
+            &-table{
+                &-body {
+                }
+                &-row{
+                    .top-users{
+                        overflow: hidden;
+                        &-title{
+                            max-width: 12.2rem;
+                        }
+                    }
+                }
+            }
+            max-width: 25.3rem;
+        }
+
+        &.commitments-targets{
+            .commitments-targets-tab{
+                background: #fafafa;
+                &-container{
+
+                    &.targets{
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        box-shadow: 1px 1px 0px 0px #e0e0e0;
+                        .fy-target-tile{
+                            background: #fff;
+                            padding: 1.2rem;
+                            width: 15rem;
+                            height: 9rem;
+                            margin: .5rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            .club-target-actions{
+                                position: absolute;
+                                top: 0.4px;
+                                right: 0.4rem;
+                                &-edit-btn{
+                                    font-size: 1rem;
+                                    cursor: pointer;
+                                }
+                            }
+                            .target{
+                                &-point{
+                                    font-size: 3rem;
+                                    font-weight: bold;
+                                    color: #444;
+                                }
+                                &-text{
+                                    font-size: 1rem;
+                                    color: #666;
+                                }
+                                &-year{
+                                    font-size: 1.2rem;
+                                    font-weight: bold;
+                                    color: #555;
+                                }
+                            }
+                        }
+                    }
+
+                    &.commitments{
+                        margin-top: 1rem;
+                        background: #fff;
+                        padding: 1.2rem;
+                            .commitments-list{
+                                &-head{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin: .5rem 0;
+        
+                                    &-title{
+                                        font-size: 1.3rem;
+                                        font-weight: 500;
+                                    }
+                                    &-btn{
+        
+                                    }
+                                }
+                            }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.show-assignees-btn{
+    color: #22BCAC;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../../Util/commonStyles";
+
+.problem-detail {
+    width: 100%;
+    max-width: 60rem;
+    .detail-page-card {
+        box-shadow: 0 4px 8px 0 rgba(192, 191, 191, 0.2);
+        max-width: 1000px;
+        margin: 0.1rem 0.1rem 2rem 0.1rem;
+        padding: 0.1rem 2.5rem 0.1rem 2.5rem;
+        text-align: left;
+
+        .col-md-11 {
+            display: flex;
+            padding: 0.5rem;
+            .close-problem {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    .meta-info {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $border-base;
+        .created-by-detail-wrapper {
+            p {
+                font-weight: $weight-semibold;
+                font-size: $text-size-small;
+                margin: 0;
+            }
+        }
+        .table-meta {
+            width: 100%;
+            th {
+                font-size: $text-size-small;
+                font-weight: $weight-semibold;
+                line-height: 1rem;
+            }
+            td {
+                font-size: $text-size-small;
+                line-height: 1rem;
+                text-align: right;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .detail-display {
+        overflow: visible;
+        margin: 2rem 2rem 1rem;
+        font-size: 0.9rem;
+        .created-by-details {
+            text-align: left;
+            .tagspecific-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                .tag {
+                    font-weight: 500;
+                    font-size: 0.7rem;
+                }
+                .tag-wrap {
+                    display: flex;
+                    .chip-item {
+                        margin: 0.1rem 0.1rem;
+                        font-size: 9px;
+                        height: 17px;
+                        max-width: 80px;
+                    }
+                }
+            }
+        }
+        .body-detail {
+            margin-bottom: 1.5rem;
+            .col-md-4 {
+                padding-right: 0rem;
+            }
+
+            > .title {
+                font-size: $text-size-heading-1;
+                display: block;
+                color: darken($primary-base, 10%);
+                font-weight: $weight-semibold;
+                margin-bottom: 0.3rem;
+                max-width: 1000px;
+                text-align: justify;
+            }
+            p {
+                font-weight: 400;
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+                max-width: 1000px;
+                text-align: justify;
+                white-space: pre-wrap;
+            }
+            table {
+                font-size: 0.7rem;
+                th {
+                    font-weight: 600;
+                }
+            }
+            .row {
+                margin-bottom: 0.5rem;
+                .created-by-detail-wrapper {
+                    display: flex;
+                    .col-md-9 {
+                        padding-top: 0.2rem;
+                        .createdby-name {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            margin-bottom: 0.2rem;
+                        }
+                        .createdby-role {
+                            font-size: 0.65rem;
+                            margin-bottom: 0.2rem;
+                        }
+                    }
+                }
+            }
+            .attachment-wrapper {
+                .attachment-map {
+                    .attachment-display {
+                        display: flex;
+
+                        .chip-item {
+                            margin-right: 0.2rem;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

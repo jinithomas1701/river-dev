@@ -1,0 +1,114 @@
+.view-meeting-dialog-container > div:nth-child(2) {
+    width: 65%;
+    max-width: 65%;
+}
+.view-meeting-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        padding-right: 1.9rem;
+        .sub-container {
+            font-size: 0.9rem;
+            color: #a7a7a7;
+            font-weight: 600;
+        }
+        .time-container {            
+            color: #53536e;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+                color: #22BCAC;
+            }
+        }
+        .section-container {
+            font-size: 0.7rem;
+        }
+        .section-title-container {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meeting-action-section-container {
+            width: 100%;
+            padding:1.1rem 1.2rem;
+            background-color: #FAF6F7;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            .action-section {
+                display: flex;
+                flex-direction: row;
+                .count {
+                    font-size: 0.8rem;
+                    color: #999999;
+                    font-weight: 500;
+                    margin-right: 0.3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .action-comment-box {
+                    display: flex;
+                    flex: auto;
+                    align-items: center;
+                    input.comment-text {
+                        background-color: #ffffff;
+                        padding: 0.2rem;
+                        width: 100%;
+                        border: 1px solid #E0E0E0;
+                    }
+                }
+            }
+        }
+
+        .meeting-comment-list-container {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .comment-action-container {
+            display: flex;
+            padding: 1rem 0 0.5rem 0;
+            color: #18345C;
+            font-size: 0.8rem;
+            text-decoration: none;
+            a {
+                margin-left: 0.5rem;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .invitees-container {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        .section-title {
+            font-weight: 600;
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+        }
+        .rating-container {
+            
+        }
+        .chip-container {
+            flex-wrap: wrap;
+            .chip-item {
+                margin-right: 0.3rem;
+                margin-bottom: 0.3rem;
+                background: #f0f0f0;
+                div {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+}

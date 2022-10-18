@@ -1,0 +1,20 @@
+@import "../../../../Util/commonStyles";
+
+.task-delete-alert-wrap {
+    text-align: center;
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 50rem;
+        }
+    }
+    .header {
+        justify-content: center;
+        .h5 {
+            width: 100%;
+        }
+    }
+    .sure-button {
+        text-align: center;
+    }
+}

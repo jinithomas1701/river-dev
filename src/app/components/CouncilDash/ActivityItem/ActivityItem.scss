@@ -1,0 +1,117 @@
+.activity-item{
+    display: flex;
+    background: #f7f7f7;
+    padding: 0.3rem;
+    margin: .3rem 0;
+    flex-direction: column;
+    border-left: 5px solid #22bcac;
+    .assignees-list{
+        display: flex;
+        flex-direction: row;
+        margin: 0.3rem 0;
+        .assignee{
+            margin-right: 0.4rem;
+            font-size: 0.7rem;
+            padding: .1rem .2rem;
+            background: #dddd;
+            display: flex;
+            align-items: center;
+            .delete-assignee{
+                margin-left: .3rem;
+                margin-bottom: -0.3rem;
+                .icon{
+                    color: #444;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .activity-details{
+        display: flex;
+        flex-direction: row;
+        .infos{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .datas{
+                display: flex;
+                justify-content: space-between;
+                max-height: 2.5rem;
+            }
+            .title{
+                flex: 1;
+                cursor: pointer;
+            }
+            .points{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                color: #22BCAC;
+                .point{
+                    font-size: 0.75rem;
+                    margin: 0 .2rem;
+                }
+            }
+        }
+        .assign-user{
+            padding: 0 0.5rem;
+            width: 8.5rem;
+            display: flex;
+            flex-direction: column;
+            .select-assignee{
+                .activity-item-assignees-multi-select{
+                    margin-top: 0;
+                    .text-icon{
+                        display: none;
+                    }
+                    .search-results-container{
+                        .search-result-item{
+                            .contact-card{
+                                .avatar{
+                                    height: 2rem;
+                                    width: 2rem;
+                                }
+                                .content{
+                                    .main-text{
+                                        font-size: 0.7rem;
+                                    }
+                                    .sub-text{
+                                        font-size: 0.6rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .assignee-btns{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0.4rem;
+                .assignee-btn{
+                    padding: 0rem 0.6rem;
+                    font-size: 0.7rem;
+                    background: #124B3C;
+                    margin: 0.1rem;
+                    border-radius: 13px;
+                    color: #f7f7f7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &.reject{
+                        background: #FF201D;
+                    }
+                    &.approve{
+                        background: #46A60A;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@import "../../../Util/commonStyles";
+
+.view-meetings-wrapper {
+    margin: 1rem 0 2rem;
+    min-height: 25rem;
+    max-height: 25rem;
+    .main-container {
+        border-radius: 5px;
+        background: white;
+        padding: 2rem;
+        min-height: 25rem;
+    }
+
+    .secondary-container {
+        background: #e9e9e9;
+        border-radius: 5px;
+        padding: 2rem;
+        min-height: 25rem;
+        .meeting-action-wrapper {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            .delete-button {
+                margin-left: 1rem;
+            }
+            .edit-icon {
+                cursor: pointer;
+                margin-left: 1rem;
+                border-radius: 5px;
+                padding: 0.5rem 2rem 0.5rem 0.5rem;
+                background: white;
+                max-width: 2rem;
+                box-shadow: 0 3px 18px rgba($color: #113f4d, $alpha: 0.08);
+            }
+        }
+        .meeting-details-wrap {
+            margin: 1rem 0rem;
+            .table-meeting {
+                .text-head {
+                    min-width: 5rem;
+                    font-size: 0.8rem;
+                }
+                .text-body {
+                    font-size: 0.8rem;
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+
+        .attendees-button {
+            text-align: center;
+
+            .attendees {
+                min-width: 9rem;
+                background-color: #bab5b5;
+                &:hover {
+                    background-color: #847e7e;
+                }
+            }
+        }
+        .attendence-graph-wrap {
+            margin: 2rem 0rem;
+            .attendence-heading {
+                font-size: 0.9rem;
+                font-weight: 600;
+                text-align: center;
+                color: #918b8b;
+                position: relative;
+                padding-bottom: 1rem;
+                &:before {
+                    position: absolute;
+                    width: 3rem;
+                    height: 0.2rem;
+                    background: #cfcbcb;
+                    content: "";
+                    display: block;
+                    bottom: 0;
+                    right: 42%;
+                }
+            }
+            .attendence-graph {
+            }
+            .table-meta {
+                margin-top: 1rem;
+                width: 100%;
+                table-layout: fixed;
+                th {
+                    font-size: $text-size-small;
+                    color: #555151;
+                    font-weight: $weight-semibold;
+                    line-height: 1rem;
+                    text-align: left;
+                    padding-left: 1.5rem;
+                    width: 70%;
+                }
+                td {
+                    font-size: $text-size-small;
+                    line-height: 1rem;
+                    text-align: right;
+                    padding-right: 1.5rem;
+                    width: 50%;
+                    color: #555151;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .history-list-wrap {
+        background: #dbdbdb;
+        border-radius: 5px;
+        padding-top: 3rem;
+        overflow: auto;
+        .each-history {
+            .year-display {
+                padding: 0.3rem;
+                font-size: 0.9rem;
+                color: #858888;
+                font-weight: 500;
+            }
+            .status-heading {
+                color: #22bcac;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-decoration: underline;
+                margin-bottom: 0.5rem;
+            }
+            .concluded-list-time {
+                font-size: 0.8rem;
+                margin: 0.6rem;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .upcoming-list-item {
+                font-size: 0.8rem;
+                margin: 0.6rem;
+            }
+        }
+    }
+}

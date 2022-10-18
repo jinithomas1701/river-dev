@@ -1,0 +1,105 @@
+@import "../../../../Util/commonStyles.scss";
+
+.upcoming-wrapper {
+    padding-top: 2rem;
+
+    .announcment-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &::after {
+            display: flex;
+            content: none;
+            width: 100%;
+        }
+        .no-input {
+            padding-top: 4rem;
+            text-align: center;
+            justify-content: center;
+            color: gray;
+            width: 100%;
+        }
+        > .announcement-task-tile-wrapper {
+            width: 100%;
+            margin: 0 auto 3rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: flex-start;
+
+            > .announcement-task-tile-wrapper {
+                width: 48%;
+                margin: 0 1% 3rem;
+            }
+            .no-input {
+                padding-top: 4rem;
+                text-align: center;
+                justify-content: center;
+                color: gray;
+                width: 100%;
+            }
+        }
+    }
+    .loadmore {
+        text-align: center;
+    }
+    .filter {
+        padding-right: 0rem;
+    }
+    .create-button-wrapper {
+        padding-left: 0rem;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.create-announcement-dialog-wrapper {
+    @include common-dialog;
+
+    > .common-dialog-body {
+        max-width: 900px;
+    }
+}
+.problem-detail-dialog-wrapper.task-problem {
+    text-align: center;
+    overflow: visible;
+
+    > div > .content {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
+        > .problem-detail > .detail-display {
+            overflow: visible;
+        }
+    }
+}
+.solution-detail-dialog-wrapper.solutiondetail-wrap {
+    .detail-page-card {
+        display: flex;
+        box-shadow: none;
+        margin: 0;
+        padding: 0 15px;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        margin: -1rem 0 0;
+        border-bottom: 1px solid #eee;
+    }
+    .detail-display {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+        .meta-info {
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}

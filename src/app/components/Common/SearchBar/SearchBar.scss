@@ -1,0 +1,86 @@
+@import "../../../Util/commonStyles.scss";
+
+.searchbar-wrapper {
+    display  : flex;
+    flex-wrap: nowrap;
+    position : relative;
+
+    &.light {
+        background: #fff;
+
+        .input-searchbar {
+            >div:before {
+                visibility: hidden;
+            }
+        }
+    }
+
+    &.minimal {
+        background: #fff;
+
+        .input-searchbar {
+            >div:before {
+                background-color: $border-base;
+            }
+        }
+    }
+
+    &.dark {
+        background: #f3f3f3;
+
+        .input-searchbar {
+            >div:before {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .input-searchbar {
+        flex-grow: 1;
+        margin   : 0;
+
+        >div {
+            height: 100%;
+
+            >input {
+                box-sizing   : border-box;
+                padding-left : 1rem;
+                padding-right: 2.5rem;
+                height       : 100%;
+            }
+        }
+    }
+
+    @mixin search-button-style {
+        position        : absolute;
+        top             : 0;
+        height          : 100%;
+        min-width       : 0;
+        padding         : 0 0.5rem;
+        border-radius   : 0;
+        color           : $primary-base;
+        background-color: transparent;
+
+    }
+
+    .btn-search.btn-search {
+        @include search-button-style();
+        right: 0;
+
+        &:hover {
+            background-color: $primary-base;
+            color           : #fff;
+        }
+    }
+    
+    .btn-clear.btn-clear {
+        @include search-button-style();
+        color: $text-base;
+        right: 2rem;
+        
+        &:hover {
+            background-color: #fff;
+            color: $tertiary-base;
+        }
+    }
+}

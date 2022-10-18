@@ -1,0 +1,26 @@
+@import "../../../../Util/commonStyles";
+
+.create-transaction-dialog-wrapper {
+    @include common-dialog;
+    .common-dialog-body {
+        max-width: 40rem;
+    }
+
+    .input-select {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-text {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .note {
+        margin: 1rem 0 0 0;
+    }
+
+    .create-transaction-button-wrapper {
+        width: 4.5rem;
+    }
+}

@@ -1,0 +1,133 @@
+
+.litup-suggest-vote-dialog-container{
+    .idealitup-myvote{
+        padding: 0.5rem;
+        .dp-box{
+            padding-bottom: 0.2rem;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+
+            &-title{
+                flex: 1;
+                font-size: 0.9rem;
+                &-opn{
+                    flex: 0;
+                }
+            }
+            &-value{
+                font-size:0.8rem;
+                &-opn{
+                    flex:1;
+                    textarea{
+                        border: 3px solid #f0f0f0;
+                        padding: 0.5rem;
+                        width: 100%;
+                        margin-left: 1rem;
+                        border-radius: 5%;
+                    }
+                }
+            } 
+            
+            
+        }
+
+        .dp-btns{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            &-btn{
+                padding: 0.5rem;
+                .icon{
+                    font-size: 3rem;
+                }
+
+                .green{
+                    color: green;                    
+                }
+
+                .grey{
+                    color:#ccc;
+                }
+
+                .red{
+                    color: #d23434;
+                }
+            }
+        }
+        
+    }
+
+    .idealitup-allvotes{
+        .stats{
+          display:none;
+          
+        }
+        .opinions{
+          
+          .opinion{
+                padding: 0.3rem 0.3rem;
+                box-shadow: 0px 0px 5px #ccc;
+                margin-bottom: 0.3rem;
+            &-title{
+              font-size:0.9rem;
+              color:rgb(57, 57, 158);
+              span{
+                margin-left:0.3rem;
+                font-weight:bold;
+                font-size:0.8rem;
+              }
+
+              .green{
+                  color: #00a73e;
+              }
+
+              .red{
+                  color:#bb2f2f;
+              }
+            }
+            &-ratings{
+              display:flex;
+              flex-direction:column;
+              
+              .rating{
+                display:flex;
+                flex-direction:row;
+                padding:0.1rem 0.5rem;
+                margin-bottom:0.2rem;
+                background:#fff;
+                font-size:0.9rem;
+                border-bottom: 1px dashed #eee;
+                &.top{
+                    color:#0095ff;
+                    font-weight: bolder;
+                }                
+                &-key{
+                  flex:1;
+                  font-weight:bold;
+                  color:#555;
+                  margin-right:0.5rem;
+                  font-size: 0.8rem;
+                }
+                &-value{
+                    white-space: pre-wrap;
+                }
+              }
+              
+            }
+          }
+          
+          
+        }
+      }
+
+      .no-data-label{
+        text-align: center;
+        padding: 2rem;
+        font-size: 1rem;
+        color: #bbb
+      }
+}

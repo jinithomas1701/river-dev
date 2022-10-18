@@ -1,0 +1,46 @@
+.sidemenu-item {
+    padding: 0;
+    img {
+        width: 15px;
+        margin-left: 0px;
+    }
+
+    .expand-icon {
+        color: #666;
+    }
+
+    .item-text {
+        h3 {
+            font-size: 0.8rem;
+            margin: 0 0.2rem;
+        }
+    }
+
+    &-children {
+        display: none;
+
+        &.active {
+            display: initial;
+        }
+    }
+}
+
+.sidedrawer-container {
+    .role-switch {
+        padding: 0 0.5rem;
+    }
+
+    .img-panel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+
+        .club-logo {
+            width: 90%;
+            height: 90%;
+            max-width: 3.7rem;
+            max-height: 3.7rem;
+        }
+    }
+}

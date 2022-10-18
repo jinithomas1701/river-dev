@@ -1,0 +1,306 @@
+[
+    {
+        "icon": "home",
+        "text": "Home",
+        "path": "/welcome",
+        "privilage": "VIEW_USER_MENU"
+    },
+    {
+        "icon": "dvr",
+        "text": "Feeds",
+        "path": "/dashboard",
+        "privilage": "VIEW_USER_MENU"
+    },
+    {
+        "icon": "dashboard",
+        "text": "Panel Dashboard",
+        "privilage": "VIEW_COUNCIL_DASHBOARD",
+        "path": "/admin/councilDash",
+        "desc": "View all activities, voices etc assigned to your panel and take action on that"
+    },
+    {
+        "icon": "dashboard",
+        "text": "CEO Dashboard",
+        "privilage": "VIEW_CEO_DASHBOARD",
+        "path": "/admin/ceoDash",
+        "desc": "Compare and evaluate all clubs and their performance"
+    },
+    {
+        "icon": "dashboard",
+        "text": "President Dashboard",
+        "privilage": "VIEW_CLUB_PRESIDENT_DASHBOARD",
+        "path": "/admin/clubDash",
+        "desc": "summary of your club and comparison with other clubs"
+    },
+    {
+        "icon": "emoji_people",
+        "text": "Leader DashBoard",
+        "path": "/dashboard/leader",
+        "privilage": "VIEW_LEADER_ANNOUNCEMENT"
+    },
+    {
+        "icon": "dashboard",
+        "text": "River Dashboard",
+        "privilage": "VIEW_RIVER_DASHBOARD",
+        "path": "/admin/riverDash",
+        "desc": "View River Council dashboard"
+    },
+    {
+        "icon": "dashboard",
+        "text": "Admin Dashboard",
+        "privilage": "VIEW_ADMIN_DASHBOARD",
+        "path": "/admin/adminDash",
+        "desc": "View Admin Dashboard"
+    },
+    {
+        "icon": "dashboard",
+        "text": "Audit Dashboard",
+        "privilage": "VIEW_AUDIT_DASHBOARD",
+        "path": "/audit/auditDash",
+        "desc": "View Audit Dashboard"
+    },
+    {
+        "icon": "dashboard",
+        "text": "Treasurer Dashboard",
+        "path": "/club-treasurer/treasurerDash",
+        "privilage": "VIEW_TRANSACTION_DASHBOARD_TREASURER",
+        "desc": "Handling the finance features of club treasurer"
+    },
+    {
+        "icon": "dashboard",
+        "text": "CFO Dashboard",
+        "path": "/cfo/cfoDash",
+        "privilage": "VIEW_TRANSACTION_DASHBOARD_CFO",
+        "desc": "Handling the finance features of cfo"
+    },
+    {
+        "icon": "person",
+        "text": "My Profile",
+        "path": "/myProfile",
+        "privilage": "VIEW_USER_MENU"
+    },
+    {
+        "icon": "store",
+        "text": "My Club",
+        "path": "/myClub",
+        "privilage": "VIEW_USER_MENU"
+    },
+    {
+        "icon": "directions_run",
+        "text": "Activities",
+        "path": "/member_activity",
+        "privilage": "VIEW_USER_MENU",
+        "children": [
+            {
+                "icon": "directions_run",
+                "text": "My Activities",
+                "path": "/member_activity",
+                "privilage": "VIEW_USER_MENU"
+            },
+            {
+                "icon": "list",
+                "text": "Line Items",
+                "path": "/line-item",
+                "privilage": "VIEW_USER_MENU"
+            }
+        ]
+    },
+    {
+        "icon": "monetization_on",
+        "text": "Finance",
+        "path": "/finance/finance-team",
+        "privilage": "VIEW_TRANSACTION_DASHBOARD_FINANCE_TEAM",
+        "desc": "Handling the finance features of finance team"
+    },
+    {
+        "icon": "extension",
+        "text": "Club Initiatives",
+        "path": "/clubinitiatives",
+        "privilage": "VIEW_CLUB_MEMBER_ANNOUNCEMENT",
+        "desc": "Display announcements to club member"
+    },
+    {
+        "icon": "people",
+        "text": "Group Meetings",
+        "path": "/group-meetings/list",
+        "privilage": "MTN_VIEW_MEETINGS",
+        "desc":"Handling the group meetings."
+    },
+    {
+        "icon": "record_voice_over",
+        "text": "Voice",
+        "path": "/voice",
+        "privilage": "VIEW_VOICE"
+    },
+    {
+        "icon": "record_voice_over",
+        "text": "Voices",
+        "path": "/voices",
+        "privilage": "VIEW_USER_MENU_DISABLE",
+        "children": [
+            {
+                "icon": "record_voice_over",
+                "text": "Voices",
+                "privilage": "VIEW_USER_MENU",
+                "path": "/voices"
+            },
+            {
+                "icon": "record_voice_over",
+                "text": "Manage Voices",
+                "privilage": "VIEW_VOICE",
+                "adminItem": true,
+                "path": "/admin/voices"
+            }
+        ]
+    },
+    {
+        "im": "ideaLitupIconGrey.png",
+        "text": "ideaLit",
+        "path": "/litup",
+        "privilage": "VIEW_USER_LITUP"
+    },
+    {
+        "icon": "sort_by_alpha",
+        "text": "Litipedia",
+        "path": "/litipedia",
+        "privilage": "VIEW_USER_MENU"
+    },
+    {
+        "icon": "trending_up",
+        "text": "Go For Growth",
+        "path": "/goforgrowth",
+        "privilage": "VIEW_USER_GFG"
+    },
+    {
+        "icon": "date_range",
+        "text": "Meetings",
+        "path": "/meetings",
+        "privilage": "VIEW_USER_MENU",
+        "children": [
+            {
+                "icon": "date_range",
+                "text": "My Meetings",
+                "privilage": "VIEW_USER_MENU",
+                "path": "/meetings"
+            },
+            {
+                "icon": "date_range",
+                "text": "Manage Meetings",
+                "privilage": "VIEW_MEETING",
+                "adminItem": true,
+                "path": "/admin/meetings"
+            }
+        ]
+    },
+    {
+        "icon": "poll",
+        "text": "Polls & Surveys",
+        "path": "/polls",
+        "privilage": "VIEW_USER_MENU",
+        "children": [
+            {
+                "icon": "poll",
+                "text": "My Polls",
+                "privilage": "VIEW_USER_MENU",
+                "path": "/polls"
+            },
+            {
+                "icon": "poll",
+                "text": "Manage Polls",
+                "privilage": "VIEW_POLL",
+                "adminItem": true,
+                "path": "/admin/polls"
+            },
+            {
+                "icon": "check_box",
+                "text": "Surveys",
+                "path": "/survey",
+                "privilage": "VIEW_USER_MENU"
+            }
+        ]
+    },
+    {
+        "icon": "event_note",
+        "text": "My CUD",
+        "path": "/userCUD",
+        "privilage": "VIEW_USER_MENU_DISABLE",
+        "children": [
+            {
+                "icon": "event_note",
+                "text": "My CUDs",
+                "privilage": "VIEW_USER_MENU",
+                "path": "/userCUD"
+            },
+            {
+                "icon": "event_note",
+                "text": "Manage CUDs",
+                "privilage": "GET_ALL_CUDS_FOR_COUNCIL",
+                "adminItem": true,
+                "path": "/admin/councilCUD"
+            }
+        ]
+    },
+    {
+        "icon": "build",
+        "text": "Common Dashboard",
+        "path": "/admin/dash",
+        "privilage": "VIEW_USER_DASH"
+    },
+    {
+        "icon": "supervised_user_circle",
+        "text": "Administration",
+        "path": "/admin",
+        "privilage": "ADMIN_PRIVILEGE",
+        "children": [
+            {
+                "icon": "store",
+                "text": "Manage Clubs",
+                "path": "/admin/clubs",
+                "privilage": "VIEW_CLUB",
+                "desc": "Manage all clubs"
+            },
+            {
+                "icon": "group",
+                "text": "Manage Users",
+                "path": "/admin/users",
+                "privilage": "VIEW_USER",
+                "desc": "Manage all users"
+            },
+            {
+                "icon": "group",
+                "text": "Manage Panels",
+                "path": "/admin/councils",
+                "privilage": "VIEW_COUNCIL",
+                "desc": "Manage all Panels"
+            },
+            {
+                "icon": "volume_up",
+                "text": "Voice Settings",
+                "path": "/admin/voice",
+                "privilage": "MANAGE_VOICE",
+                "desc": "Managing voice, members and related panels..."
+            },
+            {
+                "icon": "monetization_on",
+                "text": "Finance Settings",
+                "path": "/admin/finance-settings",
+                "privilage": "MANAGE_FINANCE",
+                "desc": "Manage funds of clubs"
+            },
+            {
+                "icon": "grain",
+                "text": "Manage Points",
+                "path": "/admin/points",
+                "privilage": "MANAGE_POINTS",
+                "desc": "Manage points of users"
+            },
+            {
+                "icon": "backup",
+                "text": "Bulk Upload",
+                "path": "/admin/bulkupload",
+                "privilage": "MANAGE_BULK_UPLOAD",
+                "desc": "Bulk upload of activities, users etc..."
+            }
+        ]
+    }
+]

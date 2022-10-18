@@ -1,0 +1,13 @@
+#image-dialog{
+    & > div:nth-child(2){
+        max-width: 90%;
+        max-height: 95%;
+    }
+
+    &-content{
+        padding: 0;
+        img {
+            max-width: 58rem;
+        }
+    }
+}

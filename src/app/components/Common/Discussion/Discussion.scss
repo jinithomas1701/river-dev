@@ -1,0 +1,58 @@
+.discussion-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    .message-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        background: #f8f9fa;
+        padding: 1rem;
+        padding-bottom: 5rem;
+
+        .read-older-messages{
+            text-align: center;
+            margin: 0.5rem 0;
+            color: #0d6ebb;
+            font-size: 0.9rem;
+
+            &.no-more{
+                color: #5f5f5f;                
+            }
+
+            .load-more-btn{
+                cursor: pointer;
+               &:hover{
+                   color: #297cc0;
+                   text-decoration: underline;
+               } 
+            }
+        }
+    }
+    .action-container {
+        height: 5rem !important;
+        width: 100% !important;
+        background: #eee;
+        display: flex !important;
+        padding: 1rem;
+        flex-direction: row;
+        align-items: center !important;
+        position: absolute;
+        bottom: 0;
+        .discussion-textarea {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 0.6rem;
+            border: 1px solid #ccc;
+            resize: none;
+            padding: 5px 10px;
+            font-size: 14pt;
+            margin-right: 1rem;
+        }
+    }
+
+
+}

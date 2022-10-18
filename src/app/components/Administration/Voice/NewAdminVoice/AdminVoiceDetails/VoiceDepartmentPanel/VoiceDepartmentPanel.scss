@@ -1,0 +1,25 @@
+@import "../../../../../../Util/commonStyles.scss";
+
+.voice-panel-wrapper{
+    margin: 1rem 0;
+    padding: 2rem;
+    position: relative;
+
+    .btn-edit{
+        position: absolute;
+        top: 3.5rem;
+        right: 2rem;
+        z-index: 1;
+    }
+
+    .escalation-item{
+        display: flex;
+        align-items: stretch;
+        margin-bottom: .5rem;
+        flex-direction: column;
+
+        .escalation-detail{
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.finance-team-history-wrapper{
+    position: relative;
+    margin: 0 0 1rem 0;
+
+    .empty{
+        display: flex;
+        color: gray;
+        margin: 2rem;
+        justify-content: center;
+    }
+    
+    .create-button-wrapper{
+        position: absolute;
+        right: 0;
+        top: -4.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        > button{
+            margin-left: .2rem;
+            margin-right: .2rem;
+        }
+        
+        h6{
+            margin: 0 0 0 .2rem;
+            padding: 0;
+        }
+    }
+}

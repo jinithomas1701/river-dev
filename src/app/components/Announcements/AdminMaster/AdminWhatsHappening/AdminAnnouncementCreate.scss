@@ -1,0 +1,133 @@
+@import "../../../../Util/commonStyles";
+
+.create-announcement-wrap {
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .create-page-top {
+        box-shadow: 0 4px 4px 0 rgba(194, 192, 192, 0.2);
+
+        padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+    }
+    .create-page-card {
+        max-width: 900px;
+        width: 96%;
+        margin: auto;
+        padding: 0;
+        text-align: left;
+        .content {
+            .column {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .deadline-switch {
+                    margin-bottom: 0rem;
+                }
+                .row {
+                    padding: 0.05rem;
+                    .date-time {
+                        border-bottom: 1px solid #969393;
+                        display: block;
+                        position: relative;
+
+                        .rdt {
+                            width: 90%;
+                            .claim-input {
+                                width: 100%;
+                                font-size: 0.8rem;
+                                border: none;
+                            }
+                        }
+                        .calender-icon {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                }
+                margin-top: 2rem;
+            }
+
+            .form-align-bottom {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .description-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                > .input-text {
+                    margin-bottom: 0;
+                }
+            }
+
+            .selected-problem-display {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                border: 1px solid $border-base;
+                border-radius: 2px;
+
+                .body {
+                    padding: 1rem;
+                    .problem-title {
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                    }
+                    .problem-code {
+                        font-size: 0.7rem;
+                    }
+                }
+                .action-area {
+                    margin-left: auto;
+                }
+            }
+
+            .submit-wrapper {
+                margin-top: 2rem;
+                border-top: 1px solid $border-base;
+                padding-top: 1rem;
+                display: flex;
+                justify-content: flex-end;
+                > button {
+                    margin-left: 0.3rem;
+                }
+            }
+
+            .button-group {
+                margin-top: 2rem;
+                .submit-button {
+                    margin-right: 2rem;
+                }
+                .close-button {
+                    margin-left: 0rem;
+                }
+            }
+            .chip {
+                margin-top: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            .club-wrap {
+                margin-top: 1rem;
+                .club-chip{
+                    display: flex;
+                }
+            }
+            .problemis-wrap {
+                .select-problem-button {
+                    padding-top: 1rem;
+                    .btn-default {
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50px;
+                        max-width: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}

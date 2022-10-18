@@ -1,0 +1,142 @@
+.master-activity-dock{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3rem 1rem 1rem 1rem;
+
+    .masteractivity-dock-content-wrapper{
+        padding:2%;
+        .dock-details-content{
+            margin-top: 3%;
+        }
+        .description-textbox{
+            margin-top: 3%;
+            width: 100%;
+            min-height: 5rem;
+            resize: none;
+            background-color: #F9F9F9;
+            border: 1px solid #EEEEEE;
+            margin-bottom: 3%;  
+            color: #C1C1C1;
+            padding: 3%;
+            white-space: pre-wrap;
+        }
+        .dock-list-content-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .dock-list-container{
+                width:50%;
+                .dock-list-content{
+                    .dock-header{
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .dock-actions{
+        position: absolute;
+        top: .75rem;
+        left: .75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.1rem;
+        background: #f0f0f0;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        width: 5rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: #555;
+        justify-items: center;
+        padding-left: 0.2rem;
+    }
+
+    .customize-activity{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.5rem;
+        background: #ffbdbd;;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        height: 1.7rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: #333;
+        justify-items: center;
+        margin: 1rem 0;
+        width: 5rem;
+    }
+
+    .customize-field{
+        width: 100%;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        color: #333;
+        .selector{
+            margin-right: 0.5rem;
+            background: #f5f9d8;
+            border-radius: 2rem;
+        }
+        .value{
+            font-size: 1.5rem;
+        }
+    }
+    .description{
+        margin-bottom: .5rem;
+        .label{
+            font-size: .75rem;
+            color: #999;
+        }
+        .value{
+            font-size: 1rem;
+        }
+    }
+    .customize-fields{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        .field{
+            margin-bottom: .5rem;
+            &.btn{
+                width: 10rem;
+            }
+        }
+    }
+    .infos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        background: #f8f8f8;
+        .item{
+            flex: 0 0 50%;
+            margin-bottom: .4rem;
+            .label{
+                font-size: .7rem;
+                color: #999;
+            }
+        }
+    }
+    .fy{
+        margin-left: 5rem;
+        margin-bottom: .5rem;
+        font-size: .7rem;
+        color: #999;
+    }
+}

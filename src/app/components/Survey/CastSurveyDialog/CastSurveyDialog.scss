@@ -1,0 +1,31 @@
+.mark-survey-dialog-container{
+    .content-container{
+        .survey-option{
+            &-form{
+
+            }
+            &-description{
+                font-size: 1rem;
+            }
+            &-list{
+                flex-direction: row;
+            }
+            &-otherstext{
+                width: 100%;
+                &-container{
+                    width: 100%;
+                }
+            }
+        }
+
+        .survey-created-info{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8rem;
+            justify-content: flex-start;
+            color: #7d7d7d;
+            align-items: flex-start;
+            margin-bottom: 0.9rem;
+        }
+    }
+}

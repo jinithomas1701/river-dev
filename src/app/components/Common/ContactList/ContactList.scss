@@ -1,0 +1,39 @@
+.contact-list {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem;
+    background: #F2F2F2;
+    flex-direction: column;
+    .search-input-container {
+        width: 100%;
+        position: relative;
+        .search-input {
+            padding-left: 2rem;
+            background: #ffffff;
+            width: 100%;
+            padding-top: 0.4rem;
+            margin: 0;
+            padding-right: 0.5rem;
+            padding-bottom: 0.4rem;
+        }
+        .input-icon {
+            color: #D1D1D1;
+            position: absolute;
+            font-size: 1.3rem;
+            top: 9px;
+            left: 6px;
+        }
+    }
+    .contact-list-container {
+        margin-top: 0.5rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .contact-card {
+            .checkbox-container {
+                label {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

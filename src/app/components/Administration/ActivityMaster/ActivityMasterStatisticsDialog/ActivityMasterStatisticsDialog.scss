@@ -1,0 +1,113 @@
+.activity-master-statistics-dialog-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .statistics-item{
+        display: flex;
+        flex-direction: column;
+        .heading{
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 1.5rem .5rem;
+            justify-content: center;
+        }
+    }
+    .stat-type{
+        padding: 0.5rem 0;
+        width: 7.5rem;
+        border: 1px solid #999;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10%;
+        background: #058875;
+        color: #fff;
+        box-shadow: 1px 2px 4px 0px #bbbbbb;
+        &.in-progress{
+            background: #ff761c;
+        }
+        &.completed{
+            background: #0d97d4;
+        }
+        &.approved{
+            background: #008000;
+        }
+        &.rejected{
+            background: #ff0000;
+        }
+        .title{
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .count{
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+    }
+
+    .clubs-list{
+        .club-tile{
+            padding: .3rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #999;
+            margin: 0.4rem .5rem;
+            border-radius: 10%;
+            box-shadow: 1px 2px 4px 0px #bbbbbb;
+        }
+    }
+
+    .activities-table{
+        &-head{
+            background: #e1e1e1;
+            color: #4f4f4f;
+            font-weight: 500;
+            text-align: center;
+
+            th{
+                font-weight: bold;
+            }
+        }
+
+        &-body{
+            .activities-table-row{
+                td{
+                    &.in-progress{
+                        color: #ff761c;
+                    }
+                    &.approved{
+                        color: #008000;
+                    }
+                    &.completed{
+                        color:  #0d97d4;
+                    }
+                    &.rejected{
+                        color: #ff0000;
+                    }
+                }
+                a{
+                    color: #007bff;
+                }
+                &:nth-child(2n){
+                    background: #fff3e5;
+                }
+                &:hover{
+                    background: #f1f1f1
+                }
+            }
+        }
+
+    }
+}
+
+.activities-statistics-dialog{
+    & > div:nth-child(2){
+        max-width: 90%;
+    }
+}

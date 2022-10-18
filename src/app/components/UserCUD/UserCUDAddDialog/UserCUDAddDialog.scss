@@ -1,0 +1,11 @@
+.create-cud-container{
+    width: 40rem;
+    .input-fields-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .input-container{
+            flex: 1;
+        }
+    }
+}

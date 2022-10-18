@@ -1,0 +1,45 @@
+.gfg-details-page{
+    background: #fff;
+    padding: 0.5rem 1rem 3rem 1rem;
+    .field-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .input-field{
+            margin: 0 .5rem;
+            width: 100%;
+            &.select{
+                margin-top: 16px;
+            }
+            &.checkbox{
+                display: flex;
+                align-items: center;
+                flex: 0 0 50%;
+                margin: 16px 0;
+                .checkbox-label{
+                    margin: 0;
+                }
+            }
+            .datetime-picker-wrapper{
+                position: relative;
+                padding-top: 2.3rem;
+                .datetime-picker-label{
+                    position: absolute;
+                    top: 0.6rem;
+                    left: 0;
+                    margin: 0;
+                    font-size: 0.8rem;
+                    color: #22bcac;
+                }
+                .datetime-input{
+                    border: 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .edit-target-field{
+        width: 100%;
+    }
+}

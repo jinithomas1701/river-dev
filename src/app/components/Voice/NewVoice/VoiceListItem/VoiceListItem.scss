@@ -1,0 +1,117 @@
+@import "../../../../Util/cssUtils.scss";
+
+.voicelist-item {
+    display         : flex;
+    align-items     : flex-start;
+    cursor          : pointer;
+    padding-top     : 1rem;
+    background-color: #fff;
+    transition      : background-color .2s;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 0 0.3rem;
+
+    &.active {
+        background-color: $highlight-base;
+    }
+
+    &:hover {
+        background-color: #fcfcfc;
+    }
+
+    >.avatar-wrapper {
+        margin-left: 1rem;
+    }
+
+    >.infoarea-wrapper {
+        flex-grow     : 1;
+        //border-bottom : 1px solid #ddd;
+        margin        : 0 1rem 0 .5rem;
+        display       : flex;
+        flex-wrap     : nowrap;
+        padding-bottom: .5rem;
+        min-width     : 0;
+
+        >.info-area {
+            flex-grow: 1;
+            min-width: 0;
+
+            >.title {
+                margin       : 0;
+                font-size    : $text-size-small;
+                font-weight  : $weight-medium;
+                margin-bottom: .3rem;
+                overflow     : hidden;
+                //white-space  : nowrap;
+                text-overflow: ellipsis;
+
+            }
+
+            >.description {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size    : $text-size-small;
+                margin: 0 0 .1rem;
+            }
+
+            >.table-stats {
+                font-size: .7rem;
+                color    : #666;
+                margin-top: 1rem;
+
+                th {
+                    font-weight: $weight-medium;
+                    padding    : 0 .2rem 0 1rem;
+                    white-space: nowrap;
+                    color      : $text-light;
+
+                    &:first-child {
+                        padding: 0 .3rem 0 0;
+                    }
+                }
+
+                td {
+                    text-transform: uppercase;
+                    padding       : 0;
+                    white-space   : nowrap;
+                    font-weight: $weight-semibold;
+                    color: $text-altdark;
+
+                    .date-display {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .action-area {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            min-width      : 1.5rem;
+
+            >.unassigned-icon {
+                color: $secondary-alt;
+            }
+
+            >.escalate-icon {
+                color: $tertiary-base;
+            }
+
+            .escalation-wrapper{
+                color: $tertiary-base;
+
+                .escalation-badge{
+                    > .badge-icon{
+                        width: 15px;
+                        height: 15px;
+                        right: -5px;
+                        font-size: 0.5rem;
+                        top: -5px;
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@import "./cssUtils.scss";
+
+//**************************************************************
+// FILLED BUTTONS
+
+@mixin btn-parent {
+    box-shadow: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: $weight-semibold;
+
+    .material-icons {
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+}
+
+.btn-primary.btn-primary {
+    @include btn-parent;
+    color: #fff;
+    background-color: $primary-base;
+
+    &:hover {
+        background-color: darken($primary-base, 15%);
+    }
+}
+
+.btn-default.btn-default {
+    @include btn-parent;
+    background-color: $neutral-base;
+
+    &:hover {
+        background-color: $secondary-alt;
+    }
+}
+
+.btn-complimentary.btn-complimentary {
+    @include btn-parent;
+    color: #fff;
+    background-color: $complimentary-base;
+
+    &:hover,
+    &:focus {
+        background-color: darken($complimentary-base, 20%);
+    }
+}
+
+.btn-complimentary-alt.btn-complimentary-alt {
+    @include btn-parent;
+    color: #fff;
+    background-color: $tertiary-base;
+
+    &:hover,
+    &:focus {
+        background-color: darken($tertiary-base, 20%);
+    }
+}
+
+.btn-bordered.btn-bordered {
+    @include btn-parent;
+    //background-color: #fff;
+    border: 1px solid $border-base;
+}
+
+.btn-complimentary.btn-bordered {
+    background-color: #fff;
+    border-color: $complimentary-base;
+    color: $complimentary-base;
+
+    .material-icons {
+        color: $complimentary-base;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $complimentary-base;
+        color: #fff;
+
+        .material-icons {
+            color: #fff;
+        }
+    }
+}
+
+//**************************************************************
+//BORDERED BUTTONS
+
+@mixin btn-icon {
+    box-shadow: none;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    min-width: 0;
+}
+
+.btn-icon-plain.btn-icon-plain {
+    @include btn-icon;
+}
+
+.btn-icon-bordered.btn-icon-bordered {
+    @include btn-icon;
+    color: $icon-color;
+    border-radius: 3px;
+    border: 1px solid $border-base;
+}
+
+.btn-rounded-icon-bordered.btn-rounded-icon-bordered {
+    border: 1px solid $border-base;
+}
+
+//**************************************************************
+//DIALOGS & PROMPTS
+
+@mixin common-dialog {
+    max-width: 100%;
+    > div + div {
+        width: 100%;
+        max-width: 98%;
+
+        > .header {
+            border-bottom: 1px solid $border-base;
+            padding: 1rem 1.5rem;
+            display: flex;
+
+            > h2 {
+                flex-flow: 1;
+                font-size: 1rem;
+            }
+
+            .title-wrapper {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+
+                > .title {
+                    display: block;
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+                > .title-sub {
+                    font-size: $text-size-subheading;
+                    font-size: $text-light;
+                    margin: 0;
+                }
+            }
+            .tools-wrapper {
+            }
+        }
+
+        > .content {
+            padding: 1rem 1.5rem;
+            max-width: 100%;
+            font-size: $text-size-body;
+            position: relative;
+        }
+
+        > .submit-wrapper {
+            padding: 0 1.5rem 1rem;
+            margin: 0;
+        }
+    }
+}
+
+.problem-detail-dialog-wrapper {
+    > div > .content {
+        padding: 0;
+        > .problem-detail {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            height: 100%;
+
+            > .detail-page-card {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+
+            > .detail-display {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                overflow-y: auto;
+                padding: 3rem 2rem 1rem;
+                overflow-x: hidden;
+            }
+        }
+    }
+    .detail-page-card {
+        margin-top: -24px;
+        max-width: none;
+    }
+}

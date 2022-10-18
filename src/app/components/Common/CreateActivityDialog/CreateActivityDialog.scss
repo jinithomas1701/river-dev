@@ -1,0 +1,53 @@
+@import "../../../Util/commonStyles.scss";
+
+.create-activity-dialog-wrapper{
+    @include common-dialog;
+
+    > div{
+
+        &.common-dialog-body{
+            max-width: 50rem;
+        }
+        > .content{
+            max-height: 35rem;
+            
+            .kpilist-search-wrapper{
+                display: flex;
+                flex-direction: column;
+                
+                > .kpilist-wrapper{
+                    flex-grow: 1;
+                    overflow: auto;
+                    max-height: 22rem;
+                    margin-top: 1rem;
+                }
+            }
+            
+            .create-activity-form{
+                > .title{
+                    font-size: $text-size-heading-2;
+                    margin: 0 0 .3rem;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                > .row{
+                    margin-bottom: 1rem;
+                }
+                
+                .input-text{
+                    width: 100%;
+                }
+            }
+
+            .btn-kpi{
+                width: 2rem;
+                height: 2rem;
+                background: #22bcac;
+                color: #fff;
+                border-radius: 3px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

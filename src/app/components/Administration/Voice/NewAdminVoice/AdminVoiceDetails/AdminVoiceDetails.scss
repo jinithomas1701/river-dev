@@ -1,0 +1,47 @@
+@import "../../../../../Util/commonStyles.scss";
+
+.adminvoice-details-wrapper{
+
+    .page-heading-lvl2{
+        font-size: $text-size-heading-1;
+        margin: 1rem 0;
+    }
+
+    .page-heading-lvl3{
+        font-size: $text-size-heading-1;
+        margin: 0 0 .5rem;
+        padding-bottom: .3rem;
+        font-weight: $weight-semibold;
+        border-bottom: 1px solid $border-base;
+        text-transform: uppercase;
+    }
+
+    .title-descriptor-wrapper{
+        margin: 0;
+        padding: 0;
+
+        > dt{
+            padding: 0;
+            margin: 0;
+            font-size: $text-size-heading-2;
+            line-height: 1;
+            font-weight: $weight-semibold;
+            text-transform: uppercase;
+        }
+        dd{
+            font-size: $text-size-body;
+            padding: 0;
+            margin: 0 0 .5rem;
+        }
+    }
+
+    .submit-wrapper{
+        border-top: 1px solid $border-base;
+        margin: 1rem 0 0;
+        padding-top: 1rem;
+
+        > div{
+            margin-right: .5rem;
+        }
+    }
+}

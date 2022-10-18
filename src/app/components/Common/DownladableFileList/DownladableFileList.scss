@@ -1,0 +1,27 @@
+@import "../../../Util/cssUtils.scss";
+
+.downloadablefilelist-wrapper{
+    .btn-downlaod-file{
+        border: 1px solid $border-base;
+        background-color: #fbfbfb;
+        color: $primary-base;
+        border-radius: 2px;
+        padding: 0.3rem .5rem 0.3rem 0.8rem;
+        min-height: 0;
+
+        .textbtn{
+            max-width: 8rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.downloadablefilelist-list{
+    .item-file{
+        display: flex;
+        .icon-download{
+            margin-left: auto;
+        }
+    }
+}

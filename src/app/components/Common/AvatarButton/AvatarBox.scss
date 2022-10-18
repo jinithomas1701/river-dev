@@ -1,0 +1,41 @@
+@import "../../../Util/commonStyles";
+.avatar-each-button-wrapper {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    max-height: 1.4rem;
+    max-width: 1.4rem;
+    .avatar-style {
+        background-color: rgb(231, 230, 230);
+        max-height: 1.4rem;
+        max-width: 1.4rem;
+        font-size: 0.61rem;
+        color: #413f3f;
+    }
+    .avatar-style-onclick {
+        max-height: 1.4rem;
+        max-width: 1.4rem;
+        font-size: 0.61rem;
+        background-color: #1a73e8;
+        color: white;
+    }
+}
+.avatar-each-button-wrapper-disabled {
+    margin-right: 0.5rem;
+    pointer-events:none;
+    max-height: 1.4rem;
+    max-width: 1.4rem;
+    .avatar-style {
+        background-color: rgb(231, 230, 230);
+        max-height: 1.4rem;
+        max-width: 1.4rem;
+        font-size: 0.61rem;
+        color: #413f3f;
+    }
+    .avatar-style-onclick {
+        max-height: 1.4rem;
+        max-width: 1.4rem;
+        font-size: 0.61rem;
+        background-color: #1a73e8;
+        color: white;
+    }
+}

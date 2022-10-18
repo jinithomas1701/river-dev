@@ -1,0 +1,158 @@
+.litipedia-container{
+    display: flex;
+    flex-direction: column;
+    padding: .3rem 0.5rem;
+
+    .litipedia-extras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.3rem 0.2rem;
+        align-items: center;
+
+        .add-new-btn-container{
+            margin: 0 0.4rem;
+            .add-new-btn{
+
+            }
+        }
+
+        .search-text-container{
+            margin: 0 0.2rem;
+            position: relative;
+            .search-box-icon{
+                position: absolute;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 .2rem;
+                top: 0;
+            }
+            .search-icon{
+                color: #bbb;
+                left: 0px;
+            }
+            .clear-search-icon{
+                color: #777;
+                right: 0px;
+                top: 0;
+                cursor: pointer;
+            }
+            .search-text{
+                padding: 0.4rem 2rem;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ddd;
+            }
+        }
+    }
+
+    .recent-most-container{
+        display: flex;
+        flex-direction: row;
+        margin: .5rem 0;
+
+        .container{
+            flex: 1;
+            margin: 0 .5rem;
+            padding: .5rem;
+            background: #f1f1f1;
+            .title{
+                font-size: .75rem;
+                color: #999;
+                font-weight: bold;
+            }
+            .terms-list{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: .7rem 0;
+                .term{
+                    padding: 0.5rem;
+                    border: 1px solid #ccc;
+                    margin: .2rem;
+                    cursor: pointer;
+
+                    &.active{
+                        background-color: #444444;
+                        color: #fff;
+                    }
+
+                    &:hover{
+                        background-color: #bbb;
+                        color: #f6f6f6;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .term-alpha{
+        margin: .5rem 0;
+        .alphabet{
+            margin: .2rem 0;
+            position: relative;
+            &-letter{
+                font-size: 1rem;
+                border-radius: 50%;
+                border: 1px solid #eee;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+            }
+            .backline{
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: #eee;
+                top: 50%;
+                z-index: -1;
+            }
+        }
+        .terms-list{
+            padding: .5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .term{
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                margin: .2rem;
+                cursor: pointer;
+
+                &.active{
+                    background-color: #444444;
+                    color: #fff;
+                }
+
+                &:hover{
+                    background-color: #bbb;
+                    color: #f6f6f6;
+                }
+            }
+        }
+    }
+
+    .bottom-container{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        .load-more-btn{
+            display: flex;
+            background: #e5e5e5;
+            padding: 0.6rem 1rem;
+            box-shadow: 1px 1px #d4d4d4;
+            cursor: pointer;
+            &:hover{
+                background-color: #bbb;
+                color: #f6f6f6;
+            }
+        }
+    }
+}

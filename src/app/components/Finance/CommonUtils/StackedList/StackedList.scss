@@ -1,0 +1,19 @@
+.stackedlist-wrapper{
+    .fieldheader-wrapper{
+        margin-top: 2rem;
+        width: 100%;
+        height: 1rem;
+        overflow: hidden;
+        
+        &:first-child{
+            margin-top: 0;
+        }
+
+        > .title{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 95%;
+        }
+    }
+}

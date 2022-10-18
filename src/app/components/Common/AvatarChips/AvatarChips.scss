@@ -1,0 +1,24 @@
+@import "../../../Util/commonStyles.scss";
+
+.avatarchip-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1rem -0.5rem;
+
+    .avatarinfo-wrapper{
+        margin: 0 0.2rem 0.2rem;
+        border-radius: 7rem;
+        padding: 0.4rem 1rem 0.4rem 0.5rem;
+        transition: .3s background-color;
+
+        &:hover{
+            background-color: #eee;
+        }
+        
+        .sub-text{
+            font-size: $text-size-xsmall;
+            line-height: $text-size-xsmall;
+        }
+    }
+}

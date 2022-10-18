@@ -1,0 +1,17 @@
+@import "../../../../../../Util/commonStyles.scss";
+
+.voice-main-wrapper{
+    margin: 1rem 0;
+    padding: 2rem;
+
+    .voice-main-detail{
+        position: relative;
+
+        .btn-edit{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+}

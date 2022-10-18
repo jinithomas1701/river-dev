@@ -1,0 +1,38 @@
+.image-upload-wrapper{
+    height: auto;
+    label{
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .u_c-dp-change{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            background: rgba(255, 255, 255, .7);
+            opacity: 0;
+            height: 100%;
+            line-height: 5.5rem;
+            //margin-top: -1rem;
+            transition: opacity 300ms;
+        }
+        &:hover .u_c-dp-change{
+            opacity: 1;
+        }
+    }
+    input[type="file"]{
+        display: none;
+    }
+}

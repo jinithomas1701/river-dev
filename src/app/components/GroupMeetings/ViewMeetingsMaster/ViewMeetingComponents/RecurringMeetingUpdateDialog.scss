@@ -1,0 +1,127 @@
+@import "../../../../Util/commonStyles";
+.recurringUpdateDialog-wrapper {
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 40rem;
+            border-radius: 8px;
+        }
+    }
+    .content {
+        .repeat-period-select {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .repeat-title {
+                font-size: 0.8rem;
+                font-weight: 550;
+                margin-right: 0.5rem;
+            }
+           
+            .input-select {
+                background: #efefef;
+                border-bottom: none;
+                border-radius: 4px;
+                max-width: 6rem;
+                font-size: 0.8rem;
+            }
+            .monthly-wrap {
+                display: flex;
+                margin-left: 1rem;
+                .repeat-title {
+                    font-size: 0.8rem;
+                    font-weight: 550;
+                    margin-right: 0.5rem;
+                    align-items: center;
+                    display: flex;
+                }
+                .repeat-number {
+                    max-width: 4.5rem;
+                    background: #efefef;
+                    border-bottom: none;
+                    border-radius: 4px;
+                    margin-right: 0.5rem;
+                    .MuiInput-inputSingleline-222 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .week-days-picker {
+            margin-top: 1rem;
+            .week-picker-title {
+                // margin-bottom: 0.5rem;
+                font-weight: 600;
+                font-size: 0.8rem;
+            }
+            .week-buttons-wrap {
+                margin-top: 0.5rem;
+                display: flex;
+                .each-week-day {
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+        .time-picker {
+            margin-top: 1rem;
+        }
+        .end-date-wrap {
+            margin-top: 1.5rem;
+
+            .ends-title {
+                font-weight: 500;
+                padding-bottom: 0.5rem;
+            }
+            .ends-dates {
+                font-size: 0.8rem;
+                background: #efefef;
+                border-radius: 4px;
+                max-width: 8rem;
+            }
+            .end-title {
+                min-width: 6rem;
+                font-size: 0.8rem;
+            }
+            // .time-row {
+            //     .ends-dates {
+            //         font-size: 0.8rem;
+            //         background: #efefef;
+            //         border-radius: 4px;
+            //         max-width: 8rem;
+            //     }
+            //     .end-title {
+            //         min-width: 6rem;
+            //         font-size: 0.8rem;
+            //     }
+            // }
+        }
+        .check-switch {
+            //text-align: left;
+            align-items: center;
+            display: flex;
+            margin-top: 1rem;
+            .switch-message {
+                font-size: 0.83rem;
+                font-weight: 500;
+            }
+        }
+        .location-heading {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 0.5rem 0rem 1rem 0rem;
+        }
+    }
+    .btn-cancel {
+        background-color: #fffdfd;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: gray;
+    }
+    .btn-submit {
+        color: #22bcac;
+        background-color: #ffffff;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+}

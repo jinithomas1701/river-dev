@@ -1,0 +1,18 @@
+.user-polls-listing{
+    .title{
+        margin: 1rem 0;
+        font-weight: 700;
+        color: #7eada9;
+    }
+    &-category{
+        width: 100%;
+        overflow: auto;
+        .polls-container{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../../../Util/commonStyles";
+
+.financeadmin-overview-wrapper {
+
+    > .row{
+        align-items: center;
+    }
+    .financial-year-input-box {
+        background-color: transparent;
+    }
+    .finance-details {
+        padding: 1rem 2rem;
+        background: #ffffff;
+
+        .finadmin-summary-budget {
+            margin: 1.5rem;
+        }
+
+        .btn {
+            border-radius: 30%;
+            width: 2.5rem;
+            height: 2.5rem;
+            min-width: 0;
+            min-height: 0;
+            padding: 0;
+            margin: 0.25rem;
+            float: right;
+        }
+
+        .btn-edit {
+            border: 1px solid $border-base;
+            background-color: #fff;
+            
+        }
+    }
+    .clublist-wrapper {
+        background: #ffffff;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        > .finadmin-clubcard-wrapper {
+            @media screen and (min-width:901px) {
+                width: 30%;
+                min-width: 18rem;
+                max-width: 20rem;
+            }
+           
+            @media screen and (max-width:500px) {
+                width: 100%;
+                min-width: 18rem;
+                max-width: 100%;
+            }
+
+            @media screen and (min-width:501px) and (max-width:900px) {
+                width: 100%;
+                min-width: 18rem;
+                max-width: 20rem;
+            }
+        }
+    }
+}

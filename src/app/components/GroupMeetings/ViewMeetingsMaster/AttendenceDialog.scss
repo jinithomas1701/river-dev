@@ -1,0 +1,99 @@
+@import "../../../Util/commonStyles";
+.attendence-dialog-wrap {
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 60rem;
+            
+        }
+    }
+    .header {
+        .head {
+            font-size: 0.9rem;
+        }
+    }
+    .content {
+        //justify-content: center;
+        display: flex;
+        .club-member-attendence {
+            max-width: 60%;
+            min-width: 60%;
+            overflow: auto;
+            .attendence-wrapper {
+               
+
+                .sub-head {
+                    font-size: 0.7rem;
+                    padding: 0rem 0.8rem;
+                }
+                .each-member-wrap {
+                    border-bottom: 1px solid #efe7e7;
+                    .radio-button {
+                        text-align: center;
+                    }
+
+                    th {
+                        .avatarinfo-wrapper {
+                            .sub-text {
+                                font-size: 0.6rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attendence-graph-wrap {
+            min-width: 40%;
+            max-width: 40%;
+            max-height: 70%;
+            margin: 2rem 0rem;
+            .attendence-heading {
+                font-size: 0.9rem;
+                font-weight: 600;
+                text-align: center;
+                color: #918b8b;
+                position: relative;
+                padding-bottom: 1rem;
+                &:before {
+                    position: absolute;
+                    width: 3rem;
+                    height: 0.2rem;
+                    background: #cfcbcb;
+                    content: "";
+                    display: block;
+                    bottom: 0;
+                    right: 42%;
+                }
+            }
+            .attendence-graph {
+                justify-content: center;
+                display: flex;
+            }
+            .table-meta {
+                margin-top: 1rem;
+                width: 100%;
+                table-layout: fixed;
+                th {
+                    font-size: $text-size-small;
+                    color: #555151;
+                    font-weight: $weight-semibold;
+                    line-height: 1rem;
+                    text-align: left;
+                    padding-left: 1.5rem;
+                    width: 70%;
+                }
+                td {
+                    font-size: $text-size-small;
+                    line-height: 1rem;
+                    text-align: right;
+                    padding-right: 1.5rem;
+                    width: 50%;
+                    color: #555151;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "../../../Util/commonStyles.scss";
+
+.kpidetailsdialog-wrapper{
+    @include common-dialog;
+
+    > div {
+        > .header{
+            background: $primary-base;
+            color: #fff;
+            .tools-wrapper{
+                .btn-rounded-icon-bordered{
+                    margin-right: 1rem;
+                    color: #fff;
+                    border-radius: 50%;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+}

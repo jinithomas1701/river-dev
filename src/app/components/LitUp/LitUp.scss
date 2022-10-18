@@ -1,0 +1,592 @@
+.litup-page{
+    .empty-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 6rem;
+        color: #999;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    &-container{
+
+        .logo-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-end;
+            .litup_logo{
+                height: 4rem;;
+            }
+            .client_logo{
+                height: 6rem;
+            }
+        }
+
+        .welcome_container{
+            padding: 0.7rem 0.5rem;
+            color:#333;
+            font-size: 1.2rem;
+        }
+        
+        .litup{
+            &-tab-body{
+                padding: 1rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                .litup-idea-card-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0.3rem 0;
+                    width: 100%;
+                    height: 20rem;
+                    margin-top:0.5rem;
+                    .profile-avatar{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+                    .list-common-action-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 1.3rem;
+
+                        
+                    }
+                    .list-header {
+                        display: flex;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        margin-bottom: 0.5rem;
+                        white-space: pre-line;
+                    }
+                    .litup-list-card {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        background: #fff;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        max-height: 35rem;
+                        position: relative;
+                        border-left: 0.4rem solid #4d4d4d;
+                        .side_menu{
+                            width: 3rem;
+                            display: flex;
+                            flex-direction: column;
+                            background: #22bcac;
+                            color:#eee;
+
+                            .check{
+                                background: #fff;
+                                height: 2.5rem;
+                            }
+
+                            .item{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 0.4rem;
+                                cursor: pointer;
+                            }
+
+                            .downld{
+                                border-radius: 50%;
+                                background: #40403f;
+                                margin: 0.2rem;
+                                padding: 7px 0 0 0px;
+                            }
+                        }
+
+                        .main_area{
+                            display:flex;
+                            flex-direction: column;
+                            flex: 1;
+                            padding-left: 0.5rem;
+                            position: relative;
+                            div{
+                                padding: 0.5rem;                                
+                            }
+
+                            .title{
+                                font-size: 1rem;
+                                font-weight: bold;
+                                color: #222;
+                                min-height: 2.5rem;
+                            }
+
+                            .detail{
+                                font-size: 1rem;
+                                white-space: pre-wrap;
+                                max-height:25rem;
+                                color: #333; 
+                                overflow: auto;
+                            }
+                            .author{
+                                font-size: 0.7rem;
+                                color: #555;
+                            }
+
+                            .more{
+                                font-size: 0.8rem;
+                                color: #22bcac;
+                                cursor: pointer;                                
+                            }
+
+                            .winner-badge{
+                                position: absolute;
+                                height: 9rem;
+                                right: 0rem;
+                                top: 0rem;
+                                opacity: 0.2;
+                                img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .litup-idea-list-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;     
+                    
+                    .loading{
+                        width: 100%;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #22bcac;
+                    }
+
+                    .list-common-action-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 0.5rem 0.4rem 0 0;
+                        background: #f3f3f3;
+
+                        &-labelwrap{
+                            display: flex;
+                        }
+
+                        &-label{
+
+                            &:first-child{
+                                border-right: 1px solid #999;
+                                padding-right: 0.6rem;
+                            }
+
+                            font-size: 0.8rem;
+                            margin-left: 0.5rem;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            span{
+                                &:first-child{
+                                    font-size: 0.6rem;
+                                    font-weight: 300;
+                                }
+                                font-size: 1.5rem;
+                                padding: 0px;
+                                margin: 0px;
+                                font-weight: bold;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .label-wrap{
+                        font-size: 0.9;
+                        margin: 0.5rem 0rem;
+                        font-weight: bold;
+                        color:#888;
+                    }
+
+                    .client-tile-wrap{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        .card{
+                            display: flex;
+                            background: white;
+                            color: #555;
+                            margin: 0.5rem;
+                            height: 6rem;
+                            width: 14rem;
+                            justify-content: center;
+                            align-items: center;
+                            .data-wrap{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                h2{
+                                    font-weight: bold;
+                                    margin:0;
+                                }
+                                label{
+                                    font-size: 0.9rem;
+                                    margin: 0;
+                                }
+                                div{
+                                    position: absolute;
+                                    bottom: -0.3rem;
+                                }
+                            }
+
+                        }
+
+                        .card-side{
+                            display: flex;
+                            background: white;
+                            color: #555;
+                            margin: 0.5rem;
+                            height: 10rem;
+                            flex: 1;
+                            flex-direction: column;
+                            padding: 1rem;
+
+                            .data-wrap{
+                                height: 100%;
+                            }
+
+                            .row_head{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                height: 2rem;
+                                width: 100%;
+                                font-size: 0.7rem;  margin-bottom: 1.2rem;
+                                font-size: 0.8rem;
+                                button{
+                                    font-size: 0.7rem;
+                                    padding: 2px;
+                                }
+
+                            }
+
+                            .row_bottom{
+                                display:flex;
+                                width: 100%;
+                                flex-wrap: wrap;
+                                overflow: auto;
+                                .entry{
+                                    margin: 0.2rem 0.4rem;
+                                    label{
+                                        font-size: 0.7rem;
+                                        b{
+                                            font-size: 0.9rem;
+                                        }
+                                    }
+                                }
+
+                                
+                            }
+                        }
+                    }
+
+                    .client-classify-wrap{
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: flex-start;   
+                        flex-wrap: wrap;                     
+                        .item-wrap{
+                            min-width: 10rem;
+                            align-self: stretch;
+                            background:white;
+                            color: #444;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0.2rem 0.2rem;
+                            padding:0 0.4rem;
+                            cursor: pointer;
+                                                        
+                            &:hover{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            &.active{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            .item{
+                                font-size: 1rem;
+                                margin: 0.2rem;
+                                img{
+                                    height: 1.5rem;
+                                    margin-right: 0.2rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .client-workflow-wrap{
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: flex-start;                        
+                        .item-wrap{
+                            max-width: 14rem;
+                            padding: 0.1rem 0.4rem;
+                            height: 3rem;
+                            background:white;
+                            color: #444;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0.5rem;
+                            cursor: pointer;
+                            &:hover{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            &.active{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            .item{
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .client-workflow-level-wrap{
+                        display: flex;
+                        margin: 0.5rem;
+                        justify-content: flex-end;
+                        position: fixed;
+                        right: 0px;
+                        bottom: 1rem;
+                        z-index: 999;
+                        button{
+                            background: #ff006a;
+                            color: white;
+                        }
+                    }
+
+                    .litup-timeline-container {
+                        padding: 1rem;
+                        position: relative;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        .timeline-title {
+                            font-weight: 600;
+                            font-size: 1rem;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                        }
+                        .timeline-wrapper {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            .line {
+                                height: 3px;
+                                width: 9rem;
+                                background: #999;
+                                &.passed {
+                                    background: #22bcac;
+                                }
+                                
+                            }
+                            .node-container {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: flex-start;
+                                margin-bottom: 1.4rem;
+                                &:hover{
+                                    background: #f0f0f0;
+                                    color: #22bcac;
+                                    cursor: pointer;
+                                }
+                            }
+                            .milestone {
+                                height: 0.8rem;
+                                width: 0.8rem;
+                                border-radius: 50%;
+                                position: relative;
+                                background: none;
+                                border: 2px solid #888;
+                                .text {
+                                    position: absolute;
+                                    top: 13px;
+                                    left: 0;
+                                    width: 15rem;
+                                    font-size: 0.7rem;
+                                    &.passed {
+                                        font-weight: bold;
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                                &.current {
+                                    background: #22bcac;
+                                    border: 2px solid #22bcac;
+                                }
+                                &.passed {
+                                    background: none;
+                                    border: 2px solid #22bcac;
+                                }
+                            }
+                        }
+                    }
+
+                    .list-header {
+                        display: flex;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin-bottom: 0.5rem;
+                        white-space: pre-line;
+                        padding: 0.5rem 0.5rem;
+                        justify-content: flex-start;
+                        align-items: center;
+                        background: white;
+                        .client_logo{
+                            height: 7rem;
+                            padding-right: 1rem;
+                        }
+                        .litup-title{
+                            .litup-description{
+                                font-size: 1rem;
+                                font-weight: initial;
+                                white-space: pre-line;
+                                line-height: 1.3rem;
+                            }
+                        }
+                    }
+                    .litup-list-item {
+                        display: flex;
+                        flex-direction: row;
+                        background: #fff;
+                        padding: 1rem;
+                        align-items: flex-start;
+                        margin-bottom: 0.5rem;
+                        border-left: 0.5rem solid #009688;
+                        overflow: hidden;
+                        position: relative;
+                        .item-icon {
+                            position: absolute;
+                            /* left: 33px; */
+                            margin-top: -5px;
+                            font-size: 3.2rem;
+                            margin-left: -18px;
+                            color: #ececec;
+                        }
+                        .list-item-content {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 100%;
+                            z-index: 1;
+                            .min-title-container {
+                                display: flex;
+                                flex-direction: row;
+                                margin-left: 0.5rem;
+                                margin-bottom: 0.4rem;
+                                .main {
+                                    font-weight: bold;
+                                    color: #000000;
+                                    margin-right: 0.5rem;
+                                }
+                                .sub {
+                                    color: #777777;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                        
+                        .action-container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                        }
+                        .litup-idea-text {
+                            color: #404040;
+                            font-size: 1.1rem;
+                            margin-left: 0.5rem;
+                            white-space: pre-line;
+                            flex: 1;
+                            text-shadow: 0 0 2px #b8b8b8;
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        .footer-container {
+                            display: flex;
+                            font-size: 0.8rem;
+                            color: #999;
+                            justify-content: flex-end;
+                            bottom: 1px;
+                            position: absolute;
+                            left: 25px;
+                        }
+                    }
+                }
+
+                &.litup-settings{
+
+                    .litup-settings-title{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        padding: 1rem .5rem;
+                        color: #777;
+                    }
+
+                    .litup-settings-box{
+                        width: 100%;
+                        background: #fff;
+                        height: 10rem;
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                    }
+
+                    .actions-container{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        width: 100%;
+                        padding: 1rem 0;
+                       
+                    }
+                }
+
+
+            }
+        }
+
+        .add-new-btn{
+            
+            &-container{
+                display: flex;
+                margin-bottom: 1rem;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .listing-extras{
+        padding-top: 1rem;
+    }
+
+}
+

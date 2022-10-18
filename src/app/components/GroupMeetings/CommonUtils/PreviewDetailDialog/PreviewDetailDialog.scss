@@ -1,0 +1,58 @@
+@import "../../../../Util/commonStyles";
+.locationPreviewDialog-wrapper {
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 28rem;
+            border-radius: 8px;
+        }
+    }
+    .header {
+        > h2 {
+            font-size: 0.9rem;
+        }
+    }
+    .content {
+        //justify-content: center;
+        display: flex;
+        .preview-wrapper {
+            width: 100%;
+            // max-width: 60%;
+            // min-width: 60%;
+            overflow: auto;
+            .sub-head {
+                font-size: 0.8rem;
+                font-family: cursive;
+                padding: 0rem 0.8rem;
+                text-align: center;
+                font-weight: 500;
+            }
+            .each-preview-wrapper {
+                width: 100%;
+
+                .each-member-wrap {
+                    border-bottom: 1px solid #e3dfdf;
+                    margin-top: 0.5rem;
+                    .start-time {
+                        font-size: 0.7rem;
+                        text-align: center;
+                    }
+                    .end-time {
+                        font-size: 0.7rem;
+                        text-align: center;
+                    }
+                    .availability {
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .cancel-button {
+            background-color: #fffdfd;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: gray;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@import "../../../../Util/commonStyles";
+.announcement-problem-item-wrapper {
+    box-shadow: 0 3px 18px rgba(144, 178, 188, 0.55);
+    display: flex;
+    flex-direction: column;
+    background: #536473;
+    cursor: pointer;
+    background-size: contain;
+    border-radius: 5px;
+    transition: 0.3s background;
+    min-width: 16rem;
+    max-width: 16rem;
+    height: 22rem;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    .arrow-icon {
+        border-radius: 50%;
+        background: rgba(149, 145, 201, 1);
+        z-index: 1;
+        width: 3rem;
+        display: flex;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        margin-left: -1.5rem;
+        border: 0.05rem solid white;
+        transition: 0.3s;
+    }
+    .title {
+        z-index: 1;
+        color: honeydew;
+        font-size: 1rem;
+        font-weight: 350;
+        line-height: 1.5rem;
+        height: 21rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin: 1rem 0 0;
+        padding: 1rem 1.5rem;
+        align-self: stretch;
+    }
+    .content-clip-path-wrap {
+        filter: drop-shadow(0 0 3px rgba(0, 2px, 1px, 0.2));
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 22rem;
+    }
+    .slide-path {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 22rem;
+        background: #466677;
+        transition: 0.3s;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 55%);
+        background: rgba(70, 102, 119, 1);
+        cursor: pointer;
+    }
+
+    .button-tags-wrapper {
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        z-index: 1;
+        transform: translate3d(0, 3rem, 0);
+        padding: 1rem 0.5rem;
+        align-items: center;
+        .tags-wrap {
+            opacity: 1;
+            padding: 0.6rem;
+            display: flex;
+            justify-content: center;
+            transition: 0.3s;
+            .chip-item {
+                margin: 0.1rem 0.1rem;
+                max-width: 4.5rem;
+                font-size: 0.7rem;
+                max-height: 1.9rem;
+            }
+        }
+        .create-task-button-tile {
+            transition: 0.3s;
+            min-height: 2rem;
+            .btn-primary {
+                background-color: #272e2d;
+            }
+        }
+    }
+
+    &:hover {
+        .arrow-icon {
+            opacity: 0;
+            transform: translate3d(0, -5rem, 0);
+        }
+        .tags-wrap {
+            opacity: 0;
+            transform: translate3d(0, -5rem, 0);
+        }
+        .slide-path {
+            clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 57%);
+            z-index: 1;
+        }
+        .question-mark-icon {
+            opacity: 0.2;
+        }
+        .button-tags-wrapper {
+            transform: translate3d(0, 0, 0);
+        }
+        .create-task-button-tile {
+            .btn-primary {
+                transform: translate3d(0, 0, 0);
+                background-color: #22bcac;
+            }
+        }
+        background: #38434d;
+    }
+    .question-mark-icon {
+        position: absolute;
+        color: #b6cbcf;
+        bottom: 0%;
+        left: 0%;
+        font-size: 7rem;
+        transform: rotate(45deg) translateY(42px) translateX(0px);
+    }
+
+    .result-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .solution-wrap,
+    .claimed-wrap {
+        display: flex;
+        margin: 0;
+        align-items: center;
+
+        dt {
+            font-size: 1rem;
+            padding-right: 0.5rem;
+        }
+        dd {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    }
+}

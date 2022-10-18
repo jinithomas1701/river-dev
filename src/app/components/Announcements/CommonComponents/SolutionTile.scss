@@ -1,0 +1,102 @@
+@import "../../../Util/commonStyles";
+
+.solutiontile-wrapper {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    cursor: pointer;
+    &:hover {
+        background: #e5e5e5;
+    }
+    .solution-card {
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        padding: 1rem 1rem 0.5rem 1rem;
+        text-align: left;
+        .title {
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            font-weight: $weight-semibold;
+ 
+        }
+        .table-meta {
+            width: 100%;
+            th {
+                font-size: $text-size-small;
+                font-weight: $weight-semibold;
+                line-height: 1rem;
+            }
+            td {
+                font-size: $text-size-small;
+                line-height: 1rem;
+                text-align: right;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+        }
+
+        .description-wrap {
+            .description-title {
+                font-size: $text-size-heading-1;
+                display: block;
+                color: darken($primary-base, 10%);
+                font-weight: $weight-semibold;
+                margin-bottom: 0;
+            }
+            .description {
+                font-weight: 400;
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .attachment-wrapper {
+            .attachment-list {
+                display: flex;
+                flex-wrap: wrap;
+                padding-right: 1rem;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                > .item {
+                    padding: 0 0.5rem 0.3rem;
+                    line-height: 1;
+                    .empty {
+                        font-weight: 300;
+                    }
+                    a {
+                        color: #1c998c;
+                        text-decoration: underline;
+                        cursor: pointer;
+                        transition: 0.2s color;
+                        &:hover,
+                        &:focus {
+                            color: lighten(#22bcac, 2%);
+                        }
+                        &:visited {
+                            color: darken(#1c998c, 2%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .base-border {
+        background-color: rgb(240, 240, 240);
+        text-align: right;
+        .base-boreder-not-prevelage {
+            padding: 0.8rem 2rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .Solution-approve {
+            padding: 0.8rem 2rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .for-no-approve {
+            padding: 1.5rem 2rem;
+        }
+
+        .approve-switch {
+            margin-bottom: 0;
+        }
+    }
+}

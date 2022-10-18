@@ -1,0 +1,17 @@
+@import "../../../Util/commonStyles.scss";
+
+.promptdialog-wrapper{
+    @include common-dialog;
+
+    div + div{
+        max-width: 35rem;
+
+        .content{
+            font-size: $text-size-body;
+            
+            b{
+                font-weight: $weight-semibold;
+            }
+        }
+    }
+}

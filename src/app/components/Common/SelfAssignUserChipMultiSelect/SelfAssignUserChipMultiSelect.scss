@@ -1,0 +1,66 @@
+.userMultiChipSelect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .search-box-container {
+        display: flex;
+        position: relative;
+        margin-top: 1rem;
+        .text-icon {
+            position: absolute;
+            top: 4px;
+            color: #b3b3b3;
+            font-size: 1.3rem;
+            left: 0;
+        }
+        input {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #b3b3b3;
+            padding-left: 1.5rem;
+            width: 30%;
+        }
+        .search-results-container {
+            background: #ffffff;
+            position: absolute;
+            box-shadow: rgba(218, 218, 218, 0.2) 0px 1px 5px 0px, rgba(167, 167, 167, 0.14) 0px 2px 2px 0px, rgba(70, 70, 70, 0.12) 0px 3px 1px -2px;
+            min-width: 30%;
+            min-height: 4rem;
+            max-height: 12rem;
+            left: 0;
+            z-index: 10;
+            top: 27px;
+            overflow: auto;
+            border: 1px solid #e8e8e8;
+            .search-result-item {
+                cursor: pointer;
+                color: #000000;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid #eeeeee;
+            }
+        }
+    }
+
+    .selected-chips-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.9rem;
+        flex-wrap: wrap;
+        .chip-item-wrapper {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            .chip-item {
+                background: #e7eaec;
+                div {
+                    background-color: #118df0;
+                }
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

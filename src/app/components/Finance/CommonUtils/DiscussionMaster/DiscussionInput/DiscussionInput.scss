@@ -1,0 +1,36 @@
+@import "../../../../../Util/commonStyles.scss";
+
+.discussion-input-wrapper{
+    padding: 1rem 1.5rem .5rem;
+    font-size: $text-size-small;
+    background: #F8F9FA;
+
+    .input-comment{
+        width: 100%;
+        border: 1px solid  #000;
+        border-width: 0 0 1px;
+        resize: none;
+        transition: .2s;
+        background-color: transparent;
+
+        &:focus{
+            background: darken(#fff, 4%);
+            border-bottom-color: $primary-alt;
+        }
+    }
+    
+    .submit-wrapper{
+        padding-top: .5rem;
+        text-align: right;
+        
+        > button{
+            margin: 0 .5rem;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

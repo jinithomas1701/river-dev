@@ -1,0 +1,168 @@
+.user-details {
+    .content-container {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        font-family: roboto;
+    }
+
+    .u_c-dp{
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &-img{
+            width: 7.2rem;
+            height: 7.2rem;
+        }
+        &-change{
+            bottom: -10px;
+            background: rgba(0,0,0,.54);
+            font-size: 11px;
+            font-weight: bold;
+            left: 0;
+            line-height: 9px;
+            position: absolute;
+            padding: 7px 0;
+            text-align: center;
+            width: 7.2rem;
+            color: #d6d6d6;
+        }
+    }
+
+    #user-image{
+        &-input{
+            display: none;
+        }
+    }    
+
+    .user-img {
+        border: 2px solid #ffffff;
+        border-radius: 54%;
+        height: 7rem;
+        display: flex;
+        margin: 0rem auto;
+    }
+
+    .screen-badge-text {
+        display: block;
+        margin: 2rem auto;
+        display: flex;
+        color: #909090;
+        justify-content: center;
+        font-size: 1.6rem;
+
+        .badge-icon {
+            font-size: 2rem;
+            margin-right: 0.8rem;
+            color: #237fca;
+            font-weight: 500;
+            padding: 0.2rem;
+        }
+
+        .badge-text {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #237fca;
+        }
+    }
+
+    .chip-item-wrapper {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        .chip-item {
+            background: #e7eaec;
+            div {
+                background-color: #118df0;
+            }
+        }
+    }
+
+    .add-role-btn{
+        &-container{
+            padding: 0;
+            margin: auto 0;
+        }
+    }
+
+    .change-image-btn{
+        position: absolute;
+        right: 1rem;
+        bottom: 0rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #237fca;
+    }
+
+    .page-content-section {
+        .info-icon-holder {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .section-title {
+            color: #909090;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .new-section-title {
+            margin-top: 2rem;
+        }
+
+        .input-container {
+            padding-left: 2.8rem;
+            .input-field {
+                width: 17rem;
+            }
+            .club-input{
+                cursor: pointer;
+            }
+        }
+
+        .select-formcontrol{
+            min-width: 17rem;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .role-chips-container{
+            padding-left: 2.8rem;
+        }
+        .input-employeetype{
+            display: flex;
+            flex-direction: row;
+            padding-left: 30px;
+            margin-top: .5rem;
+
+            .input-emp-radio{
+                flex-grow: 0;
+            }
+        }
+    }
+    .club-row{
+        label + div{
+            border-bottom: 1px solid #333;
+            &:before{
+                content: none;
+            }
+            &:hover{
+                input{
+                    color: #5c9ece;
+                    cursor: pointer;
+                }
+            }
+        }
+        .noclub{
+            font: normal 1rem/1.5 "Montserrat", "Roboto","Helvetica Neue","Arial",sans-serif;
+            color: #212529;
+            text-transform: uppercase;
+            border-bottom: 1px solid #949494;
+            display: block;
+            padding: 0.5rem 0 0.1rem;
+        }
+    }
+}
+
+

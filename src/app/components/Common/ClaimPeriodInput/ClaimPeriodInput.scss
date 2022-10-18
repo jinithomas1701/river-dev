@@ -1,0 +1,40 @@
+@import "../../../Util/cssUtils.scss";
+
+.input-claimperiod{
+    position: relative;
+
+    .label{
+        font-size: $text-size-small;
+        color: $text-light;
+        margin-bottom: 0.5rem;
+        display: block;
+        line-height: 1
+    }
+
+    input{
+        width: 100%;
+        border: 1px solid $border-base;
+        border-color: transparent transparent #666;
+        padding-bottom: 1px;
+
+        &:hover{
+            border-bottom-width: 2px;
+            padding-bottom: 0;
+            border-bottom-color: #333;
+        }
+
+        &:focus{
+            border-bottom-width: 2px;
+            padding-bottom: 0;
+            border-bottom-color: $primary-base;
+        }
+    }
+
+    .calender-icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+}

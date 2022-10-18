@@ -1,0 +1,24 @@
+.add-gfg-dialog{
+    width: 30rem;
+    .field-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .input-field{
+            margin: 0 .5rem;
+            width: 100%;
+            &.select{
+                margin-top: 16px;
+            }
+            
+            .datetime-input{
+                border: 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+                width: 100%;
+            }
+        }
+    }
+    .edit-target-field{
+        width: 100%;
+    }
+}

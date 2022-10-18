@@ -1,0 +1,109 @@
+@import "../../../Util/commonStyles";
+
+.chiplist-input-wrapper {
+    .chip-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        .chip-item {
+            display: inline-flex;
+            border-radius: 1rem;
+            padding-left: 1rem;
+            align-items: center;
+            justify-content: center;
+            background: #d1cccc;
+            color: $text-dark;
+            margin: 0 0.3rem 0.3rem 0;
+            min-height: 2rem;
+            .chip-detail {
+                display: block;
+                > .chipname {
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    white-space: nowrap;
+                    padding-right: 1rem;
+                    max-width: 10rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                > .chipSubText {
+                    font-size: 0.6rem;
+                    font-weight: 400;
+                    padding: 0rem 1rem 0.3rem 0rem;
+                }
+            }
+            .btn-delete {
+                width: 2rem;
+                height: 2rem;
+                min-height: 0;
+                margin-left: -1rem;
+                box-shadow: none;
+                background-color: #d1cccc;
+
+                .material-icons {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .no-item {
+            font-size: $text-size-small;
+            font-weight: $weight-normal;
+            color: $text-base;
+            margin-bottom: 0.3rem;
+            display: block;
+            line-height: 1;
+        }
+        .btn-item {
+            .btn-add-chip {
+                position: relative;
+                z-index: 1;
+                background-color: $primary-base;
+                color: #fff;
+                padding: 0;
+                border-radius: 1rem;
+                min-height: 0;
+                min-width: 2rem;
+                &.empty,
+                &:hover {
+                    .text {
+                        max-width: 20rem;
+                        padding-right: 0.8rem;
+                        padding-left: 1rem;
+                    }
+                }
+                label {
+                    cursor: pointer;
+                    margin: 0;
+                }
+
+                .text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 0;
+                    transition: 0.2s;
+                    padding-right: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 1rem;
+                    height: 100%;
+                    background: #22bcac;
+                    display: flex;
+                    z-index: -1;
+                    align-items: center;
+                    border-radius: 0 1rem 1rem 0;
+                }
+
+                .material-icons {
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}

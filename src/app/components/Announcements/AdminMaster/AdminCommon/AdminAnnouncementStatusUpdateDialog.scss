@@ -1,0 +1,39 @@
+@import "../../../../Util/commonStyles";
+
+.statusupdate-dialog-wrap {
+    @include common-dialog;
+
+    > div {
+        &.common-dialog-body {
+            max-width: 50rem;
+        }
+    }
+    .header {
+        p {
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+            font-size: 0.9rem;
+        }
+    }
+    .date-wrap {
+        .row {
+            border-bottom: 1px solid #969393;
+            padding: 0.05rem;
+            .activity-date {
+                display: contents;
+
+                .rdt {
+                    width: 90%;
+                    .claim-input {
+                        font-size: 0.8rem;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .update-button {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

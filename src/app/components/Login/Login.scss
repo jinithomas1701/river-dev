@@ -1,0 +1,207 @@
+
+body {
+    background: transparent !important;
+}
+
+.wrapper.wrapper {	
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-container{
+    background: linear-gradient(45deg, rgba(34,188,172,1) 0%, rgba(17,92,142,1) 100%);
+}
+
+.google-signin-wrapper{
+    width: 100%;
+    max-width: 22rem;
+    background: #fff url("http://localhost:8080/resources/images/method-draw-image.svg") 0 -2rem;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    > .title{
+        font-size: .9rem;
+        line-height: 1rem;
+        margin: 2rem 0 1rem;
+    }
+
+
+    .btn-google-signin{
+        color: #fff;
+        background-color: #22bcac;
+        font-weight: 700;
+        font-size: 0.8rem;
+        font-family: "Montserrat", "Roboto","Helvetica Neue","Arial",sans-serif;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+        &:hover, &:focus{
+            background: darken(#22bcac, 10%);
+        }
+        
+        &:disabled{
+            background-color: #aaa;
+        }
+
+        .icon-wrapper{
+            display: block;
+            background: #fff;
+            margin: -0.7rem 1rem -0.7rem -1.1rem;
+            border-radius: 3px 0 0 3px;
+            padding: 0.5rem;
+        }
+    }
+}
+
+.signin-box {
+    max-width: 47rem;
+    position: relative;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 0px 7px 0px #7d7676;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .main-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        font-size: 1.2rem;
+        top: 19px;
+        width: 100%;
+        font-weight: bolder;
+        color: #999999;
+        padding: 0 3rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+        color: #fff;
+        position: fixed;
+        top: 1rem;
+        text-transform: uppercase;
+        background: #444;
+        padding: .3rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-info-icon{
+            margin-right: .5rem;
+        }
+    }
+    .w-full {
+        width: 100%;
+    }
+
+    .margin-top-medium {
+        margin-top: 2rem;
+    }
+
+    .signin-logo{
+        height: 7rem;
+        width: 7rem;
+        background: #fff;
+        border-radius: 5rem;
+        box-shadow: 0px 0px 7px 0px #e4e4e4;
+        img {
+            width: 7rem;
+            // position: absolute;
+            // right: 1.2px;
+        }
+    }
+
+    .signin-btn{
+        background: #333;
+        border-radius: 5rem;
+        height: 4rem;
+        min-width: 4rem;
+        color: #ffffff;
+        //position: absolute;
+        //box-shadow: 0 3px 5px 2px rgba(171, 167, 168, 0.3);
+        margin: 0;
+        //left: 9rem;
+        &:hover {
+            background: #000;
+            border-radius: 5rem;
+            height: 4rem;
+            min-width: 4rem;
+            color: #ffffff;
+            //position: absolute;
+            box-shadow: 0 3px 5px 2px rgba(110, 110, 110, 0.3);
+            margin: 0;
+            //left: 9rem;
+        }
+    }
+
+    .signin-wrap{
+        // flex:1;
+        padding: 1rem 0;
+        width:30rem;
+    }
+    .signin-form{
+        padding: 20px 0 40px 0;
+    }
+
+    .otp-box{
+        margin: 35px 5px;
+        h4{            
+            small{
+                color: #666;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .fab-progress {
+        color: #fff;
+    }
+    .signin-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .floating-link {
+            color: #444;
+            position: absolute;
+            bottom: 11px;
+            font-size: 0.7rem;
+            right: 39px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .floating-link-pass {
+            color: #999;
+            bottom: 11px;
+            font-size: 0.7rem;
+            left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

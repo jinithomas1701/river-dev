@@ -1,0 +1,46 @@
+.view-survey-result-dialog{
+    min-width: 37rem;
+
+    &-title{
+
+    }
+    &-description{
+
+    }
+    &-contents{
+        width: 37rem;
+
+        &-result{
+            &-container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                padding: 1rem 0;
+
+                
+            }
+        }
+
+        .total-count-display{
+            padding: 0.8rem 0 0.2rem 0;
+        }
+
+        .view-other-opinions-btn{
+
+            &-container{
+                padding: .7rem 0;
+                text-align: center;
+            }
+        }
+
+        .survey-other-opinion{
+            padding: .5rem 0;
+
+            &-list{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

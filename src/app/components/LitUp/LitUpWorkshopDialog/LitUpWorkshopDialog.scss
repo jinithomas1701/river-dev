@@ -1,0 +1,19 @@
+.workshop-dialog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .verification-code {
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    .label {
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin: 0 5rem;
+        color: #3f51b5;
+        margin-bottom: 0.6rem;
+    }
+}

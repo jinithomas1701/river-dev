@@ -1,0 +1,55 @@
+.litup-suggest-dialog-container{
+    .club-textarea {
+        border: none;
+        resize: none;
+    }
+    .club-textarea-line {
+        display: flex;
+        width: 100%;
+        height: 2px;
+        border-top: 1.1px solid #999;
+        margin-bottom: 0.5rem;
+    }
+    .dialog-topic-heading {
+        white-space: pre-line;
+        height: 100px;
+        overflow-y: auto;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        #file-upload {
+            display: none;
+        }
+        .selected-file-container {
+            display: flex;
+            flex-direction: row;
+            .file-name {
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+            .file-action {
+                margin-left: 0.5rem;
+                cursor: pointer;
+            }
+        }
+        .detail-container {
+            display: flex;
+            flex-direction: row;
+            .input-wrapper {
+                min-width: 11.4rem;
+                margin-right: 1rem;
+
+                .input-field{
+                    &.date-field{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .section-title{
+            margin-top: 1rem;
+        }
+    }
+}

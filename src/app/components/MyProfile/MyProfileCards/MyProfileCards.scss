@@ -1,0 +1,47 @@
+.my-profile-card{
+    display: inline-block;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.26);
+    margin-bottom: 1rem;
+    position: relative;
+
+    &-title{
+        position: relative;
+        font-size: 1.3rem;
+        padding: 1rem;
+        font-weight: 700;
+        color: #5c5656;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-children{
+        display: flex;
+        padding: 1rem;
+        flex-direction: row;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    &-icon{
+        position: absolute;
+        top: -2rem;
+        right: -2rem;
+        font-size: 11rem;
+        opacity: .1;        
+    }
+
+    .redirect-icon{
+
+        &-link{
+            display: inline-flex;
+            color: #3f83b8;
+            position: absolute;
+            right: 0.5rem;
+            top: 1rem;
+        }
+    }
+}

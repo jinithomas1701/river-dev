@@ -1,0 +1,29 @@
+.permission-denied-container {
+    display: flex;
+    flex-direction: column;
+    .access-denied-content {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .icon {
+            color: #545151;
+            font-size: 3rem;
+        }
+        .text-head {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: #585858;
+        }
+        .text {
+            color: #807d7d;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .action {
+            margin-top: 1.2rem;
+        }
+    }
+}

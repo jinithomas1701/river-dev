@@ -1,0 +1,128 @@
+.rivercouncil-dashboard-container{
+    .standing-table{
+        thead{
+            .table-row{
+                font-size: 1rem;
+                color: #444;
+            }
+        }
+        tbody{
+            .table-row{
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background .3s;
+                &:hover{
+                    background: #a2e2db;
+                }
+            }
+        }
+        .item-with-icon div{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .pointcard-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .point-card{
+        display: flex;
+        width: 20rem;
+        flex-direction: column;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+        font-size: .8rem;
+        color: #444;
+        margin: 0 2rem 1rem 0;
+
+        &.bigger{
+            transform: scale(1.05);
+            transform-origin: 0 50%;
+            > .header{
+                background: lighten(#22bcac, 8%);
+            }
+        }
+
+        &:first-child{
+            &:after{
+                content: '';
+                width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        > .header{
+            display: flex;
+            min-height: 9rem;
+            background: #22bcac;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            .point-count{
+                font-size: 1.5rem;
+                .points{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    position: relative;
+                    .label{
+                        position: absolute;
+                        bottom: 0.8rem;
+                        left: 100%;
+                        font-size: .8rem;
+                        font-weight: normal
+                    }
+                }
+            }
+        }
+        > .desc{
+            background: #eee;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-top: 0;
+        }
+
+        &.marker{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 0;
+                display: block;
+                top: 100%;
+                left: 50%;
+                border: 10px solid transparent;
+                border-top-color: #22bcac;
+                margin-left: -5px;
+            }
+        }
+    }
+
+    .chart-container{
+        svg > g > rect:first-child{
+            fill: transparent;
+        }
+    }
+
+    .heading-lvl2{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #22bcac;
+        border-bottom: 1px solid #22bcac;
+        margin: 2rem 0 1rem;
+        padding: 0.5rem 3rem 0.5rem 0;
+        .subtext{
+            font-weight: normal;
+            color: #444;
+        }
+    }
+    .numeric{
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+    .loading-bar{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+}

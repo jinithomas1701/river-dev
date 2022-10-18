@@ -1,0 +1,35 @@
+.title-action {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.roles {
+    .role-container {
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: column;
+        .role-comp {
+            border-bottom: 1px solid #eeeeee;
+            padding: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .role-title {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex: 1;
+                font-weight: 500;
+            }
+            .role-desc {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex: 1;
+                color: #999999;
+                margin-top: 0.7rem;
+            }
+        }
+    }
+}

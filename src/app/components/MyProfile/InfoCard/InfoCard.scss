@@ -1,0 +1,80 @@
+.infocard-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid  #eee;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    @media only screen and (max-width: 959px){
+        flex-wrap: wrap;
+    }
+
+    .infocard-item{
+        flex-basis: 33%;
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width: 959px){
+            flex-basis: 100%;
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+        .infocard-img{
+            &.logo{
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                margin-right: .5rem;
+            }
+            .image-holder{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .material-icons{
+                font-size: 2.5rem;
+            }
+        }
+        .infocard-body{
+            flex-shrink: 1;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            .material-icons{
+                font-size: 0.8rem;
+            }
+            .infocard-header{
+                font-size: 0.8rem;
+                color: #aaa;
+                display: flex;
+                text-transform: uppercase;
+                justify-content: space-between;
+                margin: 0;
+                align-items: center;
+                .redirect-link{
+                    color: #22bca8;
+                }
+            }
+            .infocard-desc{
+                font-size: 0.9rem;
+                color: #22bca8;
+                font-weight: bold;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                .points{
+                    padding-left: .5rem;
+                    display: flex;
+                    align-items: center;
+                    color: #444;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

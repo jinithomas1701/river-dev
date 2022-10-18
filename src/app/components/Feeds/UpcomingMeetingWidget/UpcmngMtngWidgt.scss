@@ -1,0 +1,52 @@
+.upcoming-meeting-widget{
+    background: #f3f3f3;
+    padding: 0.2rem 0.8rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;    
+    cursor: pointer;
+    
+    .meeting-icon{
+        margin-top: 0.3rem;
+        color: #555
+    }
+
+    .meeting-datas{
+        flex: 1;
+        margin-left: 0.3rem;
+        overflow: hidden;
+    }
+
+    .meeting-title{
+        font-size: 0.8rem;
+    }
+
+    .meeting-date{
+        font-size: 0.6rem;
+        color: #777;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .meeting-type{
+        display: flex;
+        flex-direction: row;
+        font-weight: 500;
+        color: #555;
+        justify-content: flex-end;
+
+        &-club-name{
+            font-size: 0.6rem;
+            color: teal;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 0px 2px;
+            margin-left: 3px;
+        }
+    }
+
+}

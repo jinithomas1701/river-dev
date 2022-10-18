@@ -1,0 +1,140 @@
+@import "../../../../Util/cssUtils";
+
+.group-meetings-tile-wrapper {
+    position: relative;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    background: #0b1d21;
+    width: 12rem;
+    height: 16rem;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px 0px black;
+    cursor: pointer;
+    overflow: hidden;
+
+    @media screen and (max-width: 500px) {
+        margin: 1rem 0 1rem;
+        height: 25rem;
+        width: 100%;
+    }
+
+    .status {
+        text-transform: uppercase;
+        color: #648b8e;
+        font-weight: $weight-semibold;
+        font-size: 0.8rem;
+    }
+
+    .time-left {
+        color: #648b8e;
+        font-size: $text-size-subheading;
+    }
+
+    .status-icon {
+        position: absolute;
+        right: -15px;
+        top: -12px;
+        font-size: 4rem;
+        color: #132e5e;
+    }
+
+    .details {
+        position: absolute;
+        // top: 50%;
+        // -ms-transform: translateY(-50%);
+        // transform: translateY(-40%);
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        .recurrence-type {
+            color: #a9b022;
+            margin-bottom: 0.1rem;;
+        }
+        .date {
+            margin: 0;
+            font-size: 1rem;
+            color: #ffff;
+        }
+
+        .time {
+            text-transform: uppercase;
+            color: #648b8e;
+        }
+
+        .day {
+            margin-left: 1rem;
+            text-transform: uppercase;
+            color: $voice-pending;
+        }
+
+        .room {
+            display: flex;
+            margin: 0;
+            color: #648b8e;
+            font-size: 0.8rem;
+
+            .location-icon {
+                font-size: 1.2rem;
+            }
+        }
+
+        .location {
+            color: #648b8e;
+            font-size: 0.8rem;
+        }
+
+        .title {
+            color: #ffff;
+            font-size: 0.9rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            padding-right: 0.5rem;
+            text-align: start;
+        }
+    }
+
+    .design-div {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15rem;
+            height: 10rem;
+            border-radius: 50%;
+            background: $primary-alt;
+            left: -65px;
+            bottom: -310px;
+            opacity: 0.2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            background: $complimentary-base;
+            right: -300px;
+            bottom: -500px;
+            opacity: 0.2;
+        }
+    }
+
+    &:hover {
+        background: white;
+        box-shadow: 0px 0px 5px 1px #ccc;
+        transition: 0.3s;
+
+        .details {
+            .date {
+                color: #298e96;
+            }
+            .title {
+                color: black;
+            }
+        }
+    }
+}

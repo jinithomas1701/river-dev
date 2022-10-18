@@ -1,0 +1,38 @@
+#activity-detail-dialog{
+    height: 30rem;
+    width: 100%;
+    &-title{
+
+    }
+
+    &-content{
+        .proof-images{
+            display: flex;
+            flex-wrap: wrap;
+
+            &-thumb{
+                width: 10rem;
+                cursor: pointer;
+
+                &-container{
+                    margin: .5rem;
+                }
+            }
+        }
+
+        .image-preview{
+            position: relative;
+            margin: 0.6rem 0;
+            
+            &-image{
+                width: 100%;
+            }
+            .close-btn{
+                position: absolute;
+                top: -0.7rem;
+                right: -0.7rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

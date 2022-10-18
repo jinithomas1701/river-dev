@@ -1,0 +1,23 @@
+@import "../../../Util/cssUtils.scss";
+
+.settings-stage3-wrapper{
+    
+    .activities-list-wrapper{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .input-select{
+        margin-bottom: 1rem;
+    }
+    
+    .submit-wrapper{
+        padding: 1.5rem 0 1rem;
+        display: flex;
+        justify-content: flex-end;
+        
+        .btn-default{
+            margin-right: auto;
+        }
+    }
+}

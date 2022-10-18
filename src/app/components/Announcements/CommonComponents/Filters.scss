@@ -1,0 +1,16 @@
+@import "../../../Util/commonStyles.scss";
+
+.filter-wrapper {
+    min-height: 3rem;
+    margin: 1rem 0 1rem 0;
+    > .col-md-4 {
+        padding-left: 0;
+    }
+
+    .searchbar-wrapper {
+        height: 100%;
+    }
+    .input-select {
+        background-color: transparent;
+    }
+}

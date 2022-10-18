@@ -1,0 +1,37 @@
+@import "../../../../Util/commonStyles";
+
+.approve-transaction-dialog-wrapper {
+    @include common-dialog;
+    .common-dialog-body {
+        max-width: 30rem;
+    }
+    .content {
+        > .transaction-teaser {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: black;
+
+            > label {
+                margin: 0;
+            }
+
+            table {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .transaction-value {
+                font-weight: 400;
+                color: gray;
+            }
+        }
+
+        .input-text {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .submit-bills-button-wrapper {
+        width: 4.5rem;
+    }
+}

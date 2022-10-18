@@ -1,0 +1,135 @@
+.feeds {
+    .feed-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.6rem 1.7rem;
+
+        .change-pass-banner{
+            padding: 1rem;
+            background: #eafd98;
+            margin-bottom: 1rem;
+            border: 1px solid limegreen;
+            .link{
+                color: blue;
+                cursor: pointer;
+            }
+        }
+        .external-link-tiles{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0.7rem 0;
+            justify-content: center;
+            .tile{
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #444444;
+                color: #fff;
+                margin: .2rem;
+                flex: 0 0 19%;
+                padding: 0 1.5rem;
+                cursor: pointer;
+                box-shadow: 0 0 10px #ddd;
+                &:hover{
+                    background: #1eac99;
+                }
+                &.large{
+                    flex: 0 0 38%;
+                }
+            }
+        }
+    }
+    .feed-loader-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        background: #ffffff;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        margin: 28px auto;
+    }
+
+    .widgets-container{
+        .widget{
+            &-section{
+                margin: .5rem 0;
+                &-title{
+                    margin: 1rem 0;
+                    color: #383838;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                .goto-clubdash,
+                .goto-ceodash{
+                    background: #fff;
+                    padding: 1rem 1.2rem;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #e8e8e8;
+
+                    &-icon{
+                        font-size: 2rem;
+                        padding-right: 0.5rem;
+                        color: #555;
+                    }
+                }
+            }
+
+            &.clickable{
+                cursor: pointer;
+            }
+
+            .count-0{
+                font-weight: 300;
+                color: #ccc;
+                font-size: 0.6rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .master-activities-container{
+        .nameboard{
+            margin: 1rem 0;
+            color: #908686;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        .master-activity-feed-tile{
+            background: #fff;
+            padding: 0.2rem 0.5rem;
+            box-shadow: 0.5px 0.5px 1px gainsboro;
+            margin: .5rem 0;
+            border-left: 0.2rem solid #666;
+
+            cursor: pointer;
+            .title{
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: #555;
+            }
+            .council{
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }   
+    }
+
+    .top-helper-bar{
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0 16px #f3f3f3;
+        border: 1px solid #e8e8e8;
+        &-item{
+            &.search{
+                flex: 1;
+            }
+        }
+    }
+}

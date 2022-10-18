@@ -1,0 +1,55 @@
+.my-card-widget{
+    width: 100%;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 20px #e8e8e8;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 1rem;
+    
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &-points-body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .points-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 25px;
+            cursor: pointer;
+            &.active{
+                border-bottom: solid 1px #999;
+                background: #f6f6f6;
+            }
+            &:hover{
+                background: #cccccc;
+            }
+            .title{
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #6a706e;
+            }
+            .points{
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #151515;
+            }
+            &-self{
+                
+            }
+            &-club{
+
+            }
+        }
+    }
+
+    .chart-container{
+        padding-top: 12px;
+        position: relative;
+    }
+}

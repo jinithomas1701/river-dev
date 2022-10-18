@@ -1,0 +1,31 @@
+@import "../../../Util/cssUtils.scss";
+
+.starrate-wrapper{
+    .star-box{
+        display: table;
+        .starrate-item.editable{
+            color: $primary-base;
+            cursor: pointer;
+        }
+        .starrate-item.locked{
+            color: $text-base;
+        }
+    }
+    .starrate-tip{
+        font-size: .8rem;
+        
+        .star-table{
+            padding: 0;
+            margin: 0;
+            .star-icon{
+                font-size: .8rem;
+            }
+            th{
+                padding: 0 .3rem 0 0;
+            }
+            td{
+                padding: 0 .3rem;
+            }
+        }
+    }
+}

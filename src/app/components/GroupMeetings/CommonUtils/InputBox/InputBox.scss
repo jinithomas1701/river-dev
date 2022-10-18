@@ -1,0 +1,42 @@
+@import "../../../../Util/commonStyles.scss";
+
+.input-box-wrapper {
+    padding: 1rem;
+    font-size: $text-size-small;
+    background: transparent;
+
+    .title {
+        font-size: $text-size-heading-1;
+        font-weight: $weight-semibold;
+        color: $primary-base;
+    }
+
+    .input-comment {
+        width: 100%;
+        // border: 1px solid #000;
+        border-width: 0 0 1px;
+        resize: none;
+        transition: 0.2s;
+        background-color: transparent;
+        padding-left: 0.3rem;
+        &:focus {
+            background: darken(#fff, 4%);
+            border-bottom-color: $primary-alt;
+        }
+    }
+
+    .submit-wrapper {
+        padding-top: 0.5rem;
+        text-align: right;
+
+        > button {
+            margin: 0 0.5rem;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

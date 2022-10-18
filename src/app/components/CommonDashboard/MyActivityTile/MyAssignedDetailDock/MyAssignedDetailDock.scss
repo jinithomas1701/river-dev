@@ -1,0 +1,284 @@
+.assigned-detail-dock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: #FEFEFE;
+    .close-container {
+        position: absolute;
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 2px;
+        color: #3c3c3c;
+        left: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        top: 4px;
+        color: #797878;
+        cursor: pointer;
+
+        cursor: pointer;
+        span {
+            font-size: 20px;
+        }
+    }
+    .progress-container-dock {
+        display: flex;
+        width: 100%;
+        margin-bottom: 36px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        .status-progress-wrapper {
+            width: 327px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .status-line {
+                border: 1px dashed #eee;
+                position: absolute;
+                width: 261px;
+                left: 37px;
+                z-index: 1;
+            }
+            .status-circle {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background: #FFFFFF;
+                border: 1px solid #F3F3F3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 36px;
+                position: relative;
+                z-index: 5;
+                .small-text {
+                    bottom: -28px !important;
+                }
+                .status-text {
+                    position: absolute;
+                    color: #797878;
+                    bottom: -29px;
+                    font-size: 9px;
+                    text-align: center;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+                &.completed {
+                    background: darken(#22bcac, 8%);
+                    span {
+                        font-size: 12px;
+                        color: #ffffff;
+                    }
+                }
+                &.current {
+                    background: #22bcac;
+                    span {
+                        font-size: 12px;
+                        color: #ffffff;
+                    }
+                }
+                &.rejected {
+                    background: #e27145;
+                    span {
+                        font-size: 12px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .activity-discussion {
+        display: flex;
+        width: 100%;
+        .discussion-component {
+            height: auto !important;
+            //max-height: 20rem;
+        }
+    }
+    .activity-primary-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        .main-id{
+            width: 82%;
+            display: flex;
+            padding: 10px;
+            padding-left: 0px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .label{
+                font-size: 12px;
+                font-weight: 600;
+                color: #000000;
+            }
+            .value{
+                font-size: 15px;
+                margin-top: 4px;
+            }
+        }
+        .main-head {
+            font-size: 1.6rem;
+            color: #22bcac;
+            width: 82%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .description {
+            width: 82%;
+            display: flex;
+            background: #F9F9F9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #EEEEEE;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 12px;
+            min-height: 78px;
+            margin-top: 1rem;
+        }
+        .category {
+            width: 82%;
+            display: flex;
+            background: #F9F9F9;
+            border: 1px solid #EEEEEE;
+            padding: 10px;
+            font-size: 12px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .assginee-card {
+            background: #FFFFFF;
+            color: #000000;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 82%;
+            margin-bottom: 15px;
+            border: 1px solid #EEEEEE;
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 6px;
+                .user-details {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .name {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #4E4E4F;
+                    }
+                    span {
+                        font-size: 20px;
+                        color: #4E4E4F;
+                        margin-right: 5px;
+                    }
+                }
+                .status {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .label {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #4E4E4F;
+                    }
+                    .value {
+                        font-size: 14px;
+                        color: #4E4E4F;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .secondary-header {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 10px;
+                .point-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    span {
+                        font-size: 20px;
+                        color: #A9630D;
+                    }
+                    .value {
+                        font-size: 14px;
+                        color: #000000;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .attachment-container {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 5px;
+                .attachment {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    background: #F8E5B4;
+                    color: #AA640D;
+                    padding: 10px;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                    span {
+                        font-size: 16px;
+                        color: #AA640D;
+                    }
+                    .text {
+                        font-size: 11px;
+                        color: #AA640D;
+                        width: 100%;    
+                    }
+                }
+            }
+            .user-comment-container {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                background: #fdfdfd;
+                border: 1px solid #EEEEEE;
+                padding: 5px;
+                font-size: 11px;
+            }
+        }
+    }
+}

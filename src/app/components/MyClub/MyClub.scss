@@ -1,0 +1,219 @@
+.my-club{
+    &-container{
+        .my-club{
+            &-banner{
+                height: 8rem;
+                background: #222;
+                background: url('../../../resources/images/my-club-banner-pattern.png');
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+
+                .club-info{
+                    margin: 1rem;
+                    display: flex;
+
+                    &-avatar{
+                        width: 5.5rem;
+                        height: 5.5rem;
+                        border-radius: 50%;
+                        border: 2px solid #fff; 
+                    }
+
+                    &-meta{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1.5rem;
+                        color: #fff;
+                        font-size: .8rem;
+                        font-weight: 500;
+                        flex: 10;
+                        &-clubname{
+                            font-size: 1.6rem;
+                            padding: 0;
+                        }
+                        div{
+                            padding-top: .2rem;
+                        }
+                    }
+
+                    &-points{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        font-size: 1.7rem;
+                        font-weight: 700;
+                        color: #fff;
+                        .club-points{
+                            display: flex;
+                            align-items: center;
+                            .points-icon{
+                                font-size: 1.7rem;
+                                font-weight: 700;
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-cards-container{
+                display: block;
+                flex-flow: column wrap;
+                column-count: auto;
+                -webkit-column-count: 5;
+                -webkit-column-gap: 0px;
+                -moz-column-count: 5;
+                -moz-column-gap: 0px;
+                column-count: 1;
+                column-gap: 1rem;
+
+
+                .section{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0.4rem 0;
+                    flex-wrap: wrap;
+
+                    &.basic-field{
+                        flex-wrap: nowrap;
+                        .basic-field-name{
+                            white-space: nowrap;
+                        }
+                        .basic-field-detail{
+                            display: flex;
+                            flex-grow: 1;
+                            justify-content: flex-end;
+                        }
+                        .slogan-entry{
+                            display: inline-block;
+                            padding-left: 1rem;
+                            text-align: justify;
+                        }
+                    }
+
+                    &.member-field:after{
+                        content: '';
+                        min-width: 15rem;
+                        flex-basis: 32%;
+                    }
+
+                    .contact-card{
+                        min-width: 15rem;
+                        flex-basis: 32%;
+                        background: #cccccc33;
+
+                        .content{
+                            max-width: 18rem;
+                            min-width: 0;
+                        }
+                    }
+                }
+
+                .club-container{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .club-points{
+                        font-size: 1.6rem;
+                        color: #474c62;
+                    }
+                    .club-name{
+                        font-size: 1.6rem;
+                        color: #474c62;
+                    }
+                }
+
+                .chip-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .chip{
+                        padding: 0.3rem;
+                        margin: 0.3rem;
+                        font-size: 1rem;
+                        background: #474745;
+                        color: #fff;
+                        border-radius: 3%;
+                        box-shadow: 0 0 2px rgba(153, 130, 130, 0.39), 0 2px 2px rgba(93, 105, 133, 0.37);
+                    }
+                }
+            }
+
+        }
+
+        .tab-container{
+            margin-top: 1.5rem;
+            
+            .points-history-table{
+                tbody{
+                    tr{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .points-history-table{
+                &-head{
+                    background: #383838;
+                    color: #fff;
+                    font-weight: 500;
+                    text-align: center;
+                    th{
+                        font-weight: bold;
+                    }
+                }
+
+                &-body{
+                    .points-history-table-row{
+                        background: #f9fff9;
+                        a{
+                            color: #007bff;
+                        }
+                        &:nth-child(2n){
+                            background: #f5fff5;
+                        }
+                        .desc-cell{
+                            white-space: normal;
+                            max-width: none;
+                        }
+                    }
+                    .points-history-table-row:hover{
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .basic-details-container{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding: 0.5rem;
+        }
+
+        .load-more-btn{
+            width: 100%;
+        }
+
+        .club-discussion-container {
+            .discussion-wrapper{
+                width: 100%;
+                .message-item-component .message-holder{
+                    .popover-component .user-name{
+                        font-size: 1rem;
+                    }
+                    .message-wrapper {
+                        width: auto;
+                    }
+                } 
+
+                a {
+                    color: #0094ee;
+                    &:hover{
+                        color: #0094ee;
+                    }
+                }
+            }
+        }
+    }
+}

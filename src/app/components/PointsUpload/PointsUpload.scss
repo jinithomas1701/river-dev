@@ -1,0 +1,102 @@
+.user-reports-wrapper{
+    .error-mssg {
+        white-space: pre-wrap;
+        color: red;
+        background-color: whitesmoke;
+        font-family: monospace;
+        font-size: 0.8rem;
+        margin: 5px 1em;
+        padding: 5px 1em;
+    }
+    .tools{
+        display: flex;
+        justify-content: space-between;
+
+        .file-wrapper{
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .file-label{
+            margin: 0;
+            background: #22bcac;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 0.4rem 0.8rem;
+            font-size: .8rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .report-table-wrapper{
+        padding: 1rem;
+        background: #fff;
+        margin-top: 1.5rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        color: #777;
+
+        .griddle-filter{
+            border: 1px solid #ddd;
+            padding: 0.2rem 0.5rem;
+            font-size: .8rem;
+            line-height: 2rem;
+            height: 2rem;
+            box-sizing: border-box;
+            margin: 0 1rem 0 0;
+            flex-grow: 1;
+        }
+        .griddle-settings-toggle{
+            display: none;
+            background: #22bcac;
+            color: #fff;
+            border: 1px solid  #22bcac;
+            height: 2rem;
+            margin: 0;
+            padding: 0 .5rem;
+        }
+        .griddle-noResults{
+            clear: both;
+        }
+        .griddle-table{
+            width: 100%;
+            clear: both;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .griddle-row:nth-child(odd){
+                background: #fbfbfb;
+            }
+            th {
+                padding: .3rem;
+                font-size: .9rem;
+            }
+            td{
+                padding: .3rem;
+                font-size: .9rem;
+            }
+        }
+        .report-table-header {
+            display: flex;
+            justify-content: space-between;
+
+            .griddle-pagination{
+                .griddle-page-select{
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+        .griddle-pagination{
+            display: flex;
+            flex-direction: row-reverse;
+
+            .griddle-page-select{
+                margin: 0 .2rem;
+                width: 4rem;
+                border: 1px solid #eee;
+                padding: .3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../../Util/cssUtils.scss";
+
+.fieldheader-wrapper{
+    clear: both;
+    position: relative;
+    height: $lineheight-base;
+    line-height: $lineheight-base;
+    margin-bottom: ($lineheight-base / 2);
+    margin-top: $lineheight-base;
+    
+    &:before{
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: $border-base;
+    }
+    
+    .title{
+        font-size: $text-size-small;
+        line-height: $lineheight-base;
+        margin: 0;
+        padding: 0 0.5rem;
+        background-color: #fff;
+        display: table;
+        position: relative;
+        margin-left: 0.5rem;
+        color: $primary-base;
+    }
+}

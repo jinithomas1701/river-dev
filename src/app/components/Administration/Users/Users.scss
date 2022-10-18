@@ -1,0 +1,45 @@
+.users-page-wrapper{
+
+    .listing-extras{
+        margin-bottom: 1rem;
+
+        > .btn-add-new{
+            width: auto;
+        }
+        > .search-widget {
+            width: auto !important;
+            float: none;
+            overflow: hidden;
+            height: 46px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+        }
+    }
+
+    .filter-wrapper{
+        .form-control{
+            background: none;
+        }
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        &.list-wrapper{
+            justify-content: space-between;
+            &:after{
+                content: '';
+                width: 33%;
+            }
+        }
+    }
+    .loadmore{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+
+        .btn-loadmore{
+            background-color: #333;
+            color: #fff;
+        }
+    }
+}

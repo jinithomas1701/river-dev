@@ -1,0 +1,120 @@
+@import "../../../Util/cssUtils.scss";
+
+.categorylist-wrapper{
+    .categorylist-empty{
+        color: $text-base;
+        font-size: .9rem;
+        padding: 1rem 0.5rem;
+    }
+    .group-title{
+        display: block;
+        position: relative;
+        font-weight: normal;
+        color: darken($primary-base, 5%);
+        font-weight: $weight-semibold;
+        font-size: .8rem;
+        margin: 0.3rem 0;
+
+        &:before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            margin-top: -1px;
+            background: $border-base;
+        }
+        .title{
+            background: #f9f9f9;
+            padding: 0 .5rem;
+            margin-left: .5rem;
+        }
+    }
+    .category-item{
+        background: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid $border-base;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover{
+            background: #fcfcfc;
+        }
+
+        &.selected{
+            background: $neutral-alt;
+        }
+
+        .title{
+            font-size: .8rem;
+            margin-bottom: .3rem;
+            font-weight: $weight-semibold;
+        }
+        .title-sub{
+            font-size: .8rem;
+            font-weight: $weight-medium;
+            margin: .5rem 0;
+            line-height: 1;
+        }
+
+        .sub-details{
+            font-size: .8rem;
+            display: flex;
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+
+            > .cell{
+                flex-grow: 1;
+                padding: 0 0.5rem;
+            }
+            .status-text{
+                display: flex;
+                align-items: center;
+
+                .color-dot{
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    margin-right: .2rem;
+                }
+
+                .status{
+                    white-space: nowrap;
+                }
+            }
+            .label-term-group{
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: nowrap;
+                padding: 0 0.5rem;
+                min-width: 0;
+                max-width: 35%;
+                margin: 0;
+
+                &.assignees-list{
+                    width: 12rem;
+                    flex-basis: 12rem;
+                    flex-shrink: 0;
+                }
+
+                dt{
+                    white-space: nowrap;
+                    font-weight: $weight-medium;
+                    &:after{
+                        content: ": ";
+                        padding-right: .3rem;
+                    }
+                }
+                dd{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.club-details {
+    .content-container {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        position: relative;
+
+        .reset-btn-container{
+            margin: 1rem 0;
+            .title{
+                color: #909090;
+                font-weight: 400;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            .btn-container{
+                .reset-btn{
+
+                }
+            }
+        }
+    }
+
+    .c_c-dp{
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &-img{
+            width: 7.2rem;
+            height: 7.2rem;
+        }
+        &-change{
+            bottom: -10px;
+            background: rgba(0,0,0,.54);
+            font-size: 11px;
+            font-weight: bold;
+            left: 0;
+            line-height: 9px;
+            position: absolute;
+            padding: 7px 0;
+            text-align: center;
+            width: 7.2rem;
+            color: #d6d6d6;
+        }
+    }
+
+    #club-image{
+        &-input{
+            display: none;
+        }
+    }    
+
+    .club-img {
+        border: 2px solid #ffffff;
+        border-radius: 54%;
+        height: 7rem;
+        display: flex;
+        margin: 0rem auto;
+    }
+
+    .clubdetail-img {
+        border: 2px solid #ffffff;
+        border-radius: 54%;
+        height: 7rem;
+        display: flex;
+        margin: 0rem auto;
+    }
+
+    .screen-badge-text {
+        display: block;
+        margin: 2rem auto;
+        display: flex;
+        color: #909090;
+        justify-content: center;
+        font-size: 1.6rem;
+
+        .badge-icon {
+            font-size: 2rem;
+            margin-right: 0.8rem;
+            color: #237fca;
+            font-weight: 500;
+            padding: 0.2rem;
+        }
+
+        .badge-text {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #237fca;
+        }
+    }
+
+    .input-select{
+        padding-top: 1rem;
+    }
+
+    .page-content-section {
+
+        .section-title {
+            color: #909090;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .new-section-title {
+            margin-top: 1rem;
+        }
+
+        .input-container {
+            padding-left: 2.8rem;
+            .input-field {
+                width: 17rem;
+            }
+        }
+
+        .input-switch{
+            padding-top: 1rem;
+        }
+
+        .center-button-container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            .center-button {
+                align-self: center;
+            }
+        }
+
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .contact-card-wrapper {
+                width: 25%;
+                margin-right: 5.2rem;
+                margin-top: 1.1rem;
+                .board-title{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #786a6a;
+                }
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            margin-top: 2rem;
+        }
+    }
+    .fab-progress {
+        color: #fff;
+    }
+}
+
+

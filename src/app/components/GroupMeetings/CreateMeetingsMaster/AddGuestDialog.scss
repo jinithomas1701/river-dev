@@ -1,0 +1,15 @@
+@import "../../../Util/commonStyles";
+
+.addGuest-dialog-wrap{
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 30rem;
+        }
+    }
+    .content{
+        .input-text{
+            margin: 1rem 0rem;
+        }
+    }
+}

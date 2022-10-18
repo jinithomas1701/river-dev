@@ -1,0 +1,16 @@
+@import "../../../Util/commonStyles";
+
+.create-meetings-wrapper {
+    margin: 1rem 1rem;
+    box-shadow: 0px 5px 10px 1px rgba(89, 88, 88, 0.15);
+
+    .meeting-details {
+        background: #fff;
+        padding: 1rem 5rem 6rem 2rem;
+    }
+    .invities-details {
+        position: relative;
+        padding: 1rem 2rem 1rem 2rem;
+        background: #efeded;
+    }
+}

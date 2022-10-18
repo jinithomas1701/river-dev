@@ -1,0 +1,76 @@
+@import "../../../../Util/commonStyles";
+
+.dashboard-chart-wrapper{
+    margin: 1rem 0;
+    .chart-wrapper{
+        align-items: center;
+        font-size: .8rem;
+
+        > div{
+            @media only screen and (max-width: 1024px){
+                margin-bottom: 1rem;
+            }
+        }
+
+        p{
+            font-size: .85rem;
+            font-weight: 700;
+            margin: 0 0 0.2rem 0;  
+            
+            @media only screen and (max-width: 1024px){
+                text-align: center;
+            }
+        }
+
+        .chart-data{
+            @media only screen and (max-width: 1024px){
+                border-bottom: 1px solid $border-base;
+            }
+
+            .heading{
+                font-weight: 500;
+                width: 100%;
+            }
+            .value{
+                text-align: end;
+                font-weight: 400;
+                color: gray;
+            }
+        }
+
+    
+        #other{
+            font-size: .8rem;
+
+            p{
+                font-size: .85rem;
+                font-weight: 700;
+                margin: 0 0 0.2rem 0;   
+            }
+    
+            tr{
+    
+                .heading{
+                    font-weight: 500;
+                    width: 100%;
+                }
+                .value{
+                    text-align: end;
+                    font-weight: 400;
+                    color: gray;
+                }
+            }
+
+            .common-notifications{
+                margin: 2rem 0 0 0;
+
+                .denomination-type{
+                    //float: right;
+                    font-size: 0.7rem;
+                    color: crimson;
+                }
+            }
+        }
+    }
+}
+

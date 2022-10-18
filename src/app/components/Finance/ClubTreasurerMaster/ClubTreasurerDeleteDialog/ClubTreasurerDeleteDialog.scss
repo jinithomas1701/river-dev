@@ -1,0 +1,29 @@
+@import "../../../../Util/commonStyles";
+
+.delete-transaction-dialog-wrapper {
+    @include common-dialog;
+    .common-dialog-body {
+        max-width: 25rem;
+    }
+    .content {
+        > .transaction-teaser {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: black;
+
+            > label {
+                margin: 0;
+            }
+
+            table {
+                width: 50%;
+                margin-bottom: 0.5rem;
+            }
+
+            .transaction-value {
+                font-weight: 400;
+                color: gray;
+            }
+        }
+    }
+}

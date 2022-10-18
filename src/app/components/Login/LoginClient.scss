@@ -1,0 +1,125 @@
+
+body {
+    background: transparent !important;
+}
+
+.wrapper {	
+	margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.signin-client-box {
+    max-width: 23rem;
+    position: relative;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px 0px #7d7676;
+    border-radius: 5px;
+    .main-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        font-size: 1.2rem;
+        top: 19px;
+        width: 100%;
+        font-weight: bolder;
+        color: #999999;
+        padding: 0 3rem;
+    }
+    .floating-link {
+        color: #990000;
+        position: absolute;
+        bottom: 11px;
+        font-size: 0.9rem;
+        right: 39px;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .msg {
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+        font-size: 0.8rem;
+        color: red;
+    }
+    .w-full {
+        width: 100%;
+    }
+
+    .margin-top-medium {
+        margin-top: 2rem;
+    }
+
+    .signin-logo{
+        height: 6rem;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 7rem;
+        }
+        
+    }
+
+    h3{
+        margin-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        color: #555;
+        margin: 0.7rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        img{
+            margin-left: 0.2rem;
+            height: 2rem;
+        }
+    }
+
+    .signin-form{
+        padding: 10px 0 40px 0;
+    }
+
+    .otp-box{
+        margin: 35px 5px;
+    }
+
+    .fab-progress {
+        color: #fff;
+    }
+
+    .signin-btn{
+        background: #22bca8;
+        border-radius: 5rem;
+        height: 4rem;
+        min-width: 4rem;
+        color: #ffffff;
+        position: absolute;
+        box-shadow: 0 3px 5px 2px rgba(171, 167, 168, 0.3);
+        margin: 0;
+        left: 9rem;
+        margin-top: -1rem;
+        &:hover {
+            background: #0f917f;
+            border-radius: 5rem;
+            height: 4rem;
+            min-width: 4rem;
+            color: #ffffff;
+            position: absolute;
+            box-shadow: 0 3px 5px 2px rgba(110, 110, 110, 0.3);
+            margin: 0;
+            left: 9rem;
+            margin-top: -1rem;
+        }
+    }
+}

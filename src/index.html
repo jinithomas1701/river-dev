@@ -1,0 +1,118 @@
+<!doctype html>
+<html style="background:#f9f9f9;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./resources/fIcon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/react-rangeslider/umd/rangeslider.min.css" />
+    <link rel="stylesheet" href="./resources/css/react-datetime.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script> -->
+    <title>Club</title>
+</head>
+
+<body style="background:transparent">
+    <div  id="app">
+
+        <style>
+            body {
+                background: #eaecfa;
+                
+            }
+
+            .wrap {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-family: Montserrat, helvetica, arial, sans-serif;
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #20afa0;
+                letter-spacing: 0.2em;
+                display: flex;
+                flex-direction: column
+            }
+
+            .loader {
+                width: 250px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                transform: translate(-50%, -50%);
+            }
+
+            .note {
+                transform: translate(-50%, -50%);
+                margin-top: 2rem;
+                text-align: center;
+            }
+            
+            .note span{
+                font-size: 0.7rem;
+                color:#555;
+                font-weight: bold;
+            }
+            .loader::before,
+            .loader::after {
+                content: "";
+                display: block;
+                width: 15px;
+                height: 15px;
+                background: #20afa0;
+                position: absolute;
+                animation: load 0.7s infinite alternate ease-in-out;
+            }
+
+            .loader::before {
+                top: 0;
+            }
+
+            .loader::after {
+                bottom: 0;
+            }
+
+            @keyframes load {
+                0% {
+                    left: 0;
+                    height: 30px;
+                    width: 15px;
+                }
+                50% {
+                    height: 8px;
+                    width: 40px;
+                }
+                100% {
+                    left: 235px;
+                    height: 30px;
+                    width: 15px;
+                }
+            }
+        </style>
+
+        <div class="wrap">
+            <div class="loader">
+                Please wait...
+            </div>
+
+            <div class="note">
+                <h5>Loading App completely</h5>
+                <span>It might take some seconds based on your network speed</span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <script src="/app/bundle.js"></script>
+</body>
+
+</html>

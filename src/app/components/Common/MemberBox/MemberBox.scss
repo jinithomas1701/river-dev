@@ -1,0 +1,80 @@
+@import "../../../Util/cssUtils.scss";
+
+.memberbox-wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem .5rem .5rem 0.5rem;
+    margin: 0;
+    border: 1px solid $border-alt;
+    background: #fdfdfd;
+    min-width: 12rem;
+
+    .avatar-col{
+
+        .avatar-img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .info-col{
+        flex-grow: 1;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        font-size: .8rem;
+
+        > .title{
+            display: block;
+            font-weight: $weight-semibold;
+            margin: 0 0 .2rem;
+            line-height: 1;
+        }
+
+        > .sub-title{
+            line-height: 1;
+            margin: 0 0 .3rem;
+        }
+
+        > .status{
+            margin: 0 0 .3rem;
+            text-transform: uppercase;
+            border-radius: 1rem;
+            background: $neutral-alt;
+            display: table;
+            font-size: 0.6rem;
+            padding: 0.2em 0.5rem;
+            border-radius: 2rem;
+            color: $text-altdark;
+
+            &.assigned{
+                background-color: #eee;
+            }
+
+            &.completed{
+                background-color: #68cc93;
+                color: #fff;
+            }
+
+            &.president-approved{
+                background-color: #68cc93;
+                color: #fff;
+            }
+        }
+
+        .editable-input-wrapper{
+            max-width: 10rem;
+        }
+        
+        .action-menu-wrapper{
+            position: absolute;
+            top: .5rem;
+            right: 0;
+            
+            .action-menu{
+                color: $primary-alt;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.upload-response-dialog-container > div:nth-child(2) {
+    width: 30%;
+    max-width: 30%;
+}
+
+.act-tile{
+    background: #efefef;
+    padding: 0px 7px;
+    border-bottom: 1px solid #aaa;
+}
+
+.upload-response-dialog-container {
+    #file-image {
+        display: none;
+    }
+    .content-container {
+        background-color: #ffffff;
+        position: relative;
+        .upload-response-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .list-title {
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .error-list {
+                display: flex;
+                flex-direction: column;
+                .list-item {
+                    font-size: 0.8rem;
+                    color: red;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            .user-list {
+                .user-list-item {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 0.5rem;
+                    padding: 0.5rem;
+                    border-bottom: 1px solid #e4e0e0;
+                    .user-name {
+                        font-size: 1rem;
+                        color: #000000;
+                        font-weight: 600;
+                        margin-left: 0.5rem;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .activity-status-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.3rem;
+                .status-text-title {
+                    color: #3f51b5;
+                    font-size: 1rem;
+                }
+                .points-awarded-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0.5rem;
+                    .title {
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        color: #737373;
+                    }
+                    .value {
+                        color: #3e4086;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+                .status-text-desc {
+                    color: #3F4252;
+                    font-size: 0.8rem;
+                }
+            }
+            .activity-content-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                .section-heading {
+                    margin-top: 0.6rem;
+                    color: #000000;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    display: flex;
+                    margin-bottom: 0.4rem;
+                }
+        
+                .section-content {
+                    p {
+                        font-size: 0.8rem;
+                        color: #757575;
+                    }
+                }
+                .select-file-tile {
+                    width: 3rem;
+                    height: 3rem;
+                    border: 3px solid #7783c5;
+                    cursor: pointer;
+                    display: flex;
+                    color: #7783c5;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+                }
+                .action-container {
+                    margin-top: 1rem;
+                }
+                .image-list-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 1.1rem;
+                    .image-container {
+                        display: flex;
+                        position: relative;
+                        margin-right: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        &:hover {
+                            .image-close {
+                                display: block;
+                            }
+                        }
+                        .image-close {
+                            cursor: pointer;
+                            display: none;
+                            position: absolute;
+                            top: 12px;
+                            right: 11px;
+                            font-size: 2rem;
+                            color: #fff;
+                        }
+                        img {
+                            width: 3.5rem;
+                            height: 3.5rem;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .section-color-content {
+                    font-size: 1.1rem;
+                    color: #8686e8;
+                    font-weight: bold;
+                }
+            }
+            .activity-points-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                margin-left: 2.5rem;
+                .points-container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.2rem;
+                    .points-title {
+                        display: flex;
+                        flex-direction: row;
+                        color: #8a8a8a;
+                        .text {
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    .section-color-content {
+                        font-size: 1.1rem;
+                        color: #8686e8;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.flat-button {
+    padding: 1rem !important;
+}

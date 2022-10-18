@@ -1,0 +1,58 @@
+.contact-card {
+    position: relative;
+    overflow: auto;
+    padding: 0.5rem 0.4rem;
+    background: #ffffff;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    .contact-card-inner{
+        display: flex;
+    }
+    .avatar {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
+    .content {
+        padding-left: 0.5rem;
+        flex: 2;
+        max-width: 11rem;
+        .main-text {
+            font-weight: bold;
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-transform: capitalize;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .sub-text {
+            font-size: 0.8rem;
+            color: #939090;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            &.club-role{
+                color: #5aa76d;
+            }
+        }
+    }
+    .select-action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        //padding-right: 0.8rem;
+        width: 11rem;
+        margin-left: 1rem;
+    }
+    .action {
+        //display: flex;
+        //margin-top: 0.7rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1.3rem;
+        right: 0.4rem;
+    }
+}

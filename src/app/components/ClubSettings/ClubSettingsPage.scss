@@ -1,0 +1,77 @@
+@import "../../Util/cssUtils.scss";
+
+.clubsettings-wrapper{
+
+    .stage-overview-header{
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        top: 2rem;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 4px 2px -3px rgba(0, 0, 0, .1);
+
+        .stage-header-item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1.5rem 1rem;
+            width: 30%;
+
+            &.active{
+                .stage-number{
+                    background: #a9630d;
+                    color: #fff;
+                    box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.8);
+
+                    .material-icons{
+                        display: block;
+                    }
+                }
+            }
+
+            > .title{
+                text-align: center;
+                font-size: $text-size-heading-2;
+                font-weight: $weight-medium;
+                line-height: 1;
+                padding: 1rem 0 .3rem;
+            }
+
+        }
+        .stage-number{
+            transition: .3s;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: #eee;
+            color: #333;
+            border: 2px solid #fff;
+            font-weight: $weight-medium;
+            box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.8);
+
+            .material-icons{
+                display: none;
+                color: $primary-base;
+                position: absolute;
+                bottom: -0.5rem;
+                right: -0.5rem;
+            }
+        }
+    }
+
+    .stage-content-wrapper{
+        padding: 2rem;
+        background: #fff;
+    }
+}

@@ -1,0 +1,57 @@
+@import "../../../Util/cssUtils.scss";
+
+.clubbox-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 1rem .5rem .5rem;
+    border: 1px solid $border-alt;
+    background: #fdfdfd;
+    align-items: center;
+    min-width: 13.5rem;
+
+    .avatar-img{
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: .7rem;
+
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .info-col{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 1;
+        padding-left: .5rem;
+        font-size: .8rem;
+
+        > .title{
+            display: block;
+            font-weight: $weight-semibold;
+            margin: 0 0 .3rem;
+            line-height: 1;
+        }
+
+        .editable-input-wrapper{
+            max-width: 10rem;
+        }
+
+        .action-menu-wrapper{
+            position: absolute;
+            top: .5rem;
+            right: 0;
+
+            .action-menu{
+                width: 2rem;
+                height: 2rem;
+                color: $primary-alt;
+            }
+        }
+    }
+}

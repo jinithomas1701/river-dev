@@ -1,0 +1,73 @@
+.recent-points-card{
+    background: #fff;
+    border: 1px solid  #eee;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    padding: 1rem 1.5rem;
+    > .header{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #5c5656;
+        margin-bottom: 1rem;
+    }
+    > .body{
+        &.nopoints{
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .recent-list{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: table;
+            width: 100%;
+            > .item{
+                width: 100%;
+                font-size: 1rem;
+                display: table-row;
+                .part-1{
+                    display: table-cell;
+                    padding-bottom: 0.5rem;
+                    .desc{
+                        display: block;
+                        font-size: 0.8rem;
+                        line-height: 1rem;
+                        margin-bottom: 0.2rem;
+                        color: #888;
+                    }
+                    .points{
+                        display: flex;
+                        color: #22bca8;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        align-items: center;
+                        line-height: 1;
+                        .points-icon{
+                            color: #888;
+                            font-size: 1.1rem;
+                            margin-right: 0.2rem;
+                        }
+                    }
+                }
+                .part-2{
+                    white-space: nowrap;
+                    padding-left: 0.5rem;
+                    font-size: 0.8rem;
+                    color: #ccc;
+                    display: table-cell;
+                    padding-bottom: 0.5rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .link{
+        cursor: pointer;
+        color: #5aa76d !important;
+        &:hover{
+            text-decoration: underline !important;
+        }
+    }
+}

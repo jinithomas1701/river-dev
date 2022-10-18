@@ -1,0 +1,56 @@
+@import "../../../Util/commonStyles.scss";
+
+.member-activitycomplete-wrapper{
+
+    @include common-dialog;
+
+    .complete-activity-wrapper{
+        .display-wrapper{
+
+            td{
+                padding: 0 2rem 1rem 0;
+            }
+
+            .title{
+                margin: 0;
+                padding: 0;
+                font-size: $text-size-heading-1;
+                font-weight: $weight-semibold;
+            }
+            .brief{
+            }
+        }
+
+        .avatarchip-wrapper{
+            margin: 0 0 0.5rem;
+        }
+
+        .assignees-wrapper{
+            .avatarchip-wrapper{
+                border-bottom: 1px dotted  $border-base;
+            }
+        }
+        
+        .attachment-wrapper{
+            margin-bottom: .5rem;
+            border-bottom: 1px dotted  $border-base;
+        }
+
+        .input-comment{
+            width: 100%;
+            border: 1px solid  #000;
+            border-width: 0 0 1px;
+            resize: none;
+            transition: .2s;
+
+            &:empty{
+                background: darken(#fff, 4%);
+            }
+
+            &:focus{
+                background: darken(#fff, 2%);
+                border-bottom-color: $primary-alt;
+            }
+        }
+    }
+}

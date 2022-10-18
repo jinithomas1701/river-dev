@@ -1,0 +1,46 @@
+@import "../../../Util/commonStyles.scss";
+
+.kpidetails-wrapper{
+    h2, h3{
+        margin: 0 0 0.3rem;
+        font-size: $text-size-heading-2;
+        font-weight: $weight-semibold;
+    }
+
+    .body{
+        font-size: $text-size-small;
+        margin-bottom: 1rem;
+        white-space: pre-wrap;
+    }
+
+    .body.pts-desc{
+        color: #ff7600;
+        font-weight: 500;
+    }
+
+    .table-properties{
+        font-size: $text-size-small;
+
+        th{
+            text-transform: uppercase;
+            text-align: left;
+            font-weight: $weight-semibold;
+            padding: .3rem .5rem;
+
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+        td{
+            padding: .3rem .5rem;
+
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .avatarchip-wrapper{
+        margin: 0;
+    }
+}

@@ -1,0 +1,149 @@
+.council-dashboard-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .link_container{
+        display: flex;
+        margin-bottom: 0.7rem;
+        width: 100%;
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            //width: 10rem;
+            background: white;
+            border:1px solid #ddd;
+            padding: 0.2rem 0.4rem;
+            margin-left: 0.4rem;
+            
+
+            .title{
+                font-size: 0.8rem;
+                font-weight: bold;
+                color:#444;
+                border-bottom: 1px solid #999;
+                padding: 0.3rem 0.4rem;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                padding: 0.4rem 0.4rem;
+                span{
+                    font-size: 0.8rem;
+                    color: green;
+                    text-decoration: underline;
+                    padding: 0.3rem;
+
+                    a{
+                        color: #147369;
+                    }
+                }
+            }
+        }
+    }
+    .last-week{
+        &-sidebar{
+            width: 12rem;
+            background: #fff;
+            margin: 1rem 1rem 1rem 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: max-content;
+
+            &-btn{
+                display: flex;
+                align-items: center;
+                padding: .3rem;
+                flex: 1;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #2d2d2d;
+                height: 3rem;
+                padding-left: 1.5rem;
+                &:hover{
+                    background: #d9d6d6;
+                    cursor: pointer;
+                }
+                &.active{
+                    border-right: .2rem solid #22bcac;
+                }
+            }
+        }
+        &-table{
+            &-container{
+                background: #fff;
+                margin: 1rem 0;
+                padding: 1rem;
+                flex: 1;
+                overflow: hidden;
+                position: relative;
+                min-height: 25rem;
+                tr:last-child td {
+                    border-bottom: none;
+                }
+
+                &.summary{
+                    .points-by-club{
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+                .table-navigate{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                }
+            }
+            &-title{
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            &-content{
+                overflow: auto;
+                height: max-content;
+                th{
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        &-week-control{
+            &-btn{
+                &s-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: .5rem;
+                    align-items: center;
+                }
+                background: #dfdfdf;
+                border-radius: 10rem;
+                cursor: pointer;
+                &:hover{
+                    background: #858585;
+                    color: #dbdbdb;
+                }
+                &.disabled{
+                    background: #dfdfdf;
+                    color: #b6b6b6;
+                    border-radius: 10rem;
+                    cursor: auto;
+                    &:hover{
+                        background: #dfdfdf;
+                        color: #b6b6b6;                       
+                    }
+                }
+            }
+            &-text{
+                font-weight: bold;
+                color: #555;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

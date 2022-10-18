@@ -1,0 +1,23 @@
+.adminvoice-page-wrapper{
+    padding: 1.5rem;
+    
+    .voice-list-wrapper{
+        margin: 2rem 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &:after{
+            content: '';
+            width: 30%;
+            max-width: 18rem;
+        }
+        
+        > .voicetile-link{
+            width: 30%;
+            min-width: 14rem;
+            max-width: 18rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

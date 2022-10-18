@@ -1,0 +1,21 @@
+@import "../../../Util/commonStyles";
+.meeting-alert-dialog-wrap {
+    text-align: center;
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 30rem;
+        }
+    }
+    .header {
+        justify-content: center;
+    }
+    .submit-wrapper {
+        justify-content: center;
+        .btn-delete {
+            color: #bc2256;
+            font-weight: 700;
+            background: gainsboro;
+        }
+    }
+}

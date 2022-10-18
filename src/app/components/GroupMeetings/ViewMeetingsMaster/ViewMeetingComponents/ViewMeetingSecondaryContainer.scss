@@ -1,0 +1,92 @@
+@import"../../../../Util/commonStyles";
+.secondary-container-wrapper{
+    .meeting-action-wrapper {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        .delete-button {
+            margin-left: 1rem;
+        }
+        .edit-icon {
+            cursor: pointer;
+            margin-left: 1rem;
+            border-radius: 5px;
+            padding: 0.5rem 2rem 0.5rem 0.5rem;
+            background: white;
+            max-width: 2rem;
+            box-shadow: 0 3px 18px rgba($color: #113f4d, $alpha: 0.08);
+        }
+    }
+    .meeting-details-wrap {
+        margin: 1rem 0rem;
+        .table-meeting {
+            .text-head {
+                min-width: 5rem;
+                font-size: 0.8rem;
+            }
+            .text-body {
+                font-size: 0.8rem;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    .attendees-button {
+        text-align: center;
+
+        .attendees {
+            min-width: 9rem;
+            background-color: #bab5b5;
+            &:hover {
+                background-color: #847e7e;
+            }
+        }
+    }
+    .attendence-graph-wrap {
+        margin: 2rem 0rem;
+        .attendence-heading {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            color: #918b8b;
+            position: relative;
+            padding-bottom: 1rem;
+            &:before {
+                position: absolute;
+                width: 3rem;
+                height: 0.2rem;
+                background: #cfcbcb;
+                content: "";
+                display: block;
+                bottom: 0;
+                right: 42%;
+            }
+        }
+        .attendence-graph {
+        }
+        .table-meta {
+            margin-top: 1rem;
+            width: 100%;
+            table-layout: fixed;
+            th {
+                font-size: $text-size-small;
+                color: #555151;
+                font-weight: $weight-semibold;
+                line-height: 1rem;
+                text-align: left;
+                padding-left: 1.5rem;
+                width: 70%;
+            }
+            td {
+                font-size: $text-size-small;
+                line-height: 1rem;
+                text-align: right;
+                padding-right: 1.5rem;
+                width: 50%;
+                color: #555151;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

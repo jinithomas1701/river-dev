@@ -1,0 +1,29 @@
+@import "../../../../Util/commonStyles";
+.problem-update-dialog-wrap {
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 50rem;
+        }
+    }
+    .header {
+        p {
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+            font-size: 0.9rem;
+        }
+    }
+    .content {
+        .create-body {
+            .chip-container {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0.5rem 0 0 0;
+
+                .solution-chip {
+                    margin: 0 0.5rem 0.5rem 0;
+                }
+            }
+        }
+    }
+}

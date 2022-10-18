@@ -1,0 +1,28 @@
+@import "../../../../Util/commonStyles.scss";
+
+.voiceforward-prompt-wrapper{
+    @include common-dialog;
+
+    > div{
+        > .content{
+            .input-forward, .input-optout{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .input-comment{
+                width: 100%;
+                border: 1px solid  #000;
+                border-width: 0 0 1px;
+                resize: none;
+                transition: .2s;
+
+                &:focus{
+                    background: darken(#fff, 2%);
+                    border-bottom-color: $primary-alt;
+                }
+            }
+        }
+    }
+
+}

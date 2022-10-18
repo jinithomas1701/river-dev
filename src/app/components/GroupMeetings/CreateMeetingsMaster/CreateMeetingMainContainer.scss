@@ -1,0 +1,82 @@
+@import "../../../Util/commonStyles";
+.meeting-details-wrap {
+    .meeting-type {
+        display: flex;
+        width: 100%;
+        .meeting-type-radio-button {
+            flex-direction: row;
+            .radio-label {
+                margin: 0;
+                padding-right: 1rem;
+                .radio-text {
+                    font-size: 0.8rem;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+    .recurring-check {
+        display: flex;
+        align-items: center;
+        .recurring-title {
+            font-size: 0.8rem;
+            font-weight: 550;
+        }
+    }
+    .recurrence-data {
+        background: #efeded;
+        padding: 1.5rem 2rem;
+        box-shadow: 0px 3px 3px 1px rgba(89, 88, 88, 0.15);
+        .recurr-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .recurr-body {
+            font-size: 0.84rem;
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .recurr-first {
+            display: flex;
+        }
+        .button-edit {
+            // margin-left: 50%;
+            cursor: pointer;
+            width: 25%;
+        }
+    }
+    .input-container {
+        .datetime-picker-wrapper {
+            width: 100%;
+            margin: 0;
+            border: 0;
+            display: inline-flex;
+            padding: 0;
+            position: relative;
+            flex-direction: column;
+        }
+        > label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0, 10px) scale(0.75);
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        .datetime-input {
+            width: 100%;
+            border: 0;
+            font-size: 0.8rem;
+            padding-left: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #949494;
+        }
+    }
+
+    .location-heading {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin: 2rem 0rem;
+    }
+}

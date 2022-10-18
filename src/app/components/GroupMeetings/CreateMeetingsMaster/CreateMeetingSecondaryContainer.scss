@@ -1,0 +1,36 @@
+@import "../../../Util/commonStyles";
+.invitees-details-wrap {
+    .people-head {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+    .inviting-line {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+    .avatarchip-wrap {
+        display: flex;
+    }
+    .invitees-select {
+        background-color: #ededed;
+    }
+    .buttons-wrap {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 2rem 4rem;
+        .create-button {
+            margin-right: 1rem;
+            .btn-primary {
+                box-shadow: 4px 4px 2px 0px rgba(89, 88, 88, 0.15);
+            }
+        }
+        .close-button {
+            .btn-close {
+                background: #d1cfcf;
+                box-shadow: 4px 4px 2px 0px rgba(89, 88, 88, 0.15);
+            }
+        }
+    }
+}

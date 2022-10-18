@@ -1,0 +1,80 @@
+@import "../../../../Util/commonStyles.scss";
+
+.voicemaster-wrapper{
+    //background: #fff;
+    //padding: 1rem 2rem;
+
+    .form-control{
+        height: 100%;
+    }
+
+    .voice-tools{
+        margin: 1rem 0 2rem;
+
+        .tool-section1{
+            display: flex;
+            justify-content: flex-end;
+
+            .input-select > div{
+                height: 100%;
+            }
+        }
+
+        .searchbar-wrapper{
+            width: 100%;
+        }
+
+        .btn-addvoice{
+            margin-right: 1rem;
+
+            .material-icons{
+                margin-right: .4rem;
+            }
+        }
+
+        .search-wrapper{
+            position: relative;
+            display: inline-flex;
+            flex-grow: 1;
+
+            .input-field{
+                height: 100%;
+                width: 100%;
+
+                > div{
+                    height: 100%;
+                    > input{
+                        height: 100%;
+                        padding-left: .5rem;
+                    }
+                }
+            }
+
+            .search-btn{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+            }
+        }
+    }
+
+    .voice-list{
+        //box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+        //padding: .5rem 0;
+        margin-bottom: 2rem;
+
+        > .voicelist-item:last-child > .infoarea-wrapper{
+            border-bottom-color: #fff;
+        }
+    }
+
+    .empty-voices{
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+        font-size: $text-size-body;
+        margin: 0;
+        font-weight: $weight-medium;
+        background: #fff;
+    }
+}

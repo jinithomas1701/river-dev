@@ -1,0 +1,70 @@
+.booking-add-edit-wrapper{
+    .content-container{
+        background-color: #ffffff;
+        padding: 1.5rem;
+    }
+    .timeline-container{
+        margin: 1rem 0 0;
+    }
+    .chart-form{
+        display: flex;
+        justify-content: flex-end;
+
+        .datetime-input{
+            border: 1px solid #949494;
+            border-width: 0 0 1px;
+        }
+    }
+    .page-content-section{
+        .section-title{
+            color: #909090;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    .full-width{
+        width: 100%;
+    }
+    .react-calendar-timeline{
+        .rct-header .rct-label-group{
+            background: #22bcac;
+        }
+        .rct-sidebar-header{
+            background: #22bcac;
+            border-bottom: 1px solid #e4e2e2;
+        }
+        .rct-sidebar{
+            .rct-sidebar-row{
+                border-bottom: 1px solid #e4e2e2;
+                &.rct-sidebar-row-even, &.rct-sidebar-row-odd{
+                    background: transparent;
+                }
+            }
+        }
+        .rct-vertical-lines{
+            .rct-vl{
+                border-left: 0;
+                background: transparent !important;
+            }
+            .rct-hl-odd{
+                background: #f7f7f7;
+            }
+        }
+        .rct-horizontal-lines{
+            .rct-hl-even, .rct-hl-odd{
+                background: #fff;
+                border-bottom: 1px solid #e4e2e2;
+            }
+        }
+    }
+    .chart-info{
+        display: flex;
+        margin-top: 0.5rem;
+        font-size: .8rem;
+        justify-content: flex-end;
+        color: #666;
+        .label{
+            font-weight: bold;
+        }
+    }
+}

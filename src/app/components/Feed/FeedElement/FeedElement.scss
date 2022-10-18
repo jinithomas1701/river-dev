@@ -1,0 +1,172 @@
+.feed-element {
+    margin-top: 1.5rem;
+    background: #ffffff;
+    padding: 1.2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 20px #e8e8e8;
+    border: 1px solid #e8e8e8;
+    a{
+        color: #0066a4;
+        &:hover{
+            color: #0094ee;
+        }
+    }
+
+    .visibility-ribbon{
+        position: absolute;
+        display: flex;
+        top: 10px;
+        right: 40px;
+        padding: 0.2rem;
+        background-color: #f7f7f7;
+        border: 2px solid #118def;
+        border-radius: 50%;
+        &-icon{
+            font-size: 1.3rem;
+            color: #118def;
+        }
+    }
+    
+    .feed-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 1.2rem;
+        .user-image {
+            height: 2.5rem;
+            border-radius: 50%;
+            width: 2.5rem;
+        }
+        .title-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            .user-name {
+                font-weight: bold;
+                font-size: 0.8rem;
+            }
+            .posted-date {
+                color: #40938C;
+                font-weight: 500;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .feed-content {
+        width: 100%;
+        padding: 1.2rem;
+        overflow-wrap: break-word;
+        text-align: justify;
+        white-space: pre-wrap;
+        padding-bottom: 0.3rem;
+        font-size: 0.8rem;
+        h5{
+            font-size: 0.9rem;
+        }
+    }
+    .feed-attachments {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1.2rem;
+        .attachment-file {
+            display: flex;
+            cursor: pointer;
+            width: 3rem;
+            color: #fff;
+            justify-content: center;
+            height: 3rem;
+            padding: 10px 1px;
+            border-radius: 50%;
+            background-color: #929292;
+            margin: 0 0.2rem;
+            &.color-pdf {
+                background-color: #9D6B0A;
+            }
+            &.color-doc {
+                background-color: #70C154;
+            }
+            &.color-xlxs {
+                background-color: #5497BE;
+            }
+        }
+    }
+    .feed-action-section-container {
+        width: 100%;
+        padding:0.2rem 1.2rem;
+        background-color: #f5f5f5;
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        .action-section {
+            display: flex;
+            flex-direction: row;
+            .count {
+                font-size: 0.8rem;
+                color: #999999;
+                font-weight: 500;
+                margin-right: 0.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .action-comment-box {
+                display: flex;
+                flex: auto;
+                margin-left: 0.8rem;
+                align-items: center;
+                font-size: 0.8rem;
+                input.comment-text {
+                    background-color: #ffffff;
+                    padding: 0.2rem;
+                    width: 100%;
+                    border: 1px solid #E0E0E0;
+                }
+
+                .action-icon{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .feed-comment-list-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment-action-container {
+        display: flex;
+        padding: 1rem 0 0.5rem 0;
+        color: #18345C;
+        font-size: 0.8rem;
+        text-decoration: none;
+        a {
+            margin-left: 0.5rem;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-extras{
+        position: absolute;
+        right: 0;
+        top: 0;    
+    }
+
+    .action-list{
+        display: inline;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #444;
+        cursor: pointer;
+        &:hover{
+            color: #222;
+            text-decoration: underline;
+        }
+    }
+}

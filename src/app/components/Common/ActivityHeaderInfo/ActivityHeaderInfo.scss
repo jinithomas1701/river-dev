@@ -1,0 +1,79 @@
+@import "../../../Util/commonStyles.scss";
+
+.activityheaderinfo-wrapper {
+    font-size: $text-size-body;
+
+    .activity-progressbar {
+        margin: 1rem 0;
+    }
+
+    .activity-title {
+        font-size: $text-size-heading-1;
+        margin: 0 0 0.5rem;
+        font-weight: 600;
+    }
+    .kpi-title {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: flex-start;
+
+        .text {
+            margin-top: 0.2rem;
+        }
+
+        .btn-kpi-details {
+            width: 1.3rem;
+            height: 1.3rem;
+            font-size: 1rem;
+            margin-right: 0.3rem;
+
+            .material-icons {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .alt-info {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0.5rem 0;
+
+        .ref-code {
+            flex-grow: 1;
+            font-size: $text-size-small;
+            line-height: 1;
+            font-weight: $weight-semibold;
+        }
+        dl {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            margin: 0;
+
+            dt {
+                font-size: $text-size-small;
+                position: relative;
+                &:after {
+                    content: ":";
+                    margin-right: 0.1rem;
+                }
+            }
+            dd {
+                flex-grow: 1;
+                margin-bottom: 0;
+                font-size: $text-size-small;
+            }
+        }
+    }
+    .activity-description {
+        font-size: 0.9rem;
+
+        .desc-lable {
+            font-weight: $weight-semibold;
+            display: inline;
+        }
+        .desc-body {
+            display: inline;
+        }
+    }
+}

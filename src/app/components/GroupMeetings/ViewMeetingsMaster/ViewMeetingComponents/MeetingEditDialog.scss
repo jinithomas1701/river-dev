@@ -1,0 +1,10 @@
+@import "../../../../Util/commonStyles";
+.meetingEditDialog-wrapper {
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 60rem;
+            
+        }
+    }
+}

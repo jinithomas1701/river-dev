@@ -1,0 +1,28 @@
+@import "../../../Util/commonStyles";
+.meeting-delete-dialog-wrap {
+    text-align: center;
+    @include common-dialog;
+    > div {
+        &.common-dialog-body {
+            max-width: 40rem;
+        }
+    }
+
+    .content {
+        .meeting-message {
+            font-size: 0.84rem;
+            font-weight: 500;
+            text-align: left;
+            padding-top: 1rem;
+        }
+        .check-switch {
+            //text-align: left;
+            align-items: center;
+            display: flex;
+            .switch-message {
+                font-size: 0.83rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

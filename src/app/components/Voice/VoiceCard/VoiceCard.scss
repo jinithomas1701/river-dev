@@ -1,0 +1,57 @@
+.voiceCard {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: .2rem 10px;
+    /* justify-content: space-between; */
+    background: #ffffff;
+    box-shadow: 0 0 20px #e8e8e8;
+    transition: all 0.3s cubic-bezier(0.18, 0.79, 0.85, 0.49) 0s;
+    word-wrap: break-word;
+    display: flex;
+    height: 3rem;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    .title-container{
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: baseline;
+        overflow: hidden;
+        flex: 1;
+        .title{
+            color: #383838;
+            display: flex;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .date-container{
+            white-space: nowrap;
+            color: grey;
+            /* width: 100%; */
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+    }
+    .voice-infos{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        .info-icon{
+            padding: 0.6rem 0.4rem;
+            color: #666;
+            cursor: pointer;
+        }
+    }
+    .action-container{
+        button{
+            &:disabled{
+                pointer-events: auto;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import "../../../Util/commonStyles";
+
+.list-meetings-page-wrapper {
+    position: relative;
+    margin: 1rem 0 2rem;
+
+    .create-meetings-button-wrapper {
+        position: absolute;
+        right: 0;
+        top: -3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 767px) {
+            position: static;
+            margin: 1rem 0;
+        }
+
+        > button {
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                min-height: 3rem;
+            }
+        }
+    }
+
+    .meetings-list-wrapper {
+        margin: 0.5rem 0;
+    }
+
+    .load-more-button-wrapper {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}

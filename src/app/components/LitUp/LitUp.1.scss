@@ -1,0 +1,617 @@
+.litup-page{
+    .empty-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 6rem;
+        color: #999;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    &-container{
+
+        .logo-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-end;
+            .litup_logo{
+                height: 4rem;;
+            }
+            .client_logo{
+                height: 6rem;
+            }
+        }
+
+        .welcome_container{
+            padding: 0.7rem 0.5rem;
+            color:#333;
+            font-size: 1.2rem;
+        }
+        
+        .litup{
+            &-tab-body{
+                padding: 1rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                .litup-idea-card-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0.3rem 0;
+                    width: 100%;
+                    height: 20rem;
+                    margin-top:0.5rem;
+                    .profile-avatar{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+                    .list-common-action-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 1.3rem;
+
+                        
+                    }
+                    .list-header {
+                        display: flex;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin-bottom: 0.5rem;
+                        white-space: pre-line;
+                    }
+                    .litup-list-card {
+                        display: flex;
+                        flex-direction: column;
+                        width: 25rem;
+                        background: #fff;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        height: 16rem;
+                        position: relative;
+                        .card-title-menu-container {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                        .winner-badge{
+                            position: absolute;
+                            right: 0.2rem;
+                            top: -0.3rem;
+                            &-img{
+                                height: 2.5rem;
+                            }
+                        }
+                        .add-item {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            color: #737373;
+                            .add-icon {
+                                font-size: 4rem;
+                            }
+                            .add-text {
+                                margin-top: 1rem;
+                                font-weight: bold;
+                            }
+                        }
+                        .user-details {
+                            display: flex;
+                            flex-direction: row;
+                            padding: 0.5rem;
+                            border-bottom: 1px solid #eee;
+                            
+                            .user-info {
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 0.5rem;
+                                .name {
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    width: 230px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                .date {
+                                    font-size: 0.7rem;
+                                    color: #969696;
+                                }
+                            }
+                            
+                        }
+                        .card-details-container {
+                            cursor: pointer;
+                            height: 9.4rem;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            &.no-action {
+                                cursor: default;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .litup-card-workflow-status{
+                            display: flex;
+                            justify-content: flex-end;
+                            margin: 0.3rem 1rem;
+                            span{
+                                font-size: 0.8rem;
+                                &:last-child{
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .litup-card-title {
+                            padding: 0.1rem 0.5rem;
+                            flex-wrap: wrap;
+                            font-weight: bold;
+                            font-size: 0.8rem;
+                            color: #404040;
+                            overflow: hidden;
+                            width: 280px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .litup-card-text {
+                            padding: 0.5rem;
+                            display: flex;
+                            flex-wrap: wrap;
+                            font-size: 0.8rem;
+                            color: #404040;
+                            p {
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                text-overflow: ellipsis;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                -webkit-line-clamp: 4;
+                                height: 5rem;
+                                margin-bottom:0rem;
+                                padding-bottom: 0rem; 
+                            }
+                            span{
+                                color: #22bcac;
+                                font-weight: bold;
+                                margin-left: 1rem;
+                                cursor: pointer;
+                            }
+                        }
+                        .litup-card-attachmnt{
+                            position: absolute;
+                            top: 42px;
+                            right: 11px;
+                            border-radius: 50%;
+                            color: #999;
+                        }
+                        .litup-card-actions {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            // align-content: stretch;
+                            border-top: 1px solid #eee;
+                            .action-button {
+                                // flex: 1;
+                                display: flex;
+                                color: #3e3e3e;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-content: center;
+                                &.active {
+                                    color: #3f51b5;
+                                }                                
+                                
+                            }
+                            .action{
+                                    &-wrap{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 7rem; 
+                                        &-count {
+                                            color: #404040;
+                                            color: #404040;
+                                            display: flex;
+                                            align-items: center;
+                                            width: 4rem;
+                                            justify-content: space-evenly;
+                                        }
+                                    }
+                                   
+                            }
+                        }
+                    }
+                }
+                .litup-idea-list-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;                    
+
+                    .list-common-action-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 0.5rem 0.4rem 0 0;
+                        background: #f3f3f3;
+
+                        &-labelwrap{
+                            display: flex;
+                        }
+
+                        &-label{
+
+                            &:first-child{
+                                border-right: 1px solid #999;
+                                padding-right: 0.6rem;
+                            }
+
+                            font-size: 0.8rem;
+                            margin-left: 0.5rem;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            span{
+                                &:first-child{
+                                    font-size: 0.6rem;
+                                    font-weight: 300;
+                                }
+                                font-size: 1.5rem;
+                                padding: 0px;
+                                margin: 0px;
+                                font-weight: bold;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .label-wrap{
+                        font-size: 0.9;
+                        margin: 0.5rem 0rem;
+                        font-weight: bold;
+                        color:#888;
+                    }
+
+                    .client-tile-wrap{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        .card{
+                            display: flex;
+                            background: white;
+                            color: #555;
+                            margin: 0.5rem;
+                            height: 10rem;
+                            width: 10rem;
+                            justify-content: center;
+                            align-items: center;
+                            .data-wrap{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                h2{
+                                    font-weight: bold;
+                                }
+                                label{
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                        }
+
+                        .card-side{
+                            display: flex;
+                            background: white;
+                            color: #555;
+                            margin: 0.5rem;
+                            height: 10rem;
+                            flex: 1;
+                            flex-direction: column;
+                            padding: 1rem;
+                            .row_head{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                height: 2rem;
+                                width: 100%;
+                                margin-bottom: 1.2rem;
+                                font-size: 0.8rem;
+                                button{
+                                    font-size: 0.7rem;
+                                    padding: 2px;
+                                }
+
+                            }
+
+                            .row_bottom{
+                                display:flex;
+                                width: 100%;
+                                flex-wrap: wrap;
+                                overflow: auto;
+                                .entry{
+                                    margin: 0.2rem 0.4rem;
+                                    label{
+                                        font-size: 0.7rem;
+                                        b{
+                                            font-size: 0.9rem;
+                                        }
+                                    }
+                                }
+
+                                
+                            }
+                        }
+                    }
+
+                    .client-classify-wrap{
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: flex-start;                        
+                        .item-wrap{
+                            width: 10rem;
+                            height: 3rem;
+                            background:white;
+                            color: #444;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0.5rem;
+                            cursor: pointer;
+                            &:hover{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            &.active{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            .item{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    .client-workflow-wrap{
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: flex-start;                        
+                        .item-wrap{
+                            max-width: 14rem;
+                            padding: 0.1rem 0.4rem;
+                            height: 3rem;
+                            background:white;
+                            color: #444;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0.5rem;
+                            cursor: pointer;
+                            &:hover{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            &.active{
+                                background: #22bcac;
+                                color: white;
+                            }
+                            .item{
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .client-workflow-level-wrap{
+                        display: flex;
+                        margin: 0.5rem;
+                        justify-content: flex-end;
+                    }
+
+                    .litup-timeline-container {
+                        padding: 1rem;
+                        position: relative;
+                        width: 100%;
+                        height: 2.3rem;
+                        margin-bottom: 1rem;
+                        .timeline-title {
+                            font-weight: 600;
+                            font-size: 1rem;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                        }
+                        .timeline-wrapper {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: flex-start;
+                            .line {
+                                height: 3px;
+                                width: 9rem;
+                                background: #999;
+                                &.passed {
+                                    background: #22bcac;
+                                }
+                                
+                            }
+                            .node-container {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: flex-start;
+                                &:hover{
+                                    background: #f0f0f0;
+                                    color: #22bcac;
+                                    cursor: pointer;
+                                }
+                            }
+                            .milestone {
+                                height: 0.8rem;
+                                width: 0.8rem;
+                                border-radius: 50%;
+                                position: relative;
+                                background: none;
+                                border: 2px solid #888;
+                                .text {
+                                    position: absolute;
+                                    top: 13px;
+                                    left: 0;
+                                    width: 9rem;
+                                    font-size: 0.7rem;
+                                    &.passed {
+                                        font-weight: bold;
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                                &.current {
+                                    background: #22bcac;
+                                    border: 2px solid #22bcac;
+                                }
+                                &.passed {
+                                    background: none;
+                                    border: 2px solid #22bcac;
+                                }
+                            }
+                        }
+                    }
+
+                    .list-header {
+                        display: flex;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin-bottom: 0.5rem;
+                        white-space: pre-line;
+                        padding: 1.5rem 1rem;
+                        
+                    }
+                    .litup-list-item {
+                        display: flex;
+                        flex-direction: row;
+                        background: #fff;
+                        padding: 1rem;
+                        align-items: flex-start;
+                        margin-bottom: 0.5rem;
+                        border-left: 0.5rem solid #009688;
+                        overflow: hidden;
+                        position: relative;
+                        .item-icon {
+                            position: absolute;
+                            /* left: 33px; */
+                            margin-top: -5px;
+                            font-size: 3.2rem;
+                            margin-left: -18px;
+                            color: #ececec;
+                        }
+                        .list-item-content {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 100%;
+                            z-index: 1;
+                            .min-title-container {
+                                display: flex;
+                                flex-direction: row;
+                                margin-left: 0.5rem;
+                                margin-bottom: 0.4rem;
+                                .main {
+                                    font-weight: bold;
+                                    color: #000000;
+                                    margin-right: 0.5rem;
+                                }
+                                .sub {
+                                    color: #777777;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                        
+                        .action-container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                        }
+                        .litup-idea-text {
+                            color: #404040;
+                            font-size: 1.1rem;
+                            margin-left: 0.5rem;
+                            white-space: pre-line;
+                            flex: 1;
+                            text-shadow: 0 0 2px #b8b8b8;
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        .footer-container {
+                            display: flex;
+                            font-size: 0.8rem;
+                            color: #999;
+                            justify-content: flex-end;
+                            bottom: 1px;
+                            position: absolute;
+                            left: 25px;
+                        }
+                    }
+                }
+
+                &.litup-settings{
+
+                    .litup-settings-title{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        padding: 1rem .5rem;
+                        color: #777;
+                    }
+
+                    .litup-settings-box{
+                        width: 100%;
+                        background: #fff;
+                        height: 10rem;
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                    }
+
+                    .actions-container{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        width: 100%;
+                        padding: 1rem 0;
+                       
+                    }
+                }
+
+
+            }
+        }
+
+        .add-new-btn{
+            
+            &-container{
+                display: flex;
+                margin-bottom: 1rem;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .listing-extras{
+        padding-top: 1rem;
+    }
+
+}
+

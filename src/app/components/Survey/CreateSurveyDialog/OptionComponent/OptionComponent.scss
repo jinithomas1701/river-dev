@@ -1,0 +1,24 @@
+.option-component{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .option-text-field{
+        width: 100%;
+        &-container{
+            padding-right: .8rem;
+            flex: 1;
+        }
+    }
+
+
+    .remove-option-btn{
+        flex: 1;
+        height: 60%;
+        
+        &-container{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

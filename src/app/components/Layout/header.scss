@@ -1,0 +1,240 @@
+.flex {
+    flex: 1
+}
+
+.hover-cursor{
+    cursor: pointer;
+}
+
+.river-btn {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    color: #fff;
+    background: #1da596;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    cursor: pointer;
+    margin-left: .2rem;
+
+    &:hover {
+        background: #1da596;
+    }
+    &.flat {
+        color: #000;
+        background: none;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        cursor: pointer;
+        &:hover {
+            background: #eeeeee;
+        }
+    }
+}
+
+.app-bar-container {
+
+    .tool-bar{
+        min-height: 2rem;
+        height: 3rem;
+    }
+
+
+    .role-switcher{
+        display: flex;
+        align-items: center;
+        min-height: 3rem;
+        margin: 0 1rem 0 0;
+        justify-content: flex-end;
+
+        &-title{
+            margin: 0 1rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #444;
+            white-space: nowrap;
+        }
+
+        .role-switcher-items-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            min-width: 9rem;
+        }
+        .role-switcher-items-wrapper{
+            background: #FFFFFF;
+            color: #707070;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+        &-item{
+            padding: 0.5rem 1.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            background: #e5e5e5;
+            white-space: nowrap;
+            margin: 0.2rem 0.2rem;
+            border: none;
+            &:hover{
+                background: #ccc;
+            }
+
+            &.active{
+                background: #FFFFFF;
+                color: #707070;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .role-switch{
+        margin-top:-1rem;
+        display: flex;
+        align-items: center;
+        .span-label{
+            width: 5rem;
+            font-size: 0.6rem;
+            font-weight: bold;
+        }
+        .form-control{
+            background: transparent;
+            padding: 0 0.5rem;
+
+            div{
+                color:white;
+            }
+        }
+
+    }
+    a.header-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        margin: 0 0.05rem;
+        height: 100%;
+        &:hover{
+            background: rgb(255, 252, 213);;
+
+        }
+        &.active{
+            background: #e9e9e9;;
+        }
+        p{
+            padding: 0 .5rem;
+            font-size: .9;
+        }
+    }
+
+    .main-progress-bar {
+        color:#ffffff;
+        primaryColorBar: red;
+    }
+    .app-bar-icon-wrapper {
+        position: relative;
+        margin-bottom: 0;
+
+        .header-icon{
+            color: #444;
+        }
+
+        .notification-menu {
+            width: 24rem;
+            position: absolute;
+            top: 43px;
+            right: 0px;
+            padding-top: .5rem;
+            z-index: 100;
+
+            .more-notifications{
+                color: #4e4d4d;
+                font-weight: bold;
+                text-align: center;
+                padding: 0.4rem 0.8rem;
+                background: #e4e4e4;
+                cursor: pointer;
+                &:hover{
+                    background: #9B999B;
+                }
+            }
+        }
+        .notifications-badge{
+            &.zero{
+                &>span{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .club-logo{
+        height: 1.5rem;
+        z-index: 10000;
+        padding: 3px;
+        margin-left: 1rem;
+    }
+}
+
+.profile-card {
+    width: 15rem;
+    z-index: 100;
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        &.role-wrapper {
+            margin-top: 1rem;
+        }
+        .title {
+            font-weight: 600;
+            color: #676767;
+            font-size: 0.8rem;
+        }
+        .profile-wrapper {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+
+            .profile-avatar{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+            }
+            .user-text {
+                display: flex;
+                flex-direction: column;
+                color: #000;
+                margin-left: 0.5rem;
+                width: 75%;
+                .name {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                }
+                .email {
+                    font-size: 0.7rem;
+                    color: #999;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .action-wrapper {
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

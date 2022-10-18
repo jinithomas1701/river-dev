@@ -1,0 +1,56 @@
+@import "../../../Util/commonStyles.scss";
+
+.rating-criteria-wrapper{
+    border-top: 1px solid $border-base;
+
+    .rating-table{
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: $text-size-small;
+
+        thead{
+            th{
+                text-align: right;
+                padding-top: .5rem;
+            }
+        }
+
+        tbody{
+            tr{
+                &:nth-child(even){
+                    border-bottom: 1px dotted $border-base;
+                }
+                th{
+                    font-weight: $weight-medium;
+                    padding-top: .3rem;
+                }
+            }
+        }
+
+        tr{
+            td{
+                padding: .5rem .5rem .3rem;
+                font-size: $text-size-small;
+
+                &.star-display{
+                    white-space: nowrap;
+                    text-align: left;
+                    padding-left: 0;
+
+                    .material-icons{
+                        color: #2d6f98;
+                    }
+                }
+
+                &.align-right{
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .material-icons{
+        font-size: 1rem;
+    }
+}

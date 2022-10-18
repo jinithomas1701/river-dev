@@ -1,0 +1,14 @@
+.rate-meeting-container {
+    display: flex;
+    flex-direction: column;
+    .sub-title {
+        color: #464646;
+        font-weight: 500;
+    }
+    .rating-container {
+        margin-top: 1rem;
+        .star-rating {
+            cursor: pointer;
+        }
+    }
+}

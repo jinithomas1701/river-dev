@@ -1,0 +1,70 @@
+@import "../../../Util/cssUtils.scss";
+
+.editable-input-wrapper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0;
+
+    &.editable,{
+        .edit-icon{
+            opacity: 1;
+        }
+    }
+
+    &.locked .textfield-input{
+        > div{
+            &:before{
+                background-image: none;
+            }
+            input{
+                color: $text-dark;
+            }
+        }
+    }
+
+    .textfield-input{
+        position: static;
+        display: flex;
+        flex-grow: 1;
+
+        > div{
+            position: static;
+
+            &:before{
+                background-color: transparent;
+            }
+
+            &:hover{
+                &:before{
+
+                }
+            }
+
+            input{
+                padding: 0 .5rem;
+                height: 1.3rem;
+                box-sizing: border-box;
+                text-overflow: ellipsis;
+                font-weight: $weight-semibold;
+                line-height: 1.3rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .striked-value{
+        text-decoration: line-through;
+        font-size: .8rem;
+        color: $secondary-alt;
+    }
+    .material-icons{
+        font-size: 1rem;
+        color: $secondary-alt;
+    }
+
+    .edit-icon{
+        transition: opacity 0.2s;
+        opacity: 0;
+    }
+}

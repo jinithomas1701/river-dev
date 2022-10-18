@@ -1,0 +1,34 @@
+@import "../../../../Util/commonStyles.scss";
+
+.textinput-dialog-wrapper{
+    @include common-dialog;
+
+    > div{
+
+        .content{
+            p{
+                font-weight: $weight-semibold;
+            }
+            
+            .input-text{
+                width: 100%;
+                margin-bottom: .5rem;
+            }
+
+            .input-comment{
+                width: 100%;
+                border: 1px solid  #000;
+                border-width: 0 0 1px;
+                resize: none;
+                transition: .2s;
+
+                &:focus{
+                    background: darken(#fff, 2%);
+                    border-bottom-color: $primary-alt;
+                }
+            }
+        }
+
+        
+    }
+}

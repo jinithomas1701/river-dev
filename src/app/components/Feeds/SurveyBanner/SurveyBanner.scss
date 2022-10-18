@@ -1,0 +1,65 @@
+.club-banner{
+    display: flex;
+    background: #fff;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .banner-actions{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .5rem;
+        &-btn{
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    .survey{
+        &-container{
+            padding: 1.5rem;
+            background-color: #feffca;
+            .survey{
+                &-title{
+                    padding-bottom: 1rem;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: #777;
+                }
+                &-contents{
+                    .survey-option{
+                        
+                        &-form{
+                            width: 100%;
+                            margin-bottom: 0.5rem;
+                        }
+                        &-list{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+
+                        &-otherstext{
+                            margin-top: 0;
+                            &-container{
+
+                            }
+                        }
+                    }
+                }
+                &-actions{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 0.5rem;
+                    align-items: flex-end;
+                    .details-link{
+                        font-size: .8rem;
+                        color: #aaa;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

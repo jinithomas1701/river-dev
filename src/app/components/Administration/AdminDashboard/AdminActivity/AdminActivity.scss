@@ -1,0 +1,28 @@
+@import "../../../../Util/cssUtils.scss";
+
+.admin-activity-wrapper{
+    flex-grow: 1;
+
+    .filter-area{
+        margin-bottom: 1.5rem;
+        
+        .searchbar-wrapper{
+            height: 100%;
+        }
+
+        .input-select{
+            background-color: transparent;
+        }
+        
+        .action-wrapper{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+            > button{
+                margin-left: .2rem;
+                margin-right: .2rem;
+            }
+        }
+    }
+}

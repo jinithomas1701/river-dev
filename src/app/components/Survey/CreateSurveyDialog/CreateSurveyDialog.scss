@@ -1,0 +1,47 @@
+.create-survey-dialog-container{
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        .detail-container {
+            display: flex;
+            flex-direction: row;
+            .input-wrapper {
+                min-width: 11.4rem;
+                margin-right: 1rem;
+
+                .input-field{
+                    &.date-field{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .section-title{
+            margin-top: 1rem;
+        }
+        .option-components{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .add-option-btn-container{
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+    }
+    .input-container .datetime-picker-wrapper{
+        width: 100%;
+    
+        .datetime-picker{
+            margin-top: .5rem;
+        }
+    
+        > label {
+            top: -1.4rem;
+            left: -1rem;
+        }
+    
+    }
+}

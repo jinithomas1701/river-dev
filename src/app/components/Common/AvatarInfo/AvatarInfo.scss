@@ -1,0 +1,88 @@
+@import "../../../Util/commonStyles.scss";
+
+.avatarinfo-wrapper{
+    display: inline-flex;
+
+    &:hover{
+        .avatar-col{
+            .btn-delete{
+                top: 0;
+                left: 0;
+                z-index: 2;
+                opacity: 1;
+            }
+        }
+    }
+
+    .avatar-col{
+        position: relative;
+        overflow: hidden;
+
+        .avatar-img{
+            width: 2rem;
+            height: 2rem;
+            
+            img:before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $secondary-alt;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .btn-delete{
+            position: absolute;
+            opacity: 0;
+            left: -500%;
+            top: -500%;
+            padding: 0;
+            width: 2rem;
+            min-width: 0;
+            height: 2rem;
+            transition: opacity .3s;
+            background-color: $primary-base;
+            border-radius: 50%;
+            min-height: 0;
+            transition: .3s background-color;
+
+            &:hover{
+                background-color: $complimentary-base;
+            }
+
+            .material-icons{
+                font-size: 1rem;
+            }
+        }
+    }
+    .info-col{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: .5rem;
+        font-size: .8rem;
+
+        .title{
+            margin: 0;
+            font-weight: $weight-semibold;
+        }
+    }
+    .sub-text{
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .status{
+        margin: 0;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        background: $neutral-alt;
+        display: table;
+        font-size: 0.6rem;
+        padding: 0.2em 0.5rem;
+        border-radius: 2rem;
+    }
+}

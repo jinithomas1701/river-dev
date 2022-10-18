@@ -1,0 +1,110 @@
+.booking-wrapper{
+    .content-container{
+        /*background-color: #ffffff;
+        padding: 1.5rem;*/
+    }
+    .page-content-section{
+        .section-title{
+            color: #909090;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    .full-width{
+        width: 100%;
+    }
+    .booking-body{
+        margin-top: 1.5rem;
+    }
+    .bookcard{
+        $bookcard: &;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 1rem;
+        background: #fff;
+        padding: 1rem;
+        border-left: 3px solid  #22bca8;
+
+        .bookcard-header{
+            display: flex;
+            .bookcard-title{
+                font-size: 1rem;
+                color: #22bca8;
+                font-weight: bold;
+                margin-bottom: 0;
+
+                .bookcard-subtitle{
+                    color: #909090;
+                    font-size: 0.8rem;
+                }
+            }
+            .bookcard-time{
+                font-size: 0.8rem;
+                flex-basis: 100%;
+            }
+            .actions{
+                display: flex;
+                margin: -1rem -1rem -1rem auto;
+                border-left: 1px solid #e8e8e8;
+
+                button{
+                    min-width: 0;
+                }
+
+                @media only screen and (max-width: 600px){
+                    flex-direction: column;
+                }
+            }
+        }
+        .bookcard-info{
+            display: flex;
+            align-items: start;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 2;
+            padding-right: 1rem;
+        }
+        .bookcard-short{
+            margin-bottom: 0;
+            &:after{
+                content: "";
+                display: block;
+            }
+        }
+        .bookcard-body{
+            margin-top: 1rem;
+
+            .table-common{
+                tr:last-child{
+                    th, td{
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+        &.expanded{
+            .actions{
+                border-bottom: 1px solid  #e8e8e8;
+            }
+        }
+        &.cancelled{
+            background: #f5f5f5;
+            border-left-color: #ccc;
+        }
+    }
+    .search-widget{
+        margin-bottom: 1rem;
+    }
+    .btn-add-new{
+        margin-bottom: 1rem;
+    }
+    .text-multiline{
+        white-space: normal;
+        text-overflow: none;
+    }
+    .bookcard-status{
+        font-size: .75rem;
+        margin-right: auto;
+        padding-left: 1rem;
+        color: #f95c5c;
+    }
+}

@@ -1,0 +1,22 @@
+.surveys-page{
+    &-container{
+        .surveys{
+            &-tab-body{
+                padding: 1rem 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &-active{
+    
+            }
+        }
+    }
+
+    .listing-extras{
+        padding-top: 1rem;
+    }
+
+}
+.create-survey-btn{
+    right: 3rem;
+}

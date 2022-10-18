@@ -1,0 +1,133 @@
+{
+    "reports":[
+    {
+        "title": "Top 20 Members of a Month",
+        "url" : "reports/top20",
+        "fromDate": "NO",
+        "toDate": "NO",
+        "clubId":"NO",
+        "month":"MND",
+        "year": "MND"
+    },
+    {
+        "title": "Top 20 Members of a Month (Clubwise)",
+        "url" : "reports/club/top20",
+        "fromDate": "NO",
+        "toDate": "NO",
+        "clubId":"NO",
+        "month":"MND",
+        "year": "MND"
+    
+    },
+    // {
+    //     "title": "Club Billability",
+    //     "url" : "reports/clubbillability",
+    //     "fromDate": "NO",
+    //     "toDate": "NO",
+    //     "clubId":"NO",
+    //     "month":"MND",
+    //     "year": "MND"
+    
+    // },
+    // {
+    //     "title": "Member Billability",
+    //     "url" : "reports/membersbillability",
+    //     "fromDate": "NO",
+    //     "toDate": "NO",
+    //     "clubId":"NO",
+    //     "month":"MND",
+    //     "year": "NO"
+    
+    // },
+    // {
+    //     "title": "Member Billability(Clubwise)",
+    //     "url" : "reports/club/membersbillability",
+    //     "fromDate": "NO",
+    //     "toDate": "NO",
+    //     "clubId":"NO",
+    //     "month":"MND",
+    //     "year": "NO"
+    
+    // },
+    {
+        "title": "Activity",
+        "url" : "reports/activity",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Activity(Clubwise)",
+        "url" : "reports/club/activity",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Voices",
+        "url" : "reports/voice",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Voices(Clubwise)",
+        "url" : "reports/club/voice",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Clubs Points",
+        "url" : "reports/clubs",
+        "fromDate": "NO",
+        "toDate": "NO",
+        "clubId":"NO",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Member Points",
+        "url" : "reports/club/memberpoints",
+        "fromDate": "NO",
+        "toDate": "NO",
+        "clubId":"NO",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Meetings",
+        "url" : "reports/meeting",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    },
+    {
+        "title": "Meetings(Clubwise)",
+        "url" : "reports/club/meeting",
+        "fromDate": "YES",
+        "toDate": "YES",
+        "clubId":"YES",
+        "month":"NO",
+        "year": "NO"
+    
+    }]
+}
+    

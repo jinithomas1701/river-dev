@@ -1,0 +1,71 @@
+@import "../../../../../Util/commonStyles";
+
+.finadmin-summary-budget {
+    // width: 100%;
+    font-size: $text-size-body;
+    margin: 1.5rem;
+
+    > .title {
+        font-size: 1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    > .year {
+        margin-bottom: 1rem;
+
+        span {
+            font-weight: $weight-semibold;
+        }
+    }
+    p {
+        margin: 0;
+    }
+
+    .budget {
+        display: flex;
+        // align-items: center;
+
+        > table tbody tr td {
+            text-align: end;
+        }
+
+        @media screen and (max-width: 500px) {
+            > table {
+                width: 100%;
+            }
+        }
+
+        .budget-label {
+            text-transform: capitalize;
+        }
+
+        .budget-coins {
+            font-weight: $weight-medium;
+            margin-left: 0.5rem;
+        }
+
+        .input-field {
+            margin: 0 0 0 0.5rem;
+        }
+
+        .submit-wrapper {
+            margin-left: 1rem;
+        }
+
+        .btn {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            min-width: 0;
+            min-height: 0;
+            padding: 0;
+        }
+
+        .btn-edit {
+            border: 1px solid $border-base;
+            background-color: #fff;
+        }
+    }
+}

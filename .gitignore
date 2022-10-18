@@ -1,0 +1,7 @@
+/node_modules
+/dist
+/.idea
+/npm-debug.log
+/src/properties.json
+dist.zip
+/local-properties.json
